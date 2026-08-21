@@ -1,0 +1,3013 @@
+{
+  "items": {
+    "items": [
+      {
+        "id": "5ada2723-00ce-465a-9b3e-0c2a8078ad00",
+        "handle": "oppo-a36/a56/a76--kaiku",
+        "reference_id": null,
+        "item_name": "Oppo A36/A56/A76  Kaiku",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "da709465-273d-4229-9e63-b3c1cd4c7842",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-20T13:25:28.000Z",
+        "updated_at": "2026-08-20T13:25:28.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "8c1c070c-1de0-4ce7-80ce-b75b683a5826",
+            "item_id": "5ada2723-00ce-465a-9b3e-0c2a8078ad00",
+            "sku": "10687",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "CP-YP-OP009",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 400.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 400.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-08-20T13:25:28.000Z",
+            "updated_at": "2026-08-20T13:25:28.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "6ef6bc64-dceb-4a38-a116-6416684dc437",
+        "handle": "jigong-heat-tool",
+        "reference_id": null,
+        "item_name": "JIGONG Heat Tool",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-18T10:15:29.000Z",
+        "updated_at": "2026-08-18T10:15:29.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "33e0cc79-2691-413b-b129-8ae081275340",
+            "item_id": "6ef6bc64-dceb-4a38-a116-6416684dc437",
+            "sku": "10683",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 200.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 200.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-18T10:15:29.000Z",
+            "updated_at": "2026-08-18T10:15:29.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "5c4cb895-4620-4721-92f6-f29ca5037d41",
+        "handle": "redmi-9-usb-board-1",
+        "reference_id": null,
+        "item_name": "Redmi 9 USB board",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "11133a82-0b6e-4c02-8049-65405e5c40b9",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "PURPLE",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-18T03:40:27.000Z",
+        "updated_at": "2026-08-18T03:40:27.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "ee1f40d4-62d3-41a4-a2c8-5abaeeead430",
+            "item_id": "5c4cb895-4620-4721-92f6-f29ca5037d41",
+            "sku": "10377",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 80.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 80.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-08-18T03:40:27.000Z",
+            "updated_at": "2026-08-18T03:40:27.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "2a9a90a5-4e7b-4c03-93c4-b9213534d617",
+        "handle": "spark-6-go-power-flex",
+        "reference_id": null,
+        "item_name": "Spark 6 go /Spark 4 lite power flex",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "YELLOW",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-15T13:36:56.000Z",
+        "updated_at": "2026-08-15T13:37:20.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "31bed066-621c-4e59-91c3-d4e3069f882e",
+            "item_id": "2a9a90a5-4e7b-4c03-93c4-b9213534d617",
+            "sku": "10680",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "FC00652",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 35.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 35.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-08-15T13:36:56.000Z",
+            "updated_at": "2026-08-15T13:37:20.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "46a0d2aa-0910-491d-a814-63e2fb65f2c8",
+        "handle": "note-5/-5-pro-bn45",
+        "reference_id": null,
+        "item_name": "Note 5/ 5 pro BN45",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "ffaf30cf-88cc-4f86-a430-b284da9ed43a",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-15T13:29:47.000Z",
+        "updated_at": "2026-08-15T13:29:47.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "8ed030b4-96fa-47b7-ade6-02e2a8ab0997",
+            "item_id": "46a0d2aa-0910-491d-a814-63e2fb65f2c8",
+            "sku": "10674",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "BT00677",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 200.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 200.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-15T13:29:47.000Z",
+            "updated_at": "2026-08-15T13:29:47.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "ccd8e76d-b52e-4c73-a644-4965d2956a64",
+        "handle": "redmi-9-power-flex",
+        "reference_id": null,
+        "item_name": "Redmi 9 power flex",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "c2d3547f-1fda-4fa5-80a0-28eeb0fc3465",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "YELLOW",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-15T13:22:51.000Z",
+        "updated_at": "2026-08-15T13:22:51.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "90360baf-77e1-446b-8ae5-5128393f191e",
+            "item_id": "ccd8e76d-b52e-4c73-a644-4965d2956a64",
+            "sku": "10212",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "FC00502",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 40.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 40.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-08-15T13:22:51.000Z",
+            "updated_at": "2026-08-15T13:22:51.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "4fb34214-0f65-4083-87f4-383597984299",
+        "handle": "spark-go-2024-power-flex",
+        "reference_id": null,
+        "item_name": "Spark Go 2024 power flex",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "c2d3547f-1fda-4fa5-80a0-28eeb0fc3465",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "YELLOW",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-15T13:21:29.000Z",
+        "updated_at": "2026-08-15T13:21:29.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "39041163-f57f-4df7-9ef8-0e87c5b37781",
+            "item_id": "4fb34214-0f65-4083-87f4-383597984299",
+            "sku": "10671",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "FC01175",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 35.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 35.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-08-15T13:21:29.000Z",
+            "updated_at": "2026-08-15T13:21:29.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "96ff3a92-80b2-490a-bd4f-91ff2bdc8d05",
+        "handle": "hot-20i-/smart-6hd-usb-board",
+        "reference_id": null,
+        "item_name": "Hot 20i /Smart 6HD USB board",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "11133a82-0b6e-4c02-8049-65405e5c40b9",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "PURPLE",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-15T13:18:03.000Z",
+        "updated_at": "2026-08-15T13:18:03.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "f834371d-bc90-4132-878f-393954b08548",
+            "item_id": "96ff3a92-80b2-490a-bd4f-91ff2bdc8d05",
+            "sku": "10169",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "UB00350",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 65.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 65.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-08-15T13:18:03.000Z",
+            "updated_at": "2026-08-15T13:18:03.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "a2878f50-c2c6-45a7-9787-3629bbbae5ec",
+        "handle": "note-11-4g/note-11s/-poco-m4-pro-4g-tft",
+        "reference_id": null,
+        "item_name": "Note 11 4G/Note 11S/ Poco M4 pro 4G TFT",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "da709465-273d-4229-9e63-b3c1cd4c7842",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-15T13:13:12.000Z",
+        "updated_at": "2026-08-15T13:13:12.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "983456d1-2ebe-4385-86d3-da4809d7eb2d",
+            "item_id": "a2878f50-c2c6-45a7-9787-3629bbbae5ec",
+            "sku": "10616",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "063107",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 400.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 400.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-15T13:13:12.000Z",
+            "updated_at": "2026-08-15T13:13:12.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "5251112c-0336-44e7-bb5a-552702979d2d",
+        "handle": "iph-13-promax-jk-oled",
+        "reference_id": null,
+        "item_name": "iph 13 promax JK OLED",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "da709465-273d-4229-9e63-b3c1cd4c7842",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-15T13:10:15.000Z",
+        "updated_at": "2026-08-15T13:10:15.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "d197078a-bccc-4677-908f-962886ffa593",
+            "item_id": "5251112c-0336-44e7-bb5a-552702979d2d",
+            "sku": "10175",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "013220",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 1850.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 1850.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-15T13:10:15.000Z",
+            "updated_at": "2026-08-15T13:10:15.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "62c0ca5e-bab0-4206-9449-7533f8a732ba",
+        "handle": "civi-3",
+        "reference_id": null,
+        "item_name": "Civi 3",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-14T11:24:29.000Z",
+        "updated_at": "2026-08-14T11:24:29.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "498e8f89-8b30-4056-a090-697c8bb2cc59",
+            "item_id": "62c0ca5e-bab0-4206-9449-7533f8a732ba",
+            "sku": "10107",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 1750.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 1750.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-14T11:24:29.000Z",
+            "updated_at": "2026-08-14T11:24:29.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "3bb7c83e-8252-40cd-ad16-6d488b1e2e21",
+        "handle": "vivo-v27-5g",
+        "reference_id": null,
+        "item_name": "Vivo V27 5G",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-14T11:23:13.000Z",
+        "updated_at": "2026-08-14T11:23:13.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "56c6377b-bf78-443b-b10f-e00915f3be9d",
+            "item_id": "3bb7c83e-8252-40cd-ad16-6d488b1e2e21",
+            "sku": "10085",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 1200.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 1200.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-14T11:23:13.000Z",
+            "updated_at": "2026-08-14T11:23:13.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "20383f45-7625-4b8e-8482-2313ff9b83de",
+        "handle": "ဂျပ်မှန်အသေး-(glass-products)",
+        "reference_id": null,
+        "item_name": "ဂျပ်မှန်အသေး (GLASS PRODUCTS)",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-14T10:03:17.000Z",
+        "updated_at": "2026-08-14T10:03:17.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "61542776-8619-4073-9ccc-3ab46b0f2556",
+            "item_id": "20383f45-7625-4b8e-8482-2313ff9b83de",
+            "sku": "10702",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 0.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 0.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-14T10:03:17.000Z",
+            "updated_at": "2026-08-14T10:03:17.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "9bef2326-67da-4f85-b6df-cd09f743e2ff",
+        "handle": "vivo-y51-(2020)-battery-or+-/y31/y31s/y52s/y72/y53s-(b-08)-1",
+        "reference_id": null,
+        "item_name": "Vivo Y51 (2020) Battery OR+ /Y31/Y31S/Y52S/Y72/Y53S (B-08)",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-14T10:03:10.000Z",
+        "updated_at": "2026-08-14T10:03:10.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "1cd31da6-b1e1-41ae-8344-8c20eba15c59",
+            "item_id": "9bef2326-67da-4f85-b6df-cd09f743e2ff",
+            "sku": "10698",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 184.62,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 233.7,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 233.7,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-14T10:03:11.000Z",
+            "updated_at": "2026-08-14T10:03:11.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "cfaef743-4f7b-47fb-8cef-3b79348de0bc",
+        "handle": "iphone-11pro-max-battery-or-777-2",
+        "reference_id": null,
+        "item_name": "iPhone 11Pro Max Battery OR 777",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-14T10:03:08.000Z",
+        "updated_at": "2026-08-14T10:03:08.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "bb50c0a7-012b-4003-bb72-23807cae203e",
+            "item_id": "cfaef743-4f7b-47fb-8cef-3b79348de0bc",
+            "sku": "10696",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 365.38,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 462.51,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 462.51,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-14T10:03:08.000Z",
+            "updated_at": "2026-08-14T10:03:08.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "91e6faae-5b48-4690-a269-8e5cca87fa4f",
+        "handle": "ဂျပ်မှန်အေ-(glass-products)",
+        "reference_id": null,
+        "item_name": "ဂျပ်မှန်အေ (GLASS PRODUCTS)",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-14T09:55:03.000Z",
+        "updated_at": "2026-08-14T09:55:03.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "9878ebd0-3edb-4ed1-894a-af7f2d49e89a",
+            "item_id": "91e6faae-5b48-4690-a269-8e5cca87fa4f",
+            "sku": "10694",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 0.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 0.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-14T09:55:03.000Z",
+            "updated_at": "2026-08-14T09:55:03.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "d0087cd9-54de-4a9e-abf0-5d21352140a2",
+        "handle": "redmi-12-td-(b)-kasbear-/redmi-12r/redmi-note-12r-4g/5g-1",
+        "reference_id": null,
+        "item_name": "RedMi 12 TD (B) KASBEAR /RedMi 12R/RedMi Note 12R 4G/5G",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-14T09:54:59.000Z",
+        "updated_at": "2026-08-14T09:54:59.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "36728da3-e8de-4e7e-ad8b-19aa553b19a0",
+            "item_id": "d0087cd9-54de-4a9e-abf0-5d21352140a2",
+            "sku": "10693",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 315.38,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 399.22,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 399.22,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-14T09:54:59.000Z",
+            "updated_at": "2026-08-14T09:54:59.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "e50f8827-e063-4624-9700-8f42ec21e96d",
+        "handle": "vivo-y51-(2020)-battery-or+-/y31/y31s/y52s/y72/y53s-(b-08)",
+        "reference_id": null,
+        "item_name": "Vivo Y51 (2020) Battery OR+ /Y31/Y31S/Y52S/Y72/Y53S (B-08)",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-14T09:54:49.000Z",
+        "updated_at": "2026-08-14T09:54:49.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "4ff50f9c-ea16-4785-bd61-8f6be4c5230d",
+            "item_id": "e50f8827-e063-4624-9700-8f42ec21e96d",
+            "sku": "10688",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 184.62,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 233.7,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 233.7,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-14T09:54:49.000Z",
+            "updated_at": "2026-08-14T09:54:49.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "4e99d330-4a72-4837-bd32-cd25f4619007",
+        "handle": "iphone-11pro-max-battery-or-777-1",
+        "reference_id": null,
+        "item_name": "iPhone 11Pro Max Battery OR 777",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-14T09:54:42.000Z",
+        "updated_at": "2026-08-14T09:54:42.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "6c3641de-9d3e-4fcd-a87a-cf98a7b3d1d4",
+            "item_id": "4e99d330-4a72-4837-bd32-cd25f4619007",
+            "sku": "10686",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 365.38,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 462.51,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 462.51,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-14T09:54:42.000Z",
+            "updated_at": "2026-08-14T09:54:42.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "e4d71042-840c-49ab-aa75-0eafc28c4dff",
+        "handle": "ချုပ်မှန်အသေ-(glass-products)",
+        "reference_id": null,
+        "item_name": "ချုပ်မှန်အသေ (GLASS PRODUCTS)",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-14T09:51:04.000Z",
+        "updated_at": "2026-08-14T09:51:04.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "7a829574-4467-4fef-b79f-b6e03f6da54a",
+            "item_id": "e4d71042-840c-49ab-aa75-0eafc28c4dff",
+            "sku": "10681",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 0.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 0.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-14T09:51:04.000Z",
+            "updated_at": "2026-08-14T09:51:04.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "51d9c5c5-943b-4d9e-a20b-cbdf44652329",
+        "handle": "vivo-y51-(2020)-battery-or+-/y31/y31s/y52s/y72/y53s-(b-ob)",
+        "reference_id": null,
+        "item_name": "Vivo Y51 (2020) Battery OR+ /Y31/Y31S/Y52S/Y72/Y53S (B-OB)",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-14T09:50:56.000Z",
+        "updated_at": "2026-08-14T09:50:56.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "6795ca3b-bbf9-4601-bd15-381d5421e015",
+            "item_id": "51d9c5c5-943b-4d9e-a20b-cbdf44652329",
+            "sku": "10670",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 184.62,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 233.7,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 233.7,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-14T09:50:56.000Z",
+            "updated_at": "2026-08-14T09:50:56.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "00518f55-e7d3-410b-a670-f48c11a83029",
+        "handle": "iphone-11pro-max-battery-or-777",
+        "reference_id": null,
+        "item_name": "iPhone 11Pro Max Battery OR 777",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-14T09:50:53.000Z",
+        "updated_at": "2026-08-14T09:50:53.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "08c52f9e-0a06-45fb-a6ab-71c64afe855f",
+            "item_id": "00518f55-e7d3-410b-a670-f48c11a83029",
+            "sku": "10557",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 365.38,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 462.51,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 462.51,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-14T09:50:53.000Z",
+            "updated_at": "2026-08-14T09:50:53.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "50737c75-3bd2-4c6a-b8c3-2db1e4458815",
+        "handle": "cytron-technologies-rpi-pic02-raspberry-pi-pico-2",
+        "reference_id": null,
+        "item_name": "Cytron Technologies RPI-PIC02 Raspberry Pi Pico 2",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-12T11:48:21.000Z",
+        "updated_at": "2026-08-12T11:48:21.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "0c40b8a3-53e9-40e7-8e41-c205d154c403",
+            "item_id": "50737c75-3bd2-4c6a-b8c3-2db1e4458815",
+            "sku": "10669",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "38517683",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 300.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 300.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-12T11:48:21.000Z",
+            "updated_at": "2026-08-12T11:48:21.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "d053f0bd-b216-46c8-9314-ecc61f9e1d4a",
+        "handle": "redmi-note-8-usb-board",
+        "reference_id": null,
+        "item_name": "Redmi note 8 USB board",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "11133a82-0b6e-4c02-8049-65405e5c40b9",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "PURPLE",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-12T07:53:23.000Z",
+        "updated_at": "2026-08-12T07:53:23.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "6739f46e-1c66-4663-a140-54b7a135f6fa",
+            "item_id": "d053f0bd-b216-46c8-9314-ecc61f9e1d4a",
+            "sku": "10631",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 65.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 65.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-08-12T07:53:23.000Z",
+            "updated_at": "2026-08-12T07:53:23.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "bbff8847-30de-4dc7-9936-435d36eef0b4",
+        "handle": "relife-gear-glue-remover-lg2",
+        "reference_id": null,
+        "item_name": "RElife Gear Glue Remover LG2",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-11T10:48:36.000Z",
+        "updated_at": "2026-08-11T10:48:36.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "62bb9443-ed46-4019-ad86-6b95cfebd571",
+            "item_id": "bbff8847-30de-4dc7-9936-435d36eef0b4",
+            "sku": "10622",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "6941590215143",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 620.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 620.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-11T10:48:36.000Z",
+            "updated_at": "2026-08-11T10:48:36.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "7061b853-d3a8-46a1-9027-5899fe2eec64",
+        "handle": "best-soldering-iron-tip",
+        "reference_id": null,
+        "item_name": "BEST Soldering Iron Tip",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-11T10:21:14.000Z",
+        "updated_at": "2026-08-11T10:21:14.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "838ad532-0050-47b8-8536-9001295d1da0",
+            "item_id": "7061b853-d3a8-46a1-9027-5899fe2eec64",
+            "sku": "10613",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 90.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 90.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-11T10:21:14.000Z",
+            "updated_at": "2026-08-11T10:21:14.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "56592890-51ce-450f-8bb7-576cf0fe0ebc",
+        "handle": "rf4-rf-g30-zero-benzene-environmental-protection-glue",
+        "reference_id": null,
+        "item_name": "RF4 RF-G30 ZERO BENZENE Environmental Protection Glue",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-11T10:20:34.000Z",
+        "updated_at": "2026-08-11T10:20:34.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "59315bee-6f31-4116-b8ac-1ad27d764dd4",
+            "item_id": "56592890-51ce-450f-8bb7-576cf0fe0ebc",
+            "sku": "10603",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 120.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 120.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-11T10:20:34.000Z",
+            "updated_at": "2026-08-11T10:20:34.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "562c00ae-ec05-4d0f-8057-e83840b986b0",
+        "handle": "ma-ant-small-scraper-tool",
+        "reference_id": null,
+        "item_name": "Ma Ant Small Scraper Tool",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-11T10:20:18.000Z",
+        "updated_at": "2026-08-11T10:20:18.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "cab82c86-e806-4c6d-b51b-a1105891d56e",
+            "item_id": "562c00ae-ec05-4d0f-8057-e83840b986b0",
+            "sku": "10601",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 35.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 35.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-11T10:20:18.000Z",
+            "updated_at": "2026-08-11T10:20:18.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "0b13d5ef-5d44-4ba4-ae03-bc6199be8cf8",
+        "handle": "maant-pry-tool",
+        "reference_id": null,
+        "item_name": "MaAnt Pry Tool",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-11T10:20:08.000Z",
+        "updated_at": "2026-08-11T10:20:08.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "c31e8edb-0e9e-48a2-aa2c-4b0ad2338470",
+            "item_id": "0b13d5ef-5d44-4ba4-ae03-bc6199be8cf8",
+            "sku": "10575",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 80.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 80.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-11T10:20:08.000Z",
+            "updated_at": "2026-08-11T10:20:08.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "f042e8f6-b167-4f80-9252-e5f692c38e13",
+        "handle": "teardown-piece-te-029",
+        "reference_id": null,
+        "item_name": "TEARDOWN PIECE TE-029",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-11T10:19:52.000Z",
+        "updated_at": "2026-08-11T10:19:52.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "2caa6a40-23f0-4762-b83c-8d3391f94176",
+            "item_id": "f042e8f6-b167-4f80-9252-e5f692c38e13",
+            "sku": "10572",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 40.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 40.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-11T10:19:52.000Z",
+            "updated_at": "2026-08-11T10:19:52.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "5cc0dbc0-d897-4cbe-bb0a-0f2cf36979ba",
+        "handle": "ifixes-repair-mat",
+        "reference_id": null,
+        "item_name": "iFixes Repair Mat",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-11T10:19:31.000Z",
+        "updated_at": "2026-08-11T10:19:31.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "62be4dc1-94fe-41d2-a447-ccd797d581d4",
+            "item_id": "5cc0dbc0-d897-4cbe-bb0a-0f2cf36979ba",
+            "sku": "10554",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 85.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 85.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-11T10:19:31.000Z",
+            "updated_at": "2026-08-11T10:19:31.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "35a0499b-c2a8-42dc-a3f2-ab83ea8dd5b2",
+        "handle": "m200-scratch-repair-solution",
+        "reference_id": null,
+        "item_name": "M200 SCRATCH REPAIR SOLUTION",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-11T10:18:29.000Z",
+        "updated_at": "2026-08-11T10:18:29.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "97d98639-edbc-45c3-bbe9-5dce374a66ec",
+            "item_id": "35a0499b-c2a8-42dc-a3f2-ab83ea8dd5b2",
+            "sku": "10538",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "758500249764",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 250.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 250.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-11T10:18:30.000Z",
+            "updated_at": "2026-08-11T10:18:30.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "45e57bfc-367b-489a-8f0b-b5b2e943bfd7",
+        "handle": "mag-grid-pad-chip-silicone-buffer-soldering-pad",
+        "reference_id": null,
+        "item_name": "Mag Grid Pad Chip Silicone Buffer Soldering Pad",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-11T10:15:53.000Z",
+        "updated_at": "2026-08-11T10:15:53.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "fb528dae-f175-4523-b450-e1432da9f011",
+            "item_id": "45e57bfc-367b-489a-8f0b-b5b2e943bfd7",
+            "sku": "10533",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 200.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 200.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-11T10:15:53.000Z",
+            "updated_at": "2026-08-11T10:15:53.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "88295cbb-30ee-4126-8b84-71172ba7fea1",
+        "handle": "silicone-pad-m-113/te",
+        "reference_id": null,
+        "item_name": "SILICONE PAD M-113/TE",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-11T10:05:16.000Z",
+        "updated_at": "2026-08-11T10:05:16.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "70fd7d8d-560a-48d6-b4f8-4eb44b6db4f7",
+            "item_id": "88295cbb-30ee-4126-8b84-71172ba7fea1",
+            "sku": "10523",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "116499187118",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "VARIABLE",
+            "default_price": null,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "VARIABLE",
+                "price": null,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-11T10:05:16.000Z",
+            "updated_at": "2026-08-11T10:05:16.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "62be280d-0072-4eee-b12e-fa344213b953",
+        "handle": "mobile-phone-screen-bonding-fixture-tg-4000",
+        "reference_id": null,
+        "item_name": "Mobile Phone Screen Bonding Fixture TG-4000",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-11T10:05:04.000Z",
+        "updated_at": "2026-08-11T10:05:04.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "f38c4373-8e64-48ab-997e-179b79306b37",
+            "item_id": "62be280d-0072-4eee-b12e-fa344213b953",
+            "sku": "10499",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "VARIABLE",
+            "default_price": null,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "VARIABLE",
+                "price": null,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-11T10:05:04.000Z",
+            "updated_at": "2026-08-11T10:05:04.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "3b87b56f-bbac-4a72-9057-adf880c5d252",
+        "handle": "jtxtools-b9-battery-activation-board",
+        "reference_id": null,
+        "item_name": "JTXTOOLS B9 Battery Activation Board",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-11T10:02:14.000Z",
+        "updated_at": "2026-08-11T10:02:14.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "dbe2cf8a-2c10-40b2-b590-90124e676995",
+            "item_id": "3b87b56f-bbac-4a72-9057-adf880c5d252",
+            "sku": "10478",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "6979396730225",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "VARIABLE",
+            "default_price": null,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "VARIABLE",
+                "price": null,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-11T10:02:14.000Z",
+            "updated_at": "2026-08-11T10:02:14.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "aedb9375-c2f5-4b53-b820-72ae9a9518e6",
+        "handle": "jtxtools-b9-apple-&-android-battery-activation-board",
+        "reference_id": null,
+        "item_name": "JTXTOOLS B9 Apple & Android Battery Activation Board",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-11T10:02:09.000Z",
+        "updated_at": "2026-08-11T10:02:09.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "284edaaf-b45e-43c9-9768-94fb56c2bbde",
+            "item_id": "aedb9375-c2f5-4b53-b820-72ae9a9518e6",
+            "sku": "10358",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "VARIABLE",
+            "default_price": null,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "VARIABLE",
+                "price": null,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-11T10:02:09.000Z",
+            "updated_at": "2026-08-11T10:02:09.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "a6e84482-bb7b-4a3c-a1b4-db10abc70246",
+        "handle": "10x-4g-/note-9-power-flex",
+        "reference_id": null,
+        "item_name": "10x 4G /Note 9 power flex",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "c2d3547f-1fda-4fa5-80a0-28eeb0fc3465",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "YELLOW",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-11T09:45:28.000Z",
+        "updated_at": "2026-08-11T09:45:28.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "ec0b74da-0ee0-490e-a173-499e3c30dd7f",
+            "item_id": "a6e84482-bb7b-4a3c-a1b4-db10abc70246",
+            "sku": "10256",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 35.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 35.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-08-11T09:45:28.000Z",
+            "updated_at": "2026-08-11T09:45:28.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "c3082d86-031a-4b85-8093-0f4d8de799eb",
+        "handle": "redmi-a3-battery-or+-(bn5r)",
+        "reference_id": null,
+        "item_name": "RedMi A3 Battery OR+ (BN5R)",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-11T08:02:49.000Z",
+        "updated_at": "2026-08-11T08:02:49.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "1a5392d8-ddd4-4fe3-a676-be526177ed16",
+            "item_id": "c3082d86-031a-4b85-8093-0f4d8de799eb",
+            "sku": "10196",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 176.92,
+            "purchase_cost": null,
+            "default_pricing_type": "VARIABLE",
+            "default_price": null,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "VARIABLE",
+                "price": null,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-11T08:02:49.000Z",
+            "updated_at": "2026-08-11T08:02:49.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "38925f13-f81d-4a5d-beb5-2cab86906c3f",
+        "handle": "oppo-a9-(2020)-battery-or+/blp727",
+        "reference_id": null,
+        "item_name": "Oppo A9 (2020) Battery OR+/BLP727",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-11T08:02:47.000Z",
+        "updated_at": "2026-08-11T08:02:47.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "50d918f0-036c-4657-889a-809866430220",
+            "item_id": "38925f13-f81d-4a5d-beb5-2cab86906c3f",
+            "sku": "10193",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 188.46,
+            "purchase_cost": null,
+            "default_pricing_type": "VARIABLE",
+            "default_price": null,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "VARIABLE",
+                "price": null,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-11T08:02:47.000Z",
+            "updated_at": "2026-08-11T08:02:47.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "dff32484-9617-4c96-853a-c9d4ee0a4ed0",
+        "handle": "oppo-a76-power-flex/a36",
+        "reference_id": null,
+        "item_name": "Oppo A76 Power Flex/A36",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-11T08:02:43.000Z",
+        "updated_at": "2026-08-11T08:02:43.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "6f678cdb-4a54-4aaf-b7f8-030d971f091a",
+            "item_id": "dff32484-9617-4c96-853a-c9d4ee0a4ed0",
+            "sku": "10149",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 15.38,
+            "purchase_cost": null,
+            "default_pricing_type": "VARIABLE",
+            "default_price": null,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "VARIABLE",
+                "price": null,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-11T08:02:43.000Z",
+            "updated_at": "2026-08-11T08:02:43.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "7e2d6bc0-3452-412d-b7a1-8214b8ffb1b0",
+        "handle": "redmi-12-spk-com",
+        "reference_id": null,
+        "item_name": "RedMi 12 Spk Com",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-11T08:02:35.000Z",
+        "updated_at": "2026-08-18T03:42:01.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "b19f4ca7-1640-464f-966c-d0d100262066",
+            "item_id": "7e2d6bc0-3452-412d-b7a1-8214b8ffb1b0",
+            "sku": "10147",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 19.23,
+            "purchase_cost": null,
+            "default_pricing_type": "VARIABLE",
+            "default_price": null,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 35.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-08-11T08:02:35.000Z",
+            "updated_at": "2026-08-18T03:42:01.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "70f04485-2c74-4b53-b68d-ce12aed9e9a0",
+        "handle": "f9/a7x-usb-flex",
+        "reference_id": null,
+        "item_name": "F9/A7X USB Flex",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-11T08:02:29.000Z",
+        "updated_at": "2026-08-11T08:02:29.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "7a456c41-0475-49c3-8a55-02011ffdab00",
+            "item_id": "70f04485-2c74-4b53-b68d-ce12aed9e9a0",
+            "sku": "10098",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 38.46,
+            "purchase_cost": null,
+            "default_pricing_type": "VARIABLE",
+            "default_price": null,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "VARIABLE",
+                "price": null,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-11T08:02:29.000Z",
+            "updated_at": "2026-08-11T08:02:29.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "76d7a0d5-3470-4bb5-80a1-5cb4c4dc79e0",
+        "handle": "vivo-y16-usb-flex",
+        "reference_id": null,
+        "item_name": "Vivo Y16 USB Flex",
+        "description": null,
+        "track_stock": false,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-11T08:02:26.000Z",
+        "updated_at": "2026-08-11T08:02:26.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "9f6922b6-c558-4c46-9eda-59a2e26c55d3",
+            "item_id": "76d7a0d5-3470-4bb5-80a1-5cb4c4dc79e0",
+            "sku": "10066",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 21.54,
+            "purchase_cost": null,
+            "default_pricing_type": "VARIABLE",
+            "default_price": null,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "VARIABLE",
+                "price": null,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-08-11T08:02:26.000Z",
+            "updated_at": "2026-08-11T08:02:26.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "f23bd202-bb44-4fa0-8196-fcba54ae98d2",
+        "handle": "vivo-v20-bn8-battery",
+        "reference_id": null,
+        "item_name": "Vivo V20 BN8 battery",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "ffaf30cf-88cc-4f86-a430-b284da9ed43a",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREEN",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-10T10:16:46.000Z",
+        "updated_at": "2026-08-10T10:16:46.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "981f6a38-8966-40dd-88ba-fd8b29d818be",
+            "item_id": "f23bd202-bb44-4fa0-8196-fcba54ae98d2",
+            "sku": "10667",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "AT426U205150006N",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 230.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 230.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-08-10T10:16:46.000Z",
+            "updated_at": "2026-08-10T10:16:46.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "25c0e117-561d-465f-9055-29dcb2c067d5",
+        "handle": "hot-50-pro-plus-(bl49ux)",
+        "reference_id": null,
+        "item_name": "Hot 50 pro plus (BL49UX) battery",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "ffaf30cf-88cc-4f86-a430-b284da9ed43a",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREEN",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-10T10:15:13.000Z",
+        "updated_at": "2026-08-10T10:15:29.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "3f0a27ca-97dd-449e-be99-f8132d14c9ba",
+            "item_id": "25c0e117-561d-465f-9055-29dcb2c067d5",
+            "sku": "10665",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "027797",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 240.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 240.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-08-10T10:15:13.000Z",
+            "updated_at": "2026-08-10T10:15:29.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "1dfc08b0-d024-4cac-95dc-dda75eecd3bb",
+        "handle": "pova-7-5g-(bl58it)",
+        "reference_id": null,
+        "item_name": "Pova 7 5G (BL58IT)",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "ffaf30cf-88cc-4f86-a430-b284da9ed43a",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREEN",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-10T10:13:46.000Z",
+        "updated_at": "2026-08-10T10:13:46.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "d33bc9d4-e80a-4f9d-bbdf-9c52cffab1cd",
+            "item_id": "1dfc08b0-d024-4cac-95dc-dda75eecd3bb",
+            "sku": "10659",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "027826",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 250.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 250.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-08-10T10:13:46.000Z",
+            "updated_at": "2026-08-10T10:13:46.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "117164d4-ded9-4015-81a6-ec74cbc478d3",
+        "handle": "vivo-y19s/-y04-ba61-battery",
+        "reference_id": null,
+        "item_name": "Vivo Y19S/ Y04 BA61 battery",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "ffaf30cf-88cc-4f86-a430-b284da9ed43a",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREEN",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-10T10:09:51.000Z",
+        "updated_at": "2026-08-10T10:09:51.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "6a47d789-28da-489b-a860-7ac8220ce01d",
+            "item_id": "117164d4-ded9-4015-81a6-ec74cbc478d3",
+            "sku": "10656",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "027791",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 240.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 240.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-08-10T10:09:51.000Z",
+            "updated_at": "2026-08-10T10:09:51.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "c0a62b46-1b6d-4e5e-89ed-ece2647bcfcd",
+        "handle": "vivo-y35-5g/y53-5g/y02t/y53-(2020)-by1-battery",
+        "reference_id": null,
+        "item_name": "Vivo Y35 5G/Y53 5G/Y02T/Y53 (2020) BY1 battery",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "ffaf30cf-88cc-4f86-a430-b284da9ed43a",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREEN",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-10T10:08:30.000Z",
+        "updated_at": "2026-08-10T10:08:30.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "4d1fd60b-d447-4be2-9c71-3cf61ff68a48",
+            "item_id": "c0a62b46-1b6d-4e5e-89ed-ece2647bcfcd",
+            "sku": "10650",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "027792",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 230.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 230.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-08-10T10:08:30.000Z",
+            "updated_at": "2026-08-10T10:08:30.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "6fc685e1-d16a-4e98-9bec-9a9776ae7558",
+        "handle": "samsung-a32-5g-/a42/-a72-(ba426by)-battery",
+        "reference_id": null,
+        "item_name": "Samsung A32 5G /A42/ A72 (BA426BY) Battery",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "ffaf30cf-88cc-4f86-a430-b284da9ed43a",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREEN",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-08-10T10:06:48.000Z",
+        "updated_at": "2026-08-10T10:06:48.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "7c8badd4-337a-4054-82fa-cea8b1d2c071",
+            "item_id": "6fc685e1-d16a-4e98-9bec-9a9776ae7558",
+            "sku": "10648",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "027140",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 220.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 220.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-08-10T10:06:48.000Z",
+            "updated_at": "2026-08-10T10:06:48.000Z",
+            "deleted_at": null
+          }
+        ]
+      }
+    ],
+    "cursor": "ODJAo8mpuQFIBQ=="
+  },
+  "inventory": {
+    "inventory_levels": [
+      {
+        "variant_id": "8c1c070c-1de0-4ce7-80ce-b75b683a5826",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-08-21T07:08:33.000Z"
+      },
+      {
+        "variant_id": "ee1f40d4-62d3-41a4-a2c8-5abaeeead430",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-08-18T03:42:30.000Z"
+      },
+      {
+        "variant_id": "31bed066-621c-4e59-91c3-d4e3069f882e",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 2,
+        "updated_at": "2026-08-16T04:33:51.000Z"
+      },
+      {
+        "variant_id": "90360baf-77e1-446b-8ae5-5128393f191e",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 5,
+        "updated_at": "2026-08-15T13:22:50.000Z"
+      },
+      {
+        "variant_id": "39041163-f57f-4df7-9ef8-0e87c5b37781",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 3,
+        "updated_at": "2026-08-15T13:21:29.000Z"
+      },
+      {
+        "variant_id": "f834371d-bc90-4132-878f-393954b08548",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 3,
+        "updated_at": "2026-08-15T13:18:03.000Z"
+      },
+      {
+        "variant_id": "983456d1-2ebe-4385-86d3-da4809d7eb2d",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 0,
+        "updated_at": "2026-08-17T11:41:33.000Z"
+      },
+      {
+        "variant_id": "498e8f89-8b30-4056-a090-697c8bb2cc59",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 0,
+        "updated_at": "2026-08-15T06:37:50.000Z"
+      },
+      {
+        "variant_id": "56c6377b-bf78-443b-b10f-e00915f3be9d",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 0,
+        "updated_at": "2026-08-14T11:58:00.000Z"
+      },
+      {
+        "variant_id": "6739f46e-1c66-4663-a140-54b7a135f6fa",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 4,
+        "updated_at": "2026-08-12T07:53:23.000Z"
+      },
+      {
+        "variant_id": "ec0b74da-0ee0-490e-a173-499e3c30dd7f",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-08-11T09:45:28.000Z"
+      },
+      {
+        "variant_id": "b19f4ca7-1640-464f-966c-d0d100262066",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-08-18T03:42:30.000Z"
+      },
+      {
+        "variant_id": "981f6a38-8966-40dd-88ba-fd8b29d818be",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-08-10T10:16:45.000Z"
+      },
+      {
+        "variant_id": "3f0a27ca-97dd-449e-be99-f8132d14c9ba",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-08-10T10:15:13.000Z"
+      },
+      {
+        "variant_id": "d33bc9d4-e80a-4f9d-bbdf-9c52cffab1cd",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-08-10T10:13:45.000Z"
+      },
+      {
+        "variant_id": "6a47d789-28da-489b-a860-7ac8220ce01d",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-08-10T10:09:50.000Z"
+      },
+      {
+        "variant_id": "4d1fd60b-d447-4be2-9c71-3cf61ff68a48",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-08-10T10:08:30.000Z"
+      },
+      {
+        "variant_id": "7c8badd4-337a-4054-82fa-cea8b1d2c071",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-08-10T10:06:47.000Z"
+      },
+      {
+        "variant_id": "e5021f8c-e862-45b7-a86f-da2dade9ce69",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-08-10T10:05:14.000Z"
+      },
+      {
+        "variant_id": "85bb692b-5efc-445f-bd24-766f437f8f2c",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 0,
+        "updated_at": "2026-08-16T04:33:51.000Z"
+      },
+      {
+        "variant_id": "08b50e47-d738-495c-940e-4a689e49be05",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-08-11T05:58:30.000Z"
+      },
+      {
+        "variant_id": "5752407f-4d78-4eed-91f2-b86044955e2e",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 6,
+        "updated_at": "2026-08-09T09:24:16.000Z"
+      },
+      {
+        "variant_id": "4d2eade6-9a34-45b1-89cc-49f5cab57483",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-08-21T08:59:13.000Z"
+      },
+      {
+        "variant_id": "c727fb8b-eb3e-4f81-b9d7-e76a55a450d1",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 2,
+        "updated_at": "2026-08-06T10:09:37.000Z"
+      },
+      {
+        "variant_id": "a7060868-44e5-42c4-82c5-a3e743fe5289",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 2,
+        "updated_at": "2026-08-06T10:04:49.000Z"
+      },
+      {
+        "variant_id": "d8a04121-2ee0-4465-96a0-c35393aa15ea",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 0,
+        "updated_at": "2026-08-21T07:30:38.000Z"
+      },
+      {
+        "variant_id": "1ac22d91-04e4-4438-818b-95493350db1f",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-08-04T12:16:06.000Z"
+      },
+      {
+        "variant_id": "3ef2b369-d4f9-44a5-bba9-ef42ed35ebbb",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 3,
+        "updated_at": "2026-08-04T12:11:03.000Z"
+      },
+      {
+        "variant_id": "ca23fa4d-1663-4e36-bdc3-b9f1705cd014",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-08-02T12:26:07.000Z"
+      },
+      {
+        "variant_id": "c7ef9076-1adf-406d-a465-1feb91bfb0e1",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 0,
+        "updated_at": "2026-08-02T11:41:07.000Z"
+      },
+      {
+        "variant_id": "9c7a400c-6519-4e1d-b5bb-fd23d8c9d744",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-08-05T03:04:55.000Z"
+      },
+      {
+        "variant_id": "a3cefcd3-afb3-4228-afa8-97c01d6ae1d0",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-08-03T02:34:58.000Z"
+      },
+      {
+        "variant_id": "68e0d702-4212-49cd-81d9-b5f93297c0a0",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-07-27T10:39:19.000Z"
+      },
+      {
+        "variant_id": "e2c5c0a6-091f-4993-a9a4-343692f25c2e",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-07-27T09:15:15.000Z"
+      },
+      {
+        "variant_id": "0ddf2e9d-c164-402e-bcc0-528ee6a8cb4b",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 2,
+        "updated_at": "2026-07-26T05:43:27.000Z"
+      },
+      {
+        "variant_id": "3fd2a56d-422b-4611-868b-f52c716a3a97",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 3,
+        "updated_at": "2026-07-26T08:06:43.000Z"
+      },
+      {
+        "variant_id": "bf982a51-86f8-4643-b642-79f93de2a68e",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 0,
+        "updated_at": "2026-07-24T11:38:27.000Z"
+      },
+      {
+        "variant_id": "6aaec133-0c73-440c-9fe0-31e202a0c490",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 0,
+        "updated_at": "2026-08-11T09:36:06.000Z"
+      },
+      {
+        "variant_id": "67b8b6fd-e8b2-494f-8acf-54ba9c739323",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 3,
+        "updated_at": "2026-07-23T04:12:22.000Z"
+      },
+      {
+        "variant_id": "a93ec04b-2303-4a0a-b151-a0bbcd0e717f",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 6,
+        "updated_at": "2026-07-26T05:40:36.000Z"
+      },
+      {
+        "variant_id": "744436db-86cd-42a0-9e49-2df3e3a9c7ab",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-08-06T06:52:53.000Z"
+      },
+      {
+        "variant_id": "fab59a45-f464-45e9-9f00-b15a471fabb7",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 5,
+        "updated_at": "2026-07-20T05:15:17.000Z"
+      },
+      {
+        "variant_id": "61d135a7-2407-4061-96fc-b33734a4a2e9",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-07-20T05:12:23.000Z"
+      },
+      {
+        "variant_id": "843d9f15-8d78-4898-86a2-39b0fba5f6a3",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 2,
+        "updated_at": "2026-07-20T04:59:28.000Z"
+      },
+      {
+        "variant_id": "5ba96926-fee2-4878-8fa9-ae55399b9527",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-08-15T13:05:45.000Z"
+      },
+      {
+        "variant_id": "5b3ced38-f78e-4e8d-98a6-735247ab27eb",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 2,
+        "updated_at": "2026-07-06T11:57:11.000Z"
+      },
+      {
+        "variant_id": "6824ce0f-e3ee-4ba9-b395-ada673955597",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-07-01T04:19:28.000Z"
+      },
+      {
+        "variant_id": "2e764e91-4633-4686-94a7-220cce459a44",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 2,
+        "updated_at": "2026-08-05T02:48:23.000Z"
+      },
+      {
+        "variant_id": "27e6a10b-5e87-49a2-8854-07eb4b67a46f",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 0,
+        "updated_at": "2026-07-01T04:19:28.000Z"
+      },
+      {
+        "variant_id": "9912cfe2-ebc0-491c-bcef-d7b6a2537d3d",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-06-30T09:51:57.000Z"
+      }
+    ],
+    "cursor": "KDIwu4GM7AM4BA=="
+  },
+  "last_updated": "2026-08-21 17:37:12"
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NYEIN Mobile Phone Spare Parts And Tools</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: #f0f2f5; margin: 0; padding: 12px; }
+    .header { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto 16px; border-bottom: 2px solid #e4e6eb; padding-bottom: 12px; }
+    .header h2 { margin: 0; color: #1c1e21; font-size: 1.1rem; line-height: 1.3; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; max-width: 1200px; margin: 0 auto; }
+    .card { background: #fff; border-radius: 8px; padding: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); display: flex; flex-direction: column; }
+    .card img { width: 100%; height: 130px; object-fit: cover; border-radius: 6px; background: #e4e6eb; }
+    .title { font-size: 13px; font-weight: bold; margin: 8px 0 4px; min-height: 34px; line-height: 1.3; color: #050505; }
+    .price { color: #d32f2f; font-weight: bold; font-size: 15px; margin-bottom: 4px; }
+    .sku { font-size: 11px; color: #65676b; margin-bottom: 6px; }
+    .btn { border: none; padding: 6px 10px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 12px; }
+    .btn-admin { background: #1877f2; color: white; white-space: nowrap; margin-left: 8px; }
+    .btn-edit { background: #e4e6eb; color: #050505; width: 100%; margin-top: auto; }
+    .btn-save { background: #42b72a; color: white; width: 100%; margin-top: 6px; }
+    .edit-form { display: none; margin-top: 8px; border-top: 1px solid #ddd; padding-top: 8px; }
+    .edit-form label { font-size: 11px; color: #555; display: block; margin-bottom: 2px; }
+    .edit-form input { width: 100%; margin-bottom: 6px; padding: 5px; border: 1px solid #ccc; border-radius: 4px; font-size: 12px; }
+    #status-msg { text-align: center; color: #65676b; font-size: 14px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h2>NYEIN Mobile Phone Spare Parts And Tools</h2>
+    <button id="admin-toggle-btn" class="btn btn-admin" onclick="handleAdminLogin()">Admin Login</button>
+  </div>
+
+  <div id="status-msg">ပစ္စည်းစာရင်းများ ရယူနေပါသည်...</div>
+  <div id="product-grid" class="grid"></div>
+
+  <script>
+    // ၁။ Supabase Connection
+    const SUPABASE_URL = 'https://zrgbflsdffmotmovwfbx.supabase.co';
+    const SUPABASE_KEY = 'YOUR_FULL_PUBLISHABLE_KEY'; // သင် copy ကူးထားသော Publishable key ထည့်ပါ
+    const supabase = window.supabase.createClient(sb_publishable_9YTZ1ThaBuyXJ94o1EYnYA_hh3pTphR);
+
+    // ၂။ Admin Password
+    const ADMIN_USER = 'admin';
+    const ADMIN_PASS = '071065';
+    let isAdmin = false;
+
+    function handleAdminLogin() {
+      if (isAdmin) {
+        isAdmin = false;
+        document.getElementById('admin-toggle-btn').innerText = 'Admin Login';
+        renderProducts();
+        return;
+      }
+      const user = prompt('Admin Username:');
+      const pass = prompt('Admin Password:');
+      if (user === ADMIN_USER && pass === ADMIN_PASS) {
+        isAdmin = true;
+        document.getElementById('admin-toggle-btn').innerText = 'Logout';
+        alert('Admin Login အောင်မြင်ပါသည်။ ပစ္စည်းများကို Edit ပြုလုပ်နိုင်ပါပြီ။');
+        renderProducts();
+      } else {
+        alert('Username သို့မဟုတ် Password မှားယွင်းနေပါသည်!');
+      }
+    }
+
+    function toggleEditBox(sku) {
+      const box = document.getElementById(`edit-box-${sku}`);
+      box.style.display = box.style.display === 'block' ? 'none' : 'block';
+    }
+
+    async function saveProduct(sku) {
+      const name = document.getElementById(`input-name-${sku}`).value;
+      const price = parseFloat(document.getElementById(`input-price-${sku}`).value) || 0;
+      const img = document.getElementById(`input-img-${sku}`).value;
+
+      const { error } = await supabase
+        .from('custom_items')
+        .upsert({ sku: String(sku), item_name: name, price: price, image_url: img });
+
+      if (error) {
+        alert('သိမ်းဆည်းရာတွင် အမှားဖြစ်သွားပါသည်: ' + error.message);
+      } else {
+        alert('သိမ်းဆည်းပြီးပါပြီ!');
+        renderProducts();
+      }
+    }
+
+    async function renderProducts() {
+      const statusDiv = document.getElementById('status-msg');
+      const container = document.getElementById('product-grid');
+
+      try {
+        // Loyverse Data ဖတ်ယူခြင်း
+        const jsonRes = await fetch('./loyverse_auto_data.json');
+        const rawData = await jsonRes.json();
+        const itemsList = rawData.items?.items || rawData.items || [];
+
+        // Supabase Data ဖတ်ယူခြင်း
+        let overrideMap = {};
+        try {
+          const { data: dbData } = await supabase.from('custom_items').select('*');
+          (dbData || []).forEach(row => { overrideMap[row.sku] = row; });
+        } catch(e) {
+          console.warn("Supabase ချိတ်ဆက်မှု မရသေးပါ-", e);
+        }
+
+        container.innerHTML = '';
+        statusDiv.style.display = 'none';
+
+        itemsList.forEach(item => {
+          const variant = (item.variants && item.variants[0]) ? item.variants[0] : {};
+          const sku = String(variant.sku || item.id);
+          const custom = overrideMap[sku] || {};
+
+          const displayName = custom.item_name || item.item_name;
+          const displayPrice = (custom.price !== undefined && custom.price !== null) ? custom.price : (variant.default_price || 0);
+          const displayImg = custom.image_url || 'https://via.placeholder.com/200?text=No+Image';
+
+          const card = document.createElement('div');
+          card.className = 'card';
+          card.innerHTML = `
+            <img src="${displayImg}" alt="${displayName}">
+            <div class="title">${displayName}</div>
+            <div class="price">THB ${displayPrice}</div>
+            <div class="sku">SKU: ${sku}</div>
+            
+            ${isAdmin ? `
+              <button class="btn btn-edit" onclick="toggleEditBox('${sku}')">✏️ Edit</button>
+              <div id="edit-box-${sku}" class="edit-form">
+                <label>အမည်:</label>
+                <input type="text" id="input-name-${sku}" value="${displayName}">
+                <label>ဈေးနှုန်း (THB):</label>
+                <input type="number" id="input-price-${sku}" value="${displayPrice}">
+                <label>Image Direct Link:</label>
+                <input type="text" id="input-img-${sku}" value="${custom.image_url || ''}" placeholder="https://...">
+                <button class="btn btn-save" onclick="saveProduct('${sku}')">💾 Save</button>
+              </div>
+            ` : ''}
+          `;
+          container.appendChild(card);
+        });
+
+      } catch (err) {
+        statusDiv.innerHTML = `⚠️ Data ဖတ်မရသေးပါ (ဖိုင်နှစ်ခုလုံးကို GitHub ပေါ် တင်ပြီး စမ်းသပ်ပါ)။`;
+        console.error(err);
+      }
+    }
+
+    renderProducts();
+  </script>
+</body>
+</html>
