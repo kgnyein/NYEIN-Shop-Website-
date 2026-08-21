@@ -16,6 +16,7 @@
     .title { font-size: 13px; font-weight: bold; margin: 8px 0 4px; min-height: 34px; line-height: 1.3; color: #050505; }
     .price { color: #d32f2f; font-weight: bold; font-size: 15px; margin-bottom: 4px; }
     .sku { font-size: 11px; color: #65676b; margin-bottom: 6px; }
+    .stock { font-size: 11px; color: #007bff; font-weight: bold; margin-bottom: 6px; }
     .btn { border: none; padding: 6px 10px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 12px; }
     .btn-admin { background: #1877f2; color: white; white-space: nowrap; margin-left: 8px; }
     .btn-edit { background: #e4e6eb; color: #050505; width: 100%; margin-top: auto; }
@@ -23,7 +24,6 @@
     .edit-form { display: none; margin-top: 8px; border-top: 1px solid #ddd; padding-top: 8px; }
     .edit-form label { font-size: 11px; color: #555; display: block; margin-bottom: 2px; }
     .edit-form input { width: 100%; margin-bottom: 6px; padding: 5px; border: 1px solid #ccc; border-radius: 4px; font-size: 12px; }
-    #status-msg { text-align: center; color: #65676b; font-size: 14px; margin-top: 20px; }
   </style>
 </head>
 <body>
@@ -33,10 +33,10 @@
     <button id="admin-toggle-btn" class="btn btn-admin" onclick="handleAdminLogin()">Admin Login</button>
   </div>
 
-  <div id="status-msg">ပစ္စည်းစာရင်းများ ရယူနေပါသည်...</div>
   <div id="product-grid" class="grid"></div>
 
   <script>
+    // ၁။ Supabase Config
     const SUPABASE_URL = 'https://zrgbflsdffmotmovwfbx.supabase.co';
     const SUPABASE_KEY = 'sb_publishable_9YTZ1ThaBuyXJ94o1EYnYA_hh3pTphR';
     let supabase = null;
@@ -49,6 +49,61 @@
       console.warn("Supabase Init Error:", e);
     }
 
+    // ၂။ Embedded Loyverse Items
+    const rawItems = [
+      { name: "Oppo A36/A56/A76  Kaiku", sku: "10687", price: 400.0, stock: 1 },
+      { name: "JIGONG Heat Tool", sku: "10683", price: 200.0, stock: 0 },
+      { name: "Redmi 9 USB board", sku: "10377", price: 80.0, stock: 1 },
+      { name: "Spark 6 go /Spark 4 lite power flex", sku: "10680", price: 35.0, stock: 2 },
+      { name: "Note 5/ 5 pro BN45", sku: "10674", price: 200.0, stock: 0 },
+      { name: "Redmi 9 power flex", sku: "10212", price: 40.0, stock: 5 },
+      { name: "Spark Go 2024 power flex", sku: "10671", price: 35.0, stock: 3 },
+      { name: "Hot 20i /Smart 6HD USB board", sku: "10169", price: 65.0, stock: 3 },
+      { name: "Note 11 4G/Note 11S/ Poco M4 pro 4G TFT", sku: "10616", price: 400.0, stock: 0 },
+      { name: "iph 13 promax JK OLED", sku: "10175", price: 1850.0, stock: 0 },
+      { name: "Civi 3", sku: "10107", price: 1750.0, stock: 0 },
+      { name: "Vivo V27 5G", sku: "10085", price: 1200.0, stock: 0 },
+      { name: "ဂျပ်မှန်အသေး (GLASS PRODUCTS)", sku: "10702", price: 0.0, stock: 0 },
+      { name: "Vivo Y51 (2020) Battery OR+ /Y31/Y31S/Y52S/Y72/Y53S (B-08)", sku: "10698", price: 233.7, stock: 0 },
+      { name: "iPhone 11Pro Max Battery OR 777", sku: "10696", price: 462.51, stock: 0 },
+      { name: "ဂျပ်မှန်အေ (GLASS PRODUCTS)", sku: "10694", price: 0.0, stock: 0 },
+      { name: "RedMi 12 TD (B) KASBEAR /RedMi 12R/RedMi Note 12R 4G/5G", sku: "10693", price: 399.22, stock: 0 },
+      { name: "Vivo Y51 (2020) Battery OR+ /Y31/Y31S/Y52S/Y72/Y53S (B-08)", sku: "10688", price: 233.7, stock: 0 },
+      { name: "iPhone 11Pro Max Battery OR 777", sku: "10686", price: 462.51, stock: 0 },
+      { name: "ချုပ်မှန်အသေ (GLASS PRODUCTS)", sku: "10681", price: 0.0, stock: 0 },
+      { name: "Vivo Y51 (2020) Battery OR+ /Y31/Y31S/Y52S/Y72/Y53S (B-OB)", sku: "10670", price: 233.7, stock: 0 },
+      { name: "iPhone 11Pro Max Battery OR 777", sku: "10557", price: 462.51, stock: 0 },
+      { name: "Cytron Technologies RPI-PIC02 Raspberry Pi Pico 2", sku: "10669", price: 300.0, stock: 0 },
+      { name: "Redmi note 8 USB board", sku: "10631", price: 65.0, stock: 4 },
+      { name: "RElife Gear Glue Remover LG2", sku: "10622", price: 620.0, stock: 0 },
+      { name: "BEST Soldering Iron Tip", sku: "10613", price: 90.0, stock: 0 },
+      { name: "RF4 RF-G30 ZERO BENZENE Environmental Protection Glue", sku: "10603", price: 120.0, stock: 0 },
+      { name: "Ma Ant Small Scraper Tool", sku: "10601", price: 35.0, stock: 0 },
+      { name: "MaAnt Pry Tool", sku: "10575", price: 80.0, stock: 0 },
+      { name: "TEARDOWN PIECE TE-029", sku: "10572", price: 40.0, stock: 0 },
+      { name: "iFixes Repair Mat", sku: "10554", price: 85.0, stock: 0 },
+      { name: "M200 SCRATCH REPAIR SOLUTION", sku: "10538", price: 250.0, stock: 0 },
+      { name: "Mag Grid Pad Chip Silicone Buffer Soldering Pad", sku: "10533", price: 200.0, stock: 0 },
+      { name: "SILICONE PAD M-113/TE", sku: "10523", price: 0.0, stock: 0 },
+      { name: "Mobile Phone Screen Bonding Fixture TG-4000", sku: "10499", price: 0.0, stock: 0 },
+      { name: "JTXTOOLS B9 Battery Activation Board", sku: "10478", price: 0.0, stock: 0 },
+      { name: "JTXTOOLS B9 Apple & Android Battery Activation Board", sku: "10358", price: 0.0, stock: 0 },
+      { name: "10x 4G /Note 9 power flex", sku: "10256", price: 35.0, stock: 1 },
+      { name: "RedMi A3 Battery OR+ (BN5R)", sku: "10196", price: 0.0, stock: 0 },
+      { name: "Oppo A9 (2020) Battery OR+/BLP727", sku: "10193", price: 0.0, stock: 0 },
+      { name: "Oppo A76 Power Flex/A36", sku: "10149", price: 0.0, stock: 0 },
+      { name: "RedMi 12 Spk Com", sku: "10147", price: 35.0, stock: 1 },
+      { name: "F9/A7X USB Flex", sku: "10098", price: 0.0, stock: 0 },
+      { name: "Vivo Y16 USB Flex", sku: "10066", price: 0.0, stock: 0 },
+      { name: "Vivo V20 BN8 battery", sku: "10667", price: 230.0, stock: 1 },
+      { name: "Hot 50 pro plus (BL49UX) battery", sku: "10665", price: 240.0, stock: 1 },
+      { name: "Pova 7 5G (BL58IT)", sku: "10659", price: 250.0, stock: 1 },
+      { name: "Vivo Y19S/ Y04 BA61 battery", sku: "10656", price: 240.0, stock: 1 },
+      { name: "Vivo Y35 5G/Y53 5G/Y02T/Y53 (2020) BY1 battery", sku: "10650", price: 230.0, stock: 1 },
+      { name: "Samsung A32 5G /A42/ A72 (BA426BY) Battery", sku: "10648", price: 220.0, stock: 1 }
+    ];
+
+    // ၃။ Admin Password
     const ADMIN_USER = 'admin';
     const ADMIN_PASS = '071065';
     let isAdmin = false;
@@ -81,7 +136,7 @@
 
     async function saveProduct(sku) {
       if (!supabase) {
-        alert('Database ချိတ်ဆက်မှု မရသေးပါ!');
+        alert('Database ချိတ်ဆက်မရသေးပါ!');
         return;
       }
       const name = document.getElementById(`input-name-${sku}`).value;
@@ -101,72 +156,52 @@
     }
 
     async function renderProducts() {
-      const statusDiv = document.getElementById('status-msg');
       const container = document.getElementById('product-grid');
 
-      try {
-        // Cache မမိစေရန် အချိန် timestamp ထည့်၍ ခေါ်ယူခြင်း
-        const jsonRes = await fetch('loyverse_auto_data.json?t=' + new Date().getTime());
-        if (!jsonRes.ok) throw new Error('loyverse_auto_data.json ဖိုင် မတွေ့ပါ');
-        
-        const rawData = await jsonRes.json();
-        const itemsList = (rawData.items && rawData.items.items) ? rawData.items.items : (Array.isArray(rawData.items) ? rawData.items : []);
-
-        if (itemsList.length === 0) {
-          statusDiv.innerText = 'ပစ္စည်းစာရင်း မရှိသေးပါ';
-          return;
+      let overrideMap = {};
+      if (supabase) {
+        try {
+          const { data: dbData } = await supabase.from('custom_items').select('*');
+          (dbData || []).forEach(row => { overrideMap[String(row.sku)] = row; });
+        } catch(e) {
+          console.warn("Supabase fetch failed:", e);
         }
-
-        let overrideMap = {};
-        if (supabase) {
-          try {
-            const { data: dbData } = await supabase.from('custom_items').select('*');
-            (dbData || []).forEach(row => { overrideMap[String(row.sku)] = row; });
-          } catch(e) {
-            console.warn("Supabase fetch failed:", e);
-          }
-        }
-
-        container.innerHTML = '';
-        statusDiv.style.display = 'none';
-
-        itemsList.forEach(item => {
-          const variant = (item.variants && item.variants[0]) ? item.variants[0] : {};
-          const sku = String(variant.sku || item.id || '');
-          const custom = overrideMap[sku] || {};
-
-          const displayName = custom.item_name || item.item_name || 'အမည်မရှိ';
-          const displayPrice = (custom.price !== undefined && custom.price !== null) ? custom.price : (variant.default_price || 0);
-          const displayImg = custom.image_url || 'https://placehold.co/200x160/e4e6eb/65676b?text=No+Image';
-
-          const card = document.createElement('div');
-          card.className = 'card';
-          card.innerHTML = `
-            <img src="${displayImg}" alt="${displayName}">
-            <div class="title">${displayName}</div>
-            <div class="price">THB ${displayPrice}</div>
-            <div class="sku">SKU: ${sku}</div>
-            
-            ${isAdmin ? `
-              <button class="btn btn-edit" onclick="toggleEditBox('${sku}')">✏️ Edit</button>
-              <div id="edit-box-${sku}" class="edit-form">
-                <label>အမည်:</label>
-                <input type="text" id="input-name-${sku}" value="${displayName}">
-                <label>ဈေးနှုန်း (THB):</label>
-                <input type="number" id="input-price-${sku}" value="${displayPrice}">
-                <label>Image Direct Link:</label>
-                <input type="text" id="input-img-${sku}" value="${custom.image_url || ''}" placeholder="https://...">
-                <button class="btn btn-save" onclick="saveProduct('${sku}')">💾 Save</button>
-              </div>
-            ` : ''}
-          `;
-          container.appendChild(card);
-        });
-
-      } catch (err) {
-        statusDiv.innerHTML = `⚠️ Data ဖတ်မရပါ: ${err.message}`;
-        console.error(err);
       }
+
+      container.innerHTML = '';
+
+      rawItems.forEach(item => {
+        const sku = String(item.sku);
+        const custom = overrideMap[sku] || {};
+
+        const displayName = custom.item_name || item.name;
+        const displayPrice = (custom.price !== undefined && custom.price !== null) ? custom.price : item.price;
+        const displayImg = custom.image_url || 'https://placehold.co/200x160/e4e6eb/65676b?text=No+Image';
+
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          <img src="${displayImg}" alt="${displayName}">
+          <div class="title">${displayName}</div>
+          <div class="price">THB ${displayPrice}</div>
+          <div class="sku">SKU: ${sku}</div>
+          <div class="stock">လက်ကျန်: ${item.stock} ခု</div>
+          
+          ${isAdmin ? `
+            <button class="btn btn-edit" onclick="toggleEditBox('${sku}')">✏️ Edit</button>
+            <div id="edit-box-${sku}" class="edit-form">
+              <label>အမည်:</label>
+              <input type="text" id="input-name-${sku}" value="${displayName}">
+              <label>ဈေးနှုန်း (THB):</label>
+              <input type="number" id="input-price-${sku}" value="${displayPrice}">
+              <label>Image Direct Link:</label>
+              <input type="text" id="input-img-${sku}" value="${custom.image_url || ''}" placeholder="https://...">
+              <button class="btn btn-save" onclick="saveProduct('${sku}')">💾 Save</button>
+            </div>
+          ` : ''}
+        `;
+        container.appendChild(card);
+      });
     }
 
     renderProducts();
