@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NYEIN Mobile Phone Spare Parts And Tools</title>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <style>
     * { box-sizing: border-box; }
     body { font-family: system-ui, -apple-system, sans-serif; background: #f0f2f5; margin: 0; padding: 12px; }
@@ -15,8 +14,8 @@
     .card img { width: 100%; height: 130px; object-fit: cover; border-radius: 6px; background: #e4e6eb; }
     .title { font-size: 13px; font-weight: bold; margin: 8px 0 4px; min-height: 34px; line-height: 1.3; color: #050505; }
     .price { color: #d32f2f; font-weight: bold; font-size: 15px; margin-bottom: 4px; }
-    .sku { font-size: 11px; color: #65676b; margin-bottom: 6px; }
-    .stock { font-size: 11px; color: #007bff; font-weight: bold; margin-bottom: 6px; }
+    .sku { font-size: 11px; color: #65676b; margin-bottom: 4px; }
+    .stock { font-size: 11px; color: #1877f2; font-weight: bold; margin-bottom: 6px; }
     .btn { border: none; padding: 6px 10px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 12px; }
     .btn-admin { background: #1877f2; color: white; white-space: nowrap; margin-left: 8px; }
     .btn-edit { background: #e4e6eb; color: #050505; width: 100%; margin-top: auto; }
@@ -35,21 +34,9 @@
 
   <div id="product-grid" class="grid"></div>
 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script>
-    // ၁။ Supabase Config
-    const SUPABASE_URL = 'https://zrgbflsdffmotmovwfbx.supabase.co';
-    const SUPABASE_KEY = 'sb_publishable_9YTZ1ThaBuyXJ94o1EYnYA_hh3pTphR';
-    let supabase = null;
-
-    try {
-      if (window.supabase) {
-        supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
-      }
-    } catch(e) {
-      console.warn("Supabase Init Error:", e);
-    }
-
-    // ၂။ Embedded Loyverse Items
+    // ၁။ Loyverse Data စာရင်း
     const rawItems = [
       { name: "Oppo A36/A56/A76  Kaiku", sku: "10687", price: 400.0, stock: 1 },
       { name: "JIGONG Heat Tool", sku: "10683", price: 200.0, stock: 0 },
@@ -103,6 +90,36 @@
       { name: "Samsung A32 5G /A42/ A72 (BA426BY) Battery", sku: "10648", price: 220.0, stock: 1 }
     ];
 
+    // ၂။ Supabase Connection
+    const SUPABASE_URL = 'https://zrgbflsdffmotmovwfbx.supabase.co';
+    const SUPABASE_KEY = 'sb_publishable_9YTZ1ThaBuyXJ94o1EYnYA_hh3pTphR';
+    let client = null;
+    let overrideMap = {};
+
+    function initSupabase() {
+      try {
+        if (window.supabase) {
+          client = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+          fetchOverrides();
+        }
+      } catch(e) {
+        console.warn("Supabase init deferred:", e);
+      }
+    }
+
+    async function fetchOverrides() {
+      if (!client) return;
+      try {
+        const { data } = await client.from('custom_items').select('*');
+        if (data) {
+          data.forEach(row => { overrideMap[String(row.sku)] = row; });
+          renderCards();
+        }
+      } catch(e) {
+        console.warn("Override load error:", e);
+      }
+    }
+
     // ၃။ Admin Password
     const ADMIN_USER = 'admin';
     const ADMIN_PASS = '071065';
@@ -112,7 +129,7 @@
       if (isAdmin) {
         isAdmin = false;
         document.getElementById('admin-toggle-btn').innerText = 'Admin Login';
-        renderProducts();
+        renderCards();
         return;
       }
       const user = prompt('Admin Username:');
@@ -121,7 +138,7 @@
         isAdmin = true;
         document.getElementById('admin-toggle-btn').innerText = 'Logout';
         alert('Admin Login အောင်မြင်ပါသည်။');
-        renderProducts();
+        renderCards();
       } else {
         alert('Username သို့မဟုတ် Password မှားယွင်းနေပါသည်!');
       }
@@ -135,7 +152,7 @@
     }
 
     async function saveProduct(sku) {
-      if (!supabase) {
+      if (!client) {
         alert('Database ချိတ်ဆက်မရသေးပါ!');
         return;
       }
@@ -143,7 +160,7 @@
       const price = parseFloat(document.getElementById(`input-price-${sku}`).value) || 0;
       const img = document.getElementById(`input-img-${sku}`).value;
 
-      const { error } = await supabase
+      const { error } = await client
         .from('custom_items')
         .upsert({ sku: String(sku), item_name: name, price: price, image_url: img });
 
@@ -151,23 +168,14 @@
         alert('သိမ်းဆည်းရာတွင် အမှားဖြစ်သွားပါသည်: ' + error.message);
       } else {
         alert('သိမ်းဆည်းပြီးပါပြီ!');
-        renderProducts();
+        overrideMap[String(sku)] = { sku: String(sku), item_name: name, price: price, image_url: img };
+        renderCards();
       }
     }
 
-    async function renderProducts() {
+    // ၄။ Product Cards တန်းစီပြသခြင်း (ချက်ချင်း အလုပ်လုပ်မည်)
+    function renderCards() {
       const container = document.getElementById('product-grid');
-
-      let overrideMap = {};
-      if (supabase) {
-        try {
-          const { data: dbData } = await supabase.from('custom_items').select('*');
-          (dbData || []).forEach(row => { overrideMap[String(row.sku)] = row; });
-        } catch(e) {
-          console.warn("Supabase fetch failed:", e);
-        }
-      }
-
       container.innerHTML = '';
 
       rawItems.forEach(item => {
@@ -204,7 +212,9 @@
       });
     }
 
-    renderProducts();
+    // စာမျက်နှာ စဖွင့်သည်နှင့် ချက်ချင်း render ပြုလုပ်မည်
+    renderCards();
+    window.addEventListener('load', initSupabase);
   </script>
 </body>
 </html>
