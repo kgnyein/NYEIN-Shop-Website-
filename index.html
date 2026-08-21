@@ -37,10 +37,18 @@
   <div id="product-grid" class="grid"></div>
 
   <script>
-    // ၁။ Supabase Connection
+    // ၁။ Supabase Connection (မှန်ကန်စွာ ချိတ်ဆက်ပြီး)
     const SUPABASE_URL = 'https://zrgbflsdffmotmovwfbx.supabase.co';
-    const SUPABASE_KEY = 'YOUR_FULL_PUBLISHABLE_KEY'; // သင် copy ကူးထားသော Publishable key ထည့်ပါ
-    const supabase = window.supabase.createClient(sb_publishable_9YTZ1ThaBuyXJ94o1EYnYA_hh3pTphR);
+    const SUPABASE_KEY = 'sb_publishable_9YTZ1ThaBuyXJ94o1EYnYA_hh3pTphR';
+    let supabase = null;
+
+    try {
+      if (window.supabase) {
+        supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+      }
+    } catch(e) {
+      console.warn("Supabase Init Error:", e);
+    }
 
     // ၂။ Admin Password
     const ADMIN_USER = 'admin';
@@ -68,10 +76,16 @@
 
     function toggleEditBox(sku) {
       const box = document.getElementById(`edit-box-${sku}`);
-      box.style.display = box.style.display === 'block' ? 'none' : 'block';
+      if (box) {
+        box.style.display = box.style.display === 'block' ? 'none' : 'block';
+      }
     }
 
     async function saveProduct(sku) {
+      if (!supabase) {
+        alert('Database ချိတ်ဆက်မှု မရသေးပါ!');
+        return;
+      }
       const name = document.getElementById(`input-name-${sku}`).value;
       const price = parseFloat(document.getElementById(`input-price-${sku}`).value) || 0;
       const img = document.getElementById(`input-img-${sku}`).value;
@@ -94,17 +108,21 @@
 
       try {
         // Loyverse Data ဖတ်ယူခြင်း
-        const jsonRes = await fetch('./loyverse_auto_data.json');
+        const jsonRes = await fetch('loyverse_auto_data.json');
+        if (!jsonRes.ok) throw new Error('loyverse_auto_data.json ဖိုင် မတွေ့ပါ');
+        
         const rawData = await jsonRes.json();
         const itemsList = rawData.items?.items || rawData.items || [];
 
         // Supabase Data ဖတ်ယူခြင်း
         let overrideMap = {};
-        try {
-          const { data: dbData } = await supabase.from('custom_items').select('*');
-          (dbData || []).forEach(row => { overrideMap[row.sku] = row; });
-        } catch(e) {
-          console.warn("Supabase ချိတ်ဆက်မှု မရသေးပါ-", e);
+        if (supabase) {
+          try {
+            const { data: dbData } = await supabase.from('custom_items').select('*');
+            (dbData || []).forEach(row => { overrideMap[String(row.sku)] = row; });
+          } catch(e) {
+            console.warn("Supabase fetch failed:", e);
+          }
         }
 
         container.innerHTML = '';
@@ -112,10 +130,10 @@
 
         itemsList.forEach(item => {
           const variant = (item.variants && item.variants[0]) ? item.variants[0] : {};
-          const sku = String(variant.sku || item.id);
+          const sku = String(variant.sku || item.id || '');
           const custom = overrideMap[sku] || {};
 
-          const displayName = custom.item_name || item.item_name;
+          const displayName = custom.item_name || item.item_name || 'အမည်မရှိ';
           const displayPrice = (custom.price !== undefined && custom.price !== null) ? custom.price : (variant.default_price || 0);
           const displayImg = custom.image_url || 'https://via.placeholder.com/200?text=No+Image';
 
@@ -144,7 +162,7 @@
         });
 
       } catch (err) {
-        statusDiv.innerHTML = `⚠️ Data ဖတ်မရသေးပါ (ဖိုင်နှစ်ခုလုံးကို GitHub ပေါ် တင်ပြီး စမ်းသပ်ပါ)။`;
+        statusDiv.innerHTML = `⚠️ Data ဖတ်မရပါ- ${err.message}`;
         console.error(err);
       }
     }
