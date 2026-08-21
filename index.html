@@ -37,7 +37,6 @@
   <div id="product-grid" class="grid"></div>
 
   <script>
-    // ၁။ Supabase Connection (မှန်ကန်စွာ ချိတ်ဆက်ပြီး)
     const SUPABASE_URL = 'https://zrgbflsdffmotmovwfbx.supabase.co';
     const SUPABASE_KEY = 'sb_publishable_9YTZ1ThaBuyXJ94o1EYnYA_hh3pTphR';
     let supabase = null;
@@ -50,7 +49,6 @@
       console.warn("Supabase Init Error:", e);
     }
 
-    // ၂။ Admin Password
     const ADMIN_USER = 'admin';
     const ADMIN_PASS = '071065';
     let isAdmin = false;
@@ -67,7 +65,7 @@
       if (user === ADMIN_USER && pass === ADMIN_PASS) {
         isAdmin = true;
         document.getElementById('admin-toggle-btn').innerText = 'Logout';
-        alert('Admin Login အောင်မြင်ပါသည်။ ပစ္စည်းများကို Edit ပြုလုပ်နိုင်ပါပြီ။');
+        alert('Admin Login အောင်မြင်ပါသည်။');
         renderProducts();
       } else {
         alert('Username သို့မဟုတ် Password မှားယွင်းနေပါသည်!');
@@ -107,14 +105,18 @@
       const container = document.getElementById('product-grid');
 
       try {
-        // Loyverse Data ဖတ်ယူခြင်း
-        const jsonRes = await fetch('loyverse_auto_data.json');
+        // Cache မမိစေရန် အချိန် timestamp ထည့်၍ ခေါ်ယူခြင်း
+        const jsonRes = await fetch('loyverse_auto_data.json?t=' + new Date().getTime());
         if (!jsonRes.ok) throw new Error('loyverse_auto_data.json ဖိုင် မတွေ့ပါ');
         
         const rawData = await jsonRes.json();
-        const itemsList = rawData.items?.items || rawData.items || [];
+        const itemsList = (rawData.items && rawData.items.items) ? rawData.items.items : (Array.isArray(rawData.items) ? rawData.items : []);
 
-        // Supabase Data ဖတ်ယူခြင်း
+        if (itemsList.length === 0) {
+          statusDiv.innerText = 'ပစ္စည်းစာရင်း မရှိသေးပါ';
+          return;
+        }
+
         let overrideMap = {};
         if (supabase) {
           try {
@@ -135,7 +137,7 @@
 
           const displayName = custom.item_name || item.item_name || 'အမည်မရှိ';
           const displayPrice = (custom.price !== undefined && custom.price !== null) ? custom.price : (variant.default_price || 0);
-          const displayImg = custom.image_url || 'https://via.placeholder.com/200?text=No+Image';
+          const displayImg = custom.image_url || 'https://placehold.co/200x160/e4e6eb/65676b?text=No+Image';
 
           const card = document.createElement('div');
           card.className = 'card';
@@ -162,7 +164,7 @@
         });
 
       } catch (err) {
-        statusDiv.innerHTML = `⚠️ Data ဖတ်မရပါ- ${err.message}`;
+        statusDiv.innerHTML = `⚠️ Data ဖတ်မရပါ: ${err.message}`;
         console.error(err);
       }
     }
