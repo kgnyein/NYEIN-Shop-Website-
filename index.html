@@ -7,8 +7,11 @@
   <style>
     * { box-sizing: border-box; }
     body { font-family: system-ui, -apple-system, sans-serif; background: #f0f2f5; margin: 0; padding: 12px; }
-    .header { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto 16px; border-bottom: 2px solid #e4e6eb; padding-bottom: 12px; }
+    .header { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto 16px; border-bottom: 2px solid #e4e6eb; padding-bottom: 12px; flex-wrap: wrap; gap: 10px; }
     .header h2 { margin: 0; color: #1c1e21; font-size: 1.1rem; line-height: 1.3; }
+    .header-btns { display: flex; gap: 8px; }
+    .search-box { width: 100%; max-width: 1200px; margin: 0 auto 16px; }
+    .search-box input { width: 100%; padding: 10px 14px; border-radius: 8px; border: 1px solid #ccc; font-size: 14px; outline: none; }
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; max-width: 1200px; margin: 0 auto; }
     .card { background: #fff; border-radius: 8px; padding: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); display: flex; flex-direction: column; }
     .card img { width: 100%; height: 130px; object-fit: cover; border-radius: 6px; background: #e4e6eb; }
@@ -16,85 +19,130 @@
     .price { color: #d32f2f; font-weight: bold; font-size: 15px; margin-bottom: 4px; }
     .sku { font-size: 11px; color: #65676b; margin-bottom: 4px; }
     .stock { font-size: 11px; color: #1877f2; font-weight: bold; margin-bottom: 6px; }
-    .btn { border: none; padding: 6px 10px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 12px; }
-    .btn-admin { background: #1877f2; color: white; white-space: nowrap; margin-left: 8px; }
-    .btn-edit { background: #e4e6eb; color: #050505; width: 100%; margin-top: auto; }
-    .btn-save { background: #42b72a; color: white; width: 100%; margin-top: 6px; }
+    .btn { border: none; padding: 6px 10px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 12px; display: inline-block; text-align: center; }
+    .btn-admin { background: #e4e6eb; color: #050505; white-space: nowrap; }
+    .btn-cart-top { background: #ff9800; color: #fff; font-size: 13px; }
+    .btn-add-cart { background: #1877f2; color: #fff; width: 100%; margin-top: auto; padding: 8px; }
+    .btn-edit { background: #e4e6eb; color: #050505; width: 100%; margin-top: 6px; }
+    .btn-save { background: #42b72a; color: white; width: 100%; margin-top: 6px; padding: 10px; font-size: 14px; }
     .edit-form { display: none; margin-top: 8px; border-top: 1px solid #ddd; padding-top: 8px; }
     .edit-form label { font-size: 11px; color: #555; display: block; margin-bottom: 2px; }
     .edit-form input { width: 100%; margin-bottom: 6px; padding: 5px; border: 1px solid #ccc; border-radius: 4px; font-size: 12px; }
+    #status-msg { text-align: center; color: #65676b; font-size: 14px; margin-top: 20px; }
+
+    /* Modal Styles */
+    .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.5); }
+    .modal-content { background-color: #fff; margin: 20px auto; padding: 16px; border-radius: 8px; width: 95%; max-width: 500px; position: relative; }
+    .close { color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer; margin-top: -5px; }
+    .close:hover { color: #000; }
+    .cart-item { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; padding: 8px 0; font-size: 13px; }
+    .cart-item-info { flex: 1; padding-right: 10px; }
+    .cart-item-qty { font-weight: bold; color: #d32f2f; }
+    .cart-total { font-size: 16px; font-weight: bold; text-align: right; margin-top: 12px; color: #d32f2f; }
+    .order-notice { background: #fff3cd; color: #856404; padding: 10px; border-radius: 6px; font-size: 12px; line-height: 1.5; margin: 12px 0; border: 1px solid #ffeeba; }
+    .form-group { margin-bottom: 10px; }
+    .form-group label { display: block; font-size: 12px; margin-bottom: 4px; font-weight: bold; }
+    .form-group input { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; }
   </style>
 </head>
 <body>
 
   <div class="header">
     <h2>NYEIN Mobile Phone Spare Parts And Tools</h2>
-    <button id="admin-toggle-btn" class="btn btn-admin" onclick="handleAdminLogin()">Admin Login</button>
+    <div class="header-btns">
+      <button id="admin-toggle-btn" class="btn btn-admin" onclick="handleAdminLogin()">Admin</button>
+      <button class="btn btn-cart-top" onclick="openCartModal()">🛒 ခြင်းတောင်း (<span id="cart-count">0</span>)</button>
+    </div>
   </div>
 
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="🔍 ပစ္စည်းအမည် သို့မဟုတ် SKU ဖြင့် ရှာဖွေပါ..." oninput="handleSearch()">
+  </div>
+
+  <div id="status-msg">ပစ္စည်းစာရင်းများ ဖွင့်နေပါသည်...</div>
   <div id="product-grid" class="grid"></div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script>
-    // ၁။ Loyverse Data စာရင်း
-    const rawItems = [
-      { name: "Oppo A36/A56/A76  Kaiku", sku: "10687", price: 400.0, stock: 1 },
-      { name: "JIGONG Heat Tool", sku: "10683", price: 200.0, stock: 0 },
-      { name: "Redmi 9 USB board", sku: "10377", price: 80.0, stock: 1 },
-      { name: "Spark 6 go /Spark 4 lite power flex", sku: "10680", price: 35.0, stock: 2 },
-      { name: "Note 5/ 5 pro BN45", sku: "10674", price: 200.0, stock: 0 },
-      { name: "Redmi 9 power flex", sku: "10212", price: 40.0, stock: 5 },
-      { name: "Spark Go 2024 power flex", sku: "10671", price: 35.0, stock: 3 },
-      { name: "Hot 20i /Smart 6HD USB board", sku: "10169", price: 65.0, stock: 3 },
-      { name: "Note 11 4G/Note 11S/ Poco M4 pro 4G TFT", sku: "10616", price: 400.0, stock: 0 },
-      { name: "iph 13 promax JK OLED", sku: "10175", price: 1850.0, stock: 0 },
-      { name: "Civi 3", sku: "10107", price: 1750.0, stock: 0 },
-      { name: "Vivo V27 5G", sku: "10085", price: 1200.0, stock: 0 },
-      { name: "ဂျပ်မှန်အသေး (GLASS PRODUCTS)", sku: "10702", price: 0.0, stock: 0 },
-      { name: "Vivo Y51 (2020) Battery OR+ /Y31/Y31S/Y52S/Y72/Y53S (B-08)", sku: "10698", price: 233.7, stock: 0 },
-      { name: "iPhone 11Pro Max Battery OR 777", sku: "10696", price: 462.51, stock: 0 },
-      { name: "ဂျပ်မှန်အေ (GLASS PRODUCTS)", sku: "10694", price: 0.0, stock: 0 },
-      { name: "RedMi 12 TD (B) KASBEAR /RedMi 12R/RedMi Note 12R 4G/5G", sku: "10693", price: 399.22, stock: 0 },
-      { name: "Vivo Y51 (2020) Battery OR+ /Y31/Y31S/Y52S/Y72/Y53S (B-08)", sku: "10688", price: 233.7, stock: 0 },
-      { name: "iPhone 11Pro Max Battery OR 777", sku: "10686", price: 462.51, stock: 0 },
-      { name: "ချုပ်မှန်အသေ (GLASS PRODUCTS)", sku: "10681", price: 0.0, stock: 0 },
-      { name: "Vivo Y51 (2020) Battery OR+ /Y31/Y31S/Y52S/Y72/Y53S (B-OB)", sku: "10670", price: 233.7, stock: 0 },
-      { name: "iPhone 11Pro Max Battery OR 777", sku: "10557", price: 462.51, stock: 0 },
-      { name: "Cytron Technologies RPI-PIC02 Raspberry Pi Pico 2", sku: "10669", price: 300.0, stock: 0 },
-      { name: "Redmi note 8 USB board", sku: "10631", price: 65.0, stock: 4 },
-      { name: "RElife Gear Glue Remover LG2", sku: "10622", price: 620.0, stock: 0 },
-      { name: "BEST Soldering Iron Tip", sku: "10613", price: 90.0, stock: 0 },
-      { name: "RF4 RF-G30 ZERO BENZENE Environmental Protection Glue", sku: "10603", price: 120.0, stock: 0 },
-      { name: "Ma Ant Small Scraper Tool", sku: "10601", price: 35.0, stock: 0 },
-      { name: "MaAnt Pry Tool", sku: "10575", price: 80.0, stock: 0 },
-      { name: "TEARDOWN PIECE TE-029", sku: "10572", price: 40.0, stock: 0 },
-      { name: "iFixes Repair Mat", sku: "10554", price: 85.0, stock: 0 },
-      { name: "M200 SCRATCH REPAIR SOLUTION", sku: "10538", price: 250.0, stock: 0 },
-      { name: "Mag Grid Pad Chip Silicone Buffer Soldering Pad", sku: "10533", price: 200.0, stock: 0 },
-      { name: "SILICONE PAD M-113/TE", sku: "10523", price: 0.0, stock: 0 },
-      { name: "Mobile Phone Screen Bonding Fixture TG-4000", sku: "10499", price: 0.0, stock: 0 },
-      { name: "JTXTOOLS B9 Battery Activation Board", sku: "10478", price: 0.0, stock: 0 },
-      { name: "JTXTOOLS B9 Apple & Android Battery Activation Board", sku: "10358", price: 0.0, stock: 0 },
-      { name: "10x 4G /Note 9 power flex", sku: "10256", price: 35.0, stock: 1 },
-      { name: "RedMi A3 Battery OR+ (BN5R)", sku: "10196", price: 0.0, stock: 0 },
-      { name: "Oppo A9 (2020) Battery OR+/BLP727", sku: "10193", price: 0.0, stock: 0 },
-      { name: "Oppo A76 Power Flex/A36", sku: "10149", price: 0.0, stock: 0 },
-      { name: "RedMi 12 Spk Com", sku: "10147", price: 35.0, stock: 1 },
-      { name: "F9/A7X USB Flex", sku: "10098", price: 0.0, stock: 0 },
-      { name: "Vivo Y16 USB Flex", sku: "10066", price: 0.0, stock: 0 },
-      { name: "Vivo V20 BN8 battery", sku: "10667", price: 230.0, stock: 1 },
-      { name: "Hot 50 pro plus (BL49UX) battery", sku: "10665", price: 240.0, stock: 1 },
-      { name: "Pova 7 5G (BL58IT)", sku: "10659", price: 250.0, stock: 1 },
-      { name: "Vivo Y19S/ Y04 BA61 battery", sku: "10656", price: 240.0, stock: 1 },
-      { name: "Vivo Y35 5G/Y53 5G/Y02T/Y53 (2020) BY1 battery", sku: "10650", price: 230.0, stock: 1 },
-      { name: "Samsung A32 5G /A42/ A72 (BA426BY) Battery", sku: "10648", price: 220.0, stock: 1 }
-    ];
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeCartModal()">&times;</span>
+      <h3 style="margin-top: 0; font-size: 16px;">🛒 ဝယ်ယူမည့် ပစ္စည်းများ</h3>
+      
+      <div id="cart-items-container"></div>
+      <div class="cart-total" id="cart-total-price">စုစုပေါင်း: 0 THB</div>
+      
+      <div class="order-notice">
+        <b>မှတ်ချက်:</b> ဘုရားသုံးဆူမြို့အတွက် မြို့တွင်းပို့ဆောင်ခ (၂၀)ဘတ်ဖြင့် အိမ်အရောက်ပို့ပေးပါမည်။ တခြားမြို့နယ်များကို ငွေလွှဲ ပြေစာရောက်ပြီးသည်နှင့် ဂိတ်တင်ပေးပါမည်။
+      </div>
 
-    // ၂။ Supabase Connection
+      <div class="form-group">
+        <label>ဆိုင်နာမည် (သို့) အမည် *</label>
+        <input type="text" id="order-name" placeholder="ဥပမာ - ဦးကျော်" required>
+      </div>
+      <div class="form-group">
+        <label>လိပ်စာ အပြည့်အစုံ *</label>
+        <input type="text" id="order-address" placeholder="မြို့နယ်၊ ရပ်ကွက်၊ လမ်း" required>
+      </div>
+      <div class="form-group">
+        <label>Phone Number *</label>
+        <input type="tel" id="order-phone" placeholder="09xxxxxxxxx" required>
+      </div>
+
+      <button class="btn btn-save" onclick="submitOrder()">✅ ဝယ်ယူမည်</button>
+    </div>
+  </div>
+
+  <!-- External Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
+
+  <script>
+    // ---------------------------------------------------------
+    // Telegram Bot Settings (သင့် Bot Token နှင့် Chat ID ဖြင့် အစားထိုးပါ)
+    // ---------------------------------------------------------
+    const TELEGRAM_BOT_TOKEN = 'YOUR_BOT_TOKEN_HERE'; 
+    const TELEGRAM_CHAT_ID = 'YOUR_CHAT_ID_HERE';
+    // ---------------------------------------------------------
+
     const SUPABASE_URL = 'https://zrgbflsdffmotmovwfbx.supabase.co';
     const SUPABASE_KEY = 'sb_publishable_9YTZ1ThaBuyXJ94o1EYnYA_hh3pTphR';
     let client = null;
     let overrideMap = {};
+    let allItems = [];
+    let cart = {}; 
+
+    const ADMIN_USER = 'admin';
+    const ADMIN_PASS = '071065';
+    let isAdmin = false;
+
+    // -- Compressed Database (800+ Items) --
+    const b64Data = "H4sIANgaiWoC/9V9WVcjOZbwX9Gph++Qk0WF9oh4DBtDUmxu25BQPf1gwJXpLwFzWLIq+9fPvdKVQooIGjqnqrvnHLANvlJoufsi/fWvPwj+O9N7rDjePK1Yze43v60e2K83q99/+BG+k8b+8KMyP/Efxd9+/OsP8vT0kO00tWBqfccEm189rFZ3bHO/uls9uAZWyR9+lIZnLY6aczY9PTyczKAxtx5Qqh9+FIrnkPOTwx2Aaj42Fx7KQHeutwphamXZfz9zvhL//Sz58go/V6L7n0uZ/yf8P4PpterCDLZa+lGV5ocf6zjyf/+oeq1Et5Vadv8j7QuzM5Wg2Sk3uzN2uXx6Wj18g+3ePNyvN3cOjONGuq0xCNYI/lg0kj+y+fh05+Pi2G+zqmGbZbvLjSjZ6XzELjfLh2v/OKUBERwEdxBGs6Ixhpm9oik1vrGmVvDeaSg0/+HHsh2A5QwgS+5baF40Cn7O4ZfdP2xcdwZRfbZa3tyumJDnxdiYYmxNwca4ozjcEgajBXYqsdPRZL5g883N9ephffeJ7T9s7thife+xQChaJzfu0c3y6gv7sHl4XLGtP2+r3/lxanh2FVd1LEQxFhJ+TXFyf79hDXyA3zm8WPw9gFUwxfHy4e8bpnjjP0nODpbrL89+OyWspqritn93lyezvfd+jIhHSrWDXD5cwvL9EUvTx3kJ6NCD4b3/VOxVUhFS9knXIxyHJRISJ6TdhNZf10x2WaaWMG0dMcgBKWpfQvvSRJQZf3tyCLW6+ny3udl8Wq8e2Wy6vz3dH3PJZsvH+8vVA9DddA0/Vxvmh2FtDevaEszO5vnyZsUWy/sV4z+p21s/DHyYNWEYOVDlKc/Npx3qrhBsCpSyNbq537Z1+W7ULNrtlBI6lCI+drcG8jx3NLkb5s5r6LmFWN5cwfSM4n5EggdCt/j1nmWj90TJMDPRMtQ9mCqXqruyolS+d9kCaTY6ZLo+Biq9Xd7cAK1efVk9BY7l8RDXS6qsd1XMp83sgAleCD4uPmyeAIfXBXby8MTKDztF+b6439yzslg/raBbaMGAw8CU/WSMIxeTjeZ/3amwBlEndvphc7d5YLbQ5+1K6WylPMS5uSQEg3VUOm4AfVsW7P5m+Q0G0+6mrk0YP4E+wbjXXRYrIsbLACUBqvBTsh92ug1wrR3WqQCvOK0EcmCnZcB/6B3/Nd18XTJTGGTSxfx++fAFBoJ/UIcqLAnv9KjDm2vpevQNPUr8fO5RUqls92lXQFTEZ+EURnEKqpYkVmQCX7Sb6D9V9F4TAp4TWqD6o7PWGlu7Z0lewO84/jXFGVNv05MpvAakhn3yRCeQ1u0f1p/SNsi3uJzGL9r9zfMjkP6hrk/P32UEZBEt/aTiEtYFc28OswqPPR7LRjfbphr55RC1zhf/efnbas0uDIwKFIHNw6f3LWabHLNT0Br3yC9IHRAsg7IwhTUK9YpED/GhDtDUAbV9lYN97e+zrY9ezgpk5v2OpkkfVcpmA0TZQijksv2n1N152UGoOWDm9Te2h3q2J1zUetLN+Bj6Kvx7VVyUjiKYe4cJwz/ui6NmMYFdmwK53AD3Ycjbcf2JymCaUka0WO+uf0dZtLpfrh/Y0fLJI7eB3axMANq/+xWMgEeHb7D5l6j+XG2+Ase+RFXIT95keoprsv6dpfjikUd4RDpbP4J+iUIVsNGzhuMVcYKqDArKQF9z6ocvAm96T2QBW1Gc26reIerWge/1exHzwnO48O7Wcby8hSHBuoYPU+q5CkzKIJtUrSqYdSr9NHMmA+NJtzttgPzV7TnQ4ukkoCHPrKoIf7JA+IKeFGWNZR+uA4OrxkW9IPFgM8UhfariKUdEfuAGfNLMaN24oY2UA02Tvf/tM2CX57y2CvLeDXqdtMl5d+BfCdeHXTLDuwTsSu+RCakHMcKJAo1gxXllFDDobV2fn5MSYgdX0rUpWRAj9C7C+yNh6dx3tkfcHuVtwt5CZ0Ey0MQUH7Pnx8tETFpUeFoTa//+M1LAiMyssiz9WFHf8Qo0j2CSFYhSKOU64MZ2UDsHP2j2D07JcnPI126mB3Sb+Olm+fiYEjCKz2QTHayKFmF4NhiNma5PYM68YE1DVAJdle1j1x4Gxna7/J39fMBODic7pOihLKhMPnPTfypqG0ZnTy29IOuojsqajA8BYJXJOCHrgBeyhTgc77D13dXq5sbPAJ+rZDasyj2PjEfErTLbVv912glHSvJYu50MBsktDtfoKnUw4EqdM+ok2UiJprPOl+nc7+PYEeOWM0rfEXBvCXLYj0i57B2JfEHAvB3AKF0vg7Mos/U6n7GTh/Wn9d3yhviNCRveDm8O4uT3rCvYnKDi+dlOP2/ukOiSmSokW53gToBBeyXpEBSdlh4MvGsr4yTe0MZW9p9vUw+2sahEBNzXTi+sunO0CfKgQp4wJoKo2N5kfHBCIB0JiEZEY8B+MCCxnCFh8UPJCzQtSJYaz7KO90nvt0HS+4V0fVgeRE6LLxyXQpT506bKFlNV+i5394kLiuDicfP/eX/v5HiPfVgtn9his7mhhVU50OJ8cXJyCPy0Zs39PZim/481d9cPm/V1XOPm6mn9dfmEk0jUc5OamGk3/7CZLrNmz7f3KKvWDytyM7ophK8PUHrcLkG7iRRpkdW3evgBCKsCX6aOEUciGkXGqXVGbgiL3KT1rNqS3Gfx+9v19TUsRAJiMxCU0Qdou0xPxidsVxbu/Ty+s+nspNXpjOVB1Y/N9R478g/ZbSdW0UNkAtUR/jIT/gfOcOvAGPQUV9nTUOqADne1gbGSxGq5zfT5AXb9Ha2V6rY9vXl6WLJTkJrtHkp0ziUYeQC7tLe8RcdckAwZ/7HosbAtziF8b42RjyVrvFzfrFHzBmWZW6BP5+Z+1WUljPojnFggmPsuK0uiB6nRxoEePm8+wjDZev60hkX9k5xqL/vCONoCrQJ7BKTN5uNZsxh/YLPJtNmfoS//dLF/ckxe3iqwN7cXR0sg9yd2BDNuGDmnRg/Pj58pihAQQiXA5OG5elgi8basBfmPMm3PCDsFZIgQpjSpNDtafgKDChjNdHnNxp/X92wOu36F7Hb0/Ouv0Hfr8QUQGn/Ov46a/aP97emO5B9J9qugW/sFWV19Xt6tr9io5JyT7S1SUzFC7J0es8X+9HXP5B8dxtBIsjXvDaid/UdgkN8R2hiEue6P3Y/CRh+TX9k1WiDORg0Oo5oc+Gx0pD+SLikyaYmNhG8E3Gs01dK5utDK9WSOHCaxmhN4UNk/wZZHhigUdC2yrs15x3yTVmZbuWb2vMusoicsgDSCFb4zJ2tbUSFLkeNOD3bvYfmN/EE80yMcaMEINGGvs9U18VaR8VaAHI9hQTty62O02rQuM4UfGqDeI2HtwfKK0kXyqEekYLBBNSl1ZXfBj9a+GxX8IlUWGTraXK6BCXi1hwKLo83dNeLh7vr3p2dAxcXetg7kpNETFLHmGLggulQ/r1ZPhMAOewnR63QNjje4+b34wdUbGGTVi6L1GeSb+iGmEjiX4DQw/R8xLoHKPU/G9QSKaAdlvL1AtoXJ7JXgiwUDnNHneUddsFXmZU29tzEaDZs0CaE7+gf+tdgN7gy0/njvqdTCKR7nam9RnGt4oQ4WOI0C3uHtfRLcQMdhYl+E57czEN0ZGLThK5M/3bUIDQrmxnCkw7TCyK2wmVM7tAUO19VPlLSkd4oOZEdFq5xx3R1/u3Lz5PPChUhpXNBV6wdECyPRGUM3TpNL/8h25D3+ee+W23f5/HhJS4TOg2qwO+TmLTJ9XW9uVk/EgETGgDqNQF7fLclaOXOtgnlbZRKBmk1IAz3CQDJjo2PzIbP7NfLexIUT9y7ZT1qoLWi8Qw/jfOhhC79QfhVILagzk80DSrf+9HnWjYdjiKfutaB17gGbIDxT6EXYLdnq4OcmrvtUfyE8rII/I2k9EGo3yKuTSGEAjHGDgYHZgV10Ld7T2HQSt3GfKWyMtphQncXVrae8LNMQk/+2L32D011HIOM4WAfOZH5YD1cwv1SjY20o30Nnyh85C0mMP6/okSbER9u+qp6sx3hWF3Mq97jEiZr4+5ULwalXGrTyWwn5Enxw+W+BlP6ZjHyu+ujvofucSPc4kYeM7EMjtusqX6faMXQGCsntmtWAmc5aPVIF/YdcdV/aTAT0jesO6mAvhWvtqFm5fbxMTENL4kQlTQjfO75Ai35plbPKCBuwTKN5XuUIX2+ZvXc42WJ25KkXBgSLaTR56csBrlAHFRZJnqaM7ev7h3Uh+DnOCxiL9lPXMtOasOlL0wAK8fqPm/HJdHrCGiYq0mcJxCbRKw8iBEi/82KMuTGiaEzRVEVTb4HGwN8Vs0lzeDTBaOx+YeaF3U+2RWBcVLVL8l3dRYFrXSyiDVVTigl0IcTvmKizhR00tX8POTvoy5pul7IkLlxnq0V9SAx58iT+JlISj0Cd5eSI3qIL5lNemMt3AWme41GZ4VEvSeZLx+lvEO9alaeFNxqRwLXAzItKlO06GVkOzdEyatYdlHEs3TmXZQbfYc9VZsAEKNhECb+YlmD8yxyfg+lYsBequLy5ZxU35AHOWQf1UcJEyi/QonSi5nDKakENKpPFxkODL4VvVWEjXAhT4i86Mv0L/k/Bt2UFtPRwzY4ln08IJ0UmXv+ALrm0WRSFuqwwt0xVnWW0pczyI4gmKtxH1kgycJ2ho/s99viSJnxSCdgBi9g/li1ecHT9p/Tjn/yFFS0wDqIUYRB5hDf2nk9IGtknFiBsQAWRhyiULPsYhCygSihPppKaQCQuJCKXIhos2NfNzfNtImq4N4h7DQNmvtROuL0bbocIjfiMgoNGp4gc06kqUi0T40YrkVqPBIgUWFrmFuVkRj3qgR6BqIz1sG22ncVgdiLj+rBxp0Vtchx3O60cGBCldTRWVYbk+RCuqbK7dwMsUdU0dXQ2hJnLVAgGOEfcBWKXFTXxAp3Z8gT5iFyqeCCEFAXgZIcN1WIAieYBicdOohBCwzYKOUkymFwaXJedOIaFJI7QKEy+oGByQiQQhnBc1paqVVw4qouJN8P3ZUiMNXWUKJnqyPu7beCZpXTsvJYMdjE+oY3dyBwc4Do6oq7FwGp6WNe9I+yKCLvOY9AePYBGCkYLX67bLSiLM6fejxwjV8Qa5ABfBulyicO6DPqt1ZHf8xTMbTKy1wqzb+FDXdITtmupCCv1AFaCTIEX69N1kTKhFUoaZ6nSZp15WxeWkeI0KqRDpWMoHXOuu0jO+7gFoOgb6TojbGAFOgO9zHxvvIz5DHmPHT5upKZgkknAKocUZU35zJWbpNePvJ0OapT7zucklxjLS5iA1JlhTp3WBdslx0Q7b1ENzBt3CQgi4ITyFCIO8L/zRN1waNrDhceOraOR+YuukDRp2L046zJnhz+ts4vazHsWWc6bHDqXqa3zaXMTQoEmo0ACzRTgknJxk2GW7PF+tfxCIEZlDhYCEW5Uu20kbmBNS6d/xaQFjTlnwnTJFni5V9GwM+BFlhYjdV7SyCvnu0bNgZfk1NGZY9j3WKkew5BDmFmpYtc4H3fhOV5wzaLN22MvTtMGbpdEuN8XIFqCsi1qlY7YtzHRpWU076tNmFDskolLXr5reaF0znuRDxdhveUg6neJYw6Z1FC/09kJMdZ6GCDPeZG4pLoHVhdhHwucjfYaa2UERWx0nzPCmnborewJU4C52Dw/fWa4A2lQXWMutOjQcQ6diF/MSekBlx6YJm/7CLJbQ0few48Z2lF+oreFOM6pSPWLamABa+ctgMWwlWA8pvQrk+WAB1jXddQ7k7+c/wmtBhf/dy4C3Zciu3WeRq6EzhRHJI/Z6g6sYOeQ9UjNCvML84KMtBDN89wu17drV/5SVL+gVoGfsQ/HjXclei+dDoVDrAPVqTwVCB+/3RyUotwmvRbVoqRiBZ/jbA20KByjZ7hyQf9Xps6mPBVCThlKRX60/MymIX4us5Q3gDIe6Hb5mSBiyo2HqLMEWu5STFoNf4pZh3pBqaDVfSRV5RIpk/F4f0zXEigzS4C86SEzkPbSplyRQIpzhS52dLWWWZ6PRMeubFntdHMft5LSFilfWboseRO9qMaILNk+adm1oYRIGb4H7OicqLe1KgSCoA7NlBzR+uioUdHTnr+uNw9MsWb9AJqGy32ZUAzC2nzRT07P9k9OZ+ivJDtDVjxfpa9L0GWZewdOfgOkQUFKpWyGeA5Eu4DF4Z6sjuHJptohWJEHND1sSAQtQtppQSmlhcuudOm2IakWBkE+4jXpwHlGF+Xlu4dOFrnTvMpNfwfqtL4thN5fUBKZqTN6jE+Ortw8CDTjgs02NzexlNBkLuTZOAT2psvH4O1EmznxfxPbUS3qdERocCQVZl2YR9C2VOEqnWCJxhLfxTfyMQXLJo8PhPbrTCOJ3lqpQhiGJ9C2sOvCBlZYGpKolR7q2vbTfxV6UGRvErjixcarUar9XEpfOuf+xQ5KVCsTP55BNVZX/5vOoiS3nSzA2BcyHeccDqaHZ7ggb5tao6h1XNfp+cCS7S9F+Xfg0B4PEbNFktUYOl0z2Kqetq3QESJNDxhhiwEPgHZeAPctBprfJ0a5Qpan+8v89r5a96bLh7XdOVTOxqE/6lg858Jp4TN5e5MNQ2rrb1i1Luo1c+uo96KPqKZYnevN8HXIldZVndX7RGMYbWMp3kUKOG5mv5y4lom3ArmcqrsjQMIBXiNMUsUQeJ3twIVSQlSvyprq4Uzu7Y7gMk+pi0ZHlg6XQjt6aVMeXGmxiX6gLmTSow6A2aIgE4DFMN9YmjXtSnHK3vMVsBLW9Q3kNUQRFJZYYanCWCmqqbNZAG4IsFcuW6aB3k4LeBHYCH5NUa0Rsc5CuZXhQadjVVmmhX18cBtcT4a1yNSkKNGWPMhXGrWaJmaUqoFlSRFIpJZ4gDDQq3NphIkk5CFFRE7VbxOnnm+QkFntbmyjnOaGLmTilXXmFwpwFvq2iuZ4bBWFWy0P7+fJAK0rCBW9aVuniWLpsXt/CGXJSP3JQqNrTave9Mrg11VDPAs7RVkz0qTTYjhL9YmnMgzo95yYvT0nLmcXaeDH51F32/ogKG/9TDAktrV/d70ONcrWZtWMwaWD2sgZ5rLCyxNppAiZLjOGyQT3y+qC8GzrCgP/iWXIcVlVuofUCFmsq2TF0qeQvTGJn2YxLaNgR+Q11Xk+Ruyq69lxqfum3QoC6zo1M4UvQBWC05hGiDFZba1QkRNmAxjDTICCMPNgLzOgy8yiaMG7CbM89VxHMB+CHWuermYZBFYGmx0OEajUICtM6djDnsfkF3I0IJElzqQWzqViHOk5ZWeJDpElYFnCUcgWxgQJ0wGXDKOqQgWldkaRYkuOgPlo0swo9KgDtvE3d9AuVCWHcCVP6fgJs+VmZF7XoSgkH+4oK9N4jqnQuW0ZwckZG1w+lneZ9vWRg5vfY6+35GUq09M7IsxiBx75LiwKKiT+ixl9ipkpsJ+Gaq1QZqu67o0rx31d6ZyveqixQ+GDd22ednQ4doqz2xadgjmexeMjGKGyMZROIESTbTZH5Un1GgaOLVQ//aZM07oCfGAaFu1acnnVursFDvQqZjs0yuPQ2Bq3AH95Rw5iG+as04Zjv8lAcO0+G2TcskfDAAtLWMDw2yck1TLo6cv0tRcbJcI5hlJ53qbLBE0Ie9scrpMeV4o0hZvA9JixvZvN5fKmG0kVOq2Ia8Fh2fLKIykGlx1AfWpYZzutHOy3EHoWswRBWuIpIVg+0QpeXecu91ebJgrV4FLSCSPoStY9hDdjnyYjDNCjxzUUzu1wDFrD2gy0CxSKRRr9TQeA0dRMCLeHeJGBNVYUonfuyW4f5n3rzMBMetuhDuNSwNoUJGPzOlMPZX36VcziqlIXXwABVguciSiXh14SygVTukk6qfuStozF7tz5mbuzKYlNV6SrgTjWNgkFmtyjQ42aDr+OHl1V17lVEsCPyd0uXKykO4pq2H+ga55GIwi2qBoGg2Y3m08bUlhEx5qLcJ18EGmDedztsOPuw4K/srMfADVY1c3VABYAsLfDWFp0yPNk+g5oNNkEuooyk83nhhW+1ulIJpFUWQ1oKjU7wnqtNmKD9Ri6gxr9462EJHehSaHypVFl2dei6oYVtVfPIrfHNAnxHjmWTfiqqbIYQmw+asYHbHxyNpmhqwf+eBcRV5dmQAnotTmdtE1saV9o0q3rk2hQCNuDhOk4ZbMb5Q6h0bILXK9J+CrXLoxEOD6kuhMeJwRElgvvE069KNp0PxYyBZ3ZemxlemBBnmoXdgADwcKnpObiSFvZR1kPL3HHdknLMFmVUgTraF8Kk41F1Xt8AftfNBJ+3pN4MDx8EGm2uRpA4Ua5MLYffZDQSSuF2ahDrQYLt11qRuYZRc0OoJP4nlNKZkSBtU3ie7FvBCAvFB/Q0hvVWWchZZ9YGhPmAyZi6tlqLeOE6psy+MCSo6RMxwWGgHuYoqsaem7VcZEihK9mLPrJk9KphR0cjdAFc2WWsYgAq1b0NN0/M4B9VBbZL7AcEBChPNJlk0LnfyHxWw2g30HJJzF4o+sqK/n2IEgzFBDUyRFJ/su7thrDex/JHg2ZtBhf8FWa/jNseeq0sdWAaRr67NUhcFcq2uG7xxE61oMskj/EfJLttuF2QJO5a8s7isFykZqS9mtXqHJsVGpf2xB66g1LpJUZstJZHUgOmFc+tMUp06T2AR48oWywrsul7QpMsOeHy008GQEtUsMHJ6xCkkFm1mju4x4DeOCbFM54PjZTYgblgOLXSfdvmT5Xsm/fpzn/vXR/iz6iHvmF3P40TcIi7Qg9OHIqLcWEt6GegD8CqVAChYoZZ11U19FTwN3hg7bDX3zFAKp9grqKpZ09qPOkLzFgqFJhAaqtAa6sOwGnFq7pVPNxpx1VQ082TdthtAC7u1EmvFShr0cNbnGJc21aDUr0vJoRtEoSD7muB5RMArsc9F5wIdPalRdbJNmVPJ42+Q+btMkuBumqHloOX40wPtmlWaKF8cIshypByjSZKMGnXtKvEmltSdJv3VasLpwXN6FYqV/cn5r4WGBjhG/yRfj5S3V4ulN1kzdywgaZQjD2yqxgJQEmsUQJDEKLDnHfrFe/MsCPkauxfmRmfReKeU0u7BwkdDFhB3frXyns4k73SfDKA0kGvfxptfZDlfVsseNOPCR3Tkf3mxzuT3ZZzfnRCyXa319l+YYS7X4/q5eqNetAdOZfO24gsdXrW0Gj1Mb8c6PsF8APlpVfvlZoDibo9YsF8B1W4hARj/O9Xn9aPy1v2M760WVNtCXx6wc6/9ZimpBP2NlOkf1y8/SEJ22OBIHxAYqIQJK20OaBBQc0nm6jiGCGHx3+acemvgH1wNh6aQGFO6ers4CT+Y4wfZx7w1EFYvn63vUH/KcflGBVdkYKTXN2yGBlmnB4BLuPR0XU2SlRhOqzw20txbxf393jBmL1+kEhfR6i+jCrt5yI29sn3uc85LlU6RE4cRUEKIXjZzQqabFCKV4+e5iX+a5jsl+f2FuXjH0X3+1j4K8v8riO8etWaH61uV/h9h/NF85RPKKaHOuldarFw2LtTny1wfcsVf9M7+5YB3n/8s9eF9Qka9OZpWdv8l96do3jpcS6DLEuv1eTG1BP2N5q+cD2QJ9ls9WtU68O9+jUZXRsWNndKjz6HsQCEYgkLm4SCKR7budMyvK/xqTR6+zEE3hUayMnZyY4azycn4BmeZ2Ga+pOFORuw9BBlpx/ZBBGZI54d57nrzfPv7MtGBcvOTl/cORt8eNsV7PZ7vae4uyXCSLs5PiXyfGETe6+ovi7Xd2hbITRPa2u3Dlbe7FIBNMR0qkdMl5rNl7erh6W7Pr58Yk94oFFtKR1Fmo7ZFrKOSOO8X+WT5pS5a5YWGipRuwNypN9Xdd9nezk245Lf/txILrM3QFHPoAQHImAmKlvU+b1SKFUWojgKDnS5CcZp7amzm2RN7Uy0mSFBLOj4wWV+QO5bFP1Prdl7io42Q1hUp6GKOfNkSsMLhoQ00XDZXHEsYRM+epclfmohM2Np/nyljXSg5aKFUfGwq/LCvBvmBEgbTO6oCUts9AUNG8omJ64YbBipg1vwfjmp8d7DEaW5EuFSAynbh6fQUltuMIJ4CzUI7zoSVp8KITJYuJJq/nwYXZcZIfZZQ2Gz37FAyxfaNCp3Nc6m2SExFsgOG2hEHmeXAL1mJTs53SXAM0xLKBCpFQgPicumiHANBDc8ay04AaHaOZggi+259vHsiJuqvJ03Xbjkni7VPkB8glQUo/Fjchcoe2zsf6UW7PrXtnWh7+UoIzO552Tu3WZEWPaXIcg6Uuzs2G9DFfZ4a4tCGawpXdIYNxK14OAYe1d6GPgcYLj0vsVYjR5EWuc83Wk44SIAvQgBbhyIqyhSCK7PIufpKAhShYdWVUM8PD80SJ5shrEXKBjoH/HSBz/kAaTbbC03uU9JYl1oh6mQ+/0LZCfFEfSpV4fqQ5WmjrPI+g07qak1aS6q3w2Kj3zgscyyM5wNNty+WewM1vpNQshxmuyjKi0nU4TmQUaRkkKQwrYcbFVWRQhAQwDeb81Wn8Ktz3QONrjoFXWCs/qbJQ7JhXf5/ntEK1fd1t0m+0+gOJChVtZFCcBApYBmw0bromuZeodbAHFYxvf9VUq/RWTWDqcHhas22smepCwc92ksDI/XKYDnSRdvSAAlOgd+yKMTQPpKWiMSWHugB7gzg7jSV1VwyzXE0XRaDwWoJRAg/DRji7eZTk/FsWJHHqCZiHYkR+2oV0kV/WniGWvnE1G26OmNLwZnR4TGvAsCNDCi8QNTV77/IS8APqzpEsIbq5IfqNWLf8B4GLzfPWZbd2v7yg2L4Qe7Pr/WzfinysOI6bwklPuE0Z69bD6jf0X/6lireFRStLgMP6THArkgZ26h0aSvLJeo+U/WVK/qVk10Oy9+MnkUHWA4i3U9cM6LJh1B18ms9o/3B+fgD0xbXbY0TaIhGJBCUoyLTL1RWG9+i2RHTwRDrwvvvrjjlX84OPo4a94pn2ielQ243fUU6vQUMQ1Cwz4+w66l1gpI1NPIh0AX2CIWlBRmyn86fWF4esCq87q9nj4oql4MbWUIVZ1JDJ1NqebFqjZG7umWGSdpaD7b3WvbEFnl1AEqCJ8cLXE2SUBPlBww7ZVfbigAHCdK8bUNq+8cIc4JnlBHsr6Cjv/h8E/MBXOV99pMmlNrhJQu0+bfJS9ukC3piafv8U17ESBtEnT0lo4WmlOu2D808qiXFDNHT/ExaEzt11d6ZRqvVV71FE6ZpxdnFyhfRT+69LVF5qKahE5aokpG/NXWoTJVr3aRpUpQwTtSoIYXV9R/kTxpY425DssqkVhCoPjNzjCgGuF3cPx3cNIcY+2/AHgVOgn2sNlklFWY9y9tsYzlP/Fy4OuW1VKmowSA4JLt+z+Ng4br73RvNCYxA59C96SheCULFLmBc3f3RvF70g+VLnIdG0/0UVVrnXZXpuRsJgsC7YdCl7K08XRUqRBgAw2XOvDiu4NQD0SDozIqx9zBrTIDmhhRHaKH335n3ChojvAQMarwWBkXmdBE9DZr4U3adWc7FrhLgZs0F+EtnWzYB/+YvicVLAyJ5q5UxT88SLaVxUkCmCVOyzm8208IWTn5HR0OGEfJiCjRrPT+Qd2MTk8PKHjh8ss7uGbNAkwMSubJhnN5wA0YjvPmPz8uMIjrdds/rR8Wl+xy+Toa53L3Oe7x8/ruxXbkxgJur3515/1LWWdOv7jiGBC2tJNoO7sbjanMzytylIm2xaLbaHnbPHbavV3QP1/w4nXKjsoY8Ha07ndcfmRdS5Ys1zCYP+JsQr1utP8LaMfcGuWL85H5/OZNLOdk4/HbLo/GU/YYrLNqY7ZlCHT1U9vdXW3IYngs97cLWZnVNngUuxb/PbQB6Urk+cz0vpd2kyrU3ggZIReBFMsTGap4IvJ+PiE4d1kOuR5C57fctP2Y8j7UAdXWfo9dGHYYXp4AAvF7msyOWSWP+7b+ev3SpRvdMtgvCPNF0fiVRkke03OGMLA0vr9IlxqRNlpRXp1XVlmuWRJe0M+ftWtHbMolasoA5Imbc18Jio9RNCYwqM12ktKdJY9aDNeEkeFwAYNhjwf+cFy6QNA7yjTm4e23F1v48W7xMkiyixdEG/nYNPD0zmbTprjU0IdzInWUSouvt2v2BisIdjPT5+fYjxFVyI54RIXagw79ZE118v7EG3UVW7ZeKinDaBg3pWldTUEtT1mzfP1epP1psrMz3m2/gpTxyThixLMfHcb2weeuQ+kyovXztZnrsloz2ZwvMwr/FzXZ0IU8LsuflHwsy4uarrXqMpTByMwAJDKPdmuyDzn2dG0BGpYekUUqZJ1Z6QICQrE6LjqXPeXOw0JEIYqjROi8O4SNjc3q1D1JfNsRGrijxpbKHI6qKywIsL45MakXNbm5/8SYHQh8soMPU3x4kz7qtJ8dEa0o0s6NC2X4u7g1paozvbPTgCguLBlQnfZMT8epC4uqqR4uaoyEHzMBZe9+yUzqzNAFfiCSKbczcfsQlg2+pie08N1f1uwIfwu8KWJx6RJqTLfMoEqfIYCWLwjUFST4kJW89TRjbikefcJ2AxbKAv8saHKdYuGUnc3L3jPkSfjeUfpSDR0Kes5jKKeuI8wFlWmkR1TZ6Xivh36dC8U/GBLmLiALRJlcarScmuOlRCJph6bOgt0Fq8YyzPlIlTq8suyPgKEP/KgCCdRFN1DKJXz6iIW1MPN4gqx0Zr2S2fFUFmTFN75XslRUqfnHccW6bJcKOBC22VSOWNynxi1ii16XnDp1PIyX6RvvcNkrc5OhqZubedqYJvWFxBMOUfeKiuvw4uctdoyD3FTm3DZpZnDxhe/4OELbVlIxbNjN2KT0YdtqkkWVZ8LAgRSHkcdwIp8EK4crDuIAbMrq0QLUEBhYKrByzwv3UlvZavTbJl+Q9xSWCV4bfDVzLMjmfkAqoOdgNlWLxasCTHwREQdi/037iHwaNHgi/sELEPhJ4XMRhSOUV24ageSLFV2QmnbJeY74VgKNtoGodhmIIsBERNb+CNV9/f2j5tDYqz1ABeRMBrp18aMEX9xrO5cReShGJhKCmLLAc72agfJKXRVXyBfyDKUi8DHeXrzlhhgXk6AFQhZXJT+KWV1hAzfHeByAeu47p4YrUVa9Ez9uKN0oFnp8kMulO9L1MkItJADIwAJiS949/GF4VFaKD00OQBG2MJBRhmEdq/qkroShUMPIwojcDlNeqSkqKoshBHbILzHK4P4VMpgyY+2T6o0UDpEgV5KXvijirwEhM/hCMOLLhHzAXRT1m1EW+NuRH5ghQczYuBkRJRDndHjAOZAaducwsAWJy6Vyif+/d3Vf0h3J2R2Wafz9LpT+R2ATsq3GPg1AI1ABd0eCyJ/kRXDxZ66p1SqIZELcPkxq4Lnh1kSGFbQh4IIFYybtB+DWO0Pj70wuLWIEyWqOyVIt3AnJMZsdbetrdl8smgvfe7UDXugErnYhNGcbX7gsQepRH/OZmAyFWxOpYImT3Yub0toeA+066Uu+9LGQzpoVP0ThYjLAfZcmeKspiHskHAUuhqaFSxfVReg7SYcVQiZ1bh70Jp3Q5Jc547+CJfqWdlNiAGiqEVRq6LGI+h2t7PDmnNvMzUAMwpfx2nFKwsXM4js8rzzo/bWLNj0iFgmRywAOz7BW7Nd1iYmIrl7FumggKS2Q6n8cNHzObt1d4XGusx4Zq0p8wNAL1iqGrYnYFqRaEsXzGuCnciUcvdxt11BTyx21b++Q9IqO8dwX8cAgj7Jsy9yvot6RS+qosnB6YepaPvbPCBd5ZzXiZVwENURmRJl7jK4UOFMsguFmr5yNCwx8g/v1r8rg1TusgHSQ15zTEfu6ORC52DoTFe76J9sn5lxF/a+c1G9zQJcaAE64uiteJ75/w2QPhfvXJfpYVeI8ywg/cD+qbQ3IhCH9oj18KJ6J3VU4aSO8qUm+IvbPy++1Y4huKBpyzt0ldccX4zn7lDSgYKEfj7kUC3Iq9mYLxcbGLTAk+MxcSzP7prQq2dXmvHoT4e8XT6GKm2RRm4v1vsn5H/isTba2Wiv+48Hqoe+K2l6aElgq+/W5HnJjiP4rgcMXLPI/r3zoxwRm9Z8fU9hz3elsg9FNVZvKRB6tRhpsPiJbe0dNvM5Soid0/FiHjTBlJu/VvTSn/t/4kwH8Hhw7iXy5P+7c395T0Ol/SA+d+npLcnqw8VOb6iKq/vN6P49d5xPW+Tw543y+9g6i1fOViZc6qnCYTnD+KJe5wpv2efvLMF8U8nLW3aMv6VrygA0dICP/tvf/gcXdi7FsJEAAA==";
+
+    function loadDatabase() {
+      try {
+        const charData = atob(b64Data);
+        const binData = new Uint8Array(charData.length);
+        for(let i=0; i<charData.length; i++) {
+          binData[i] = charData.charCodeAt(i);
+        }
+        const decompressed = pako.ungzip(binData, { to: 'string' });
+        const loadedItems = JSON.parse(decompressed);
+        
+        allItems = loadedItems.map(i => ({
+          name: i[0],
+          sku: i[1],
+          price: i[2],
+          stock: i[3]
+        }));
+        
+        document.getElementById('status-msg').style.display = 'none';
+        renderCards(allItems);
+        initSupabase();
+      } catch(e) {
+        document.getElementById('status-msg').innerText = "⚠️ Data ဖွင့်ရာတွင် အမှားဖြစ်သွားပါသည်။";
+        console.error(e);
+      }
+    }
 
     function initSupabase() {
       try {
@@ -103,7 +151,7 @@
           fetchOverrides();
         }
       } catch(e) {
-        console.warn("Supabase init deferred:", e);
+        console.warn("Supabase init error:", e);
       }
     }
 
@@ -113,23 +161,18 @@
         const { data } = await client.from('custom_items').select('*');
         if (data) {
           data.forEach(row => { overrideMap[String(row.sku)] = row; });
-          renderCards();
+          renderCards(allItems);
         }
       } catch(e) {
         console.warn("Override load error:", e);
       }
     }
 
-    // ၃။ Admin Password
-    const ADMIN_USER = 'admin';
-    const ADMIN_PASS = '071065';
-    let isAdmin = false;
-
     function handleAdminLogin() {
       if (isAdmin) {
         isAdmin = false;
-        document.getElementById('admin-toggle-btn').innerText = 'Admin Login';
-        renderCards();
+        document.getElementById('admin-toggle-btn').innerText = 'Admin';
+        renderCards(allItems);
         return;
       }
       const user = prompt('Admin Username:');
@@ -137,18 +180,15 @@
       if (user === ADMIN_USER && pass === ADMIN_PASS) {
         isAdmin = true;
         document.getElementById('admin-toggle-btn').innerText = 'Logout';
-        alert('Admin Login အောင်မြင်ပါသည်။');
-        renderCards();
+        renderCards(allItems);
       } else {
-        alert('Username သို့မဟုတ် Password မှားယွင်းနေပါသည်!');
+        alert('Password မှားယွင်းနေပါသည်!');
       }
     }
 
     function toggleEditBox(sku) {
       const box = document.getElementById(`edit-box-${sku}`);
-      if (box) {
-        box.style.display = box.style.display === 'block' ? 'none' : 'block';
-      }
+      if (box) box.style.display = box.style.display === 'block' ? 'none' : 'block';
     }
 
     async function saveProduct(sku) {
@@ -158,32 +198,179 @@
       }
       const name = document.getElementById(`input-name-${sku}`).value;
       const price = parseFloat(document.getElementById(`input-price-${sku}`).value) || 0;
+      const stock = parseInt(document.getElementById(`input-stock-${sku}`).value) || 0;
       const img = document.getElementById(`input-img-${sku}`).value;
 
       const { error } = await client
         .from('custom_items')
-        .upsert({ sku: String(sku), item_name: name, price: price, image_url: img });
+        .upsert({ sku: String(sku), item_name: name, price: price, stock: stock, image_url: img });
 
       if (error) {
-        alert('သိမ်းဆည်းရာတွင် အမှားဖြစ်သွားပါသည်: ' + error.message);
+        alert('အမှားဖြစ်သွားပါသည် (Supabase တွင် stock column ရှိမရှိ စစ်ဆေးပါ): ' + error.message);
       } else {
+        overrideMap[String(sku)] = { sku: String(sku), item_name: name, price: price, stock: stock, image_url: img };
         alert('သိမ်းဆည်းပြီးပါပြီ!');
-        overrideMap[String(sku)] = { sku: String(sku), item_name: name, price: price, image_url: img };
-        renderCards();
+        renderCards(allItems);
       }
     }
 
-    // ၄။ Product Cards တန်းစီပြသခြင်း (ချက်ချင်း အလုပ်လုပ်မည်)
-    function renderCards() {
+    function addToCart(sku, name, price) {
+      if (cart[sku]) {
+        cart[sku].qty += 1;
+      } else {
+        cart[sku] = { name: name, price: parseFloat(price), qty: 1 };
+      }
+      updateCartBadge();
+      alert('ပစ္စည်းကို ခြင်းထဲသို့ ထည့်ပြီးပါပြီ။ 🛒');
+    }
+
+    function updateCartBadge() {
+      let totalQty = 0;
+      for (let sku in cart) totalQty += cart[sku].qty;
+      document.getElementById('cart-count').innerText = totalQty;
+    }
+
+    function openCartModal() {
+      const container = document.getElementById('cart-items-container');
+      const totalEl = document.getElementById('cart-total-price');
+      container.innerHTML = '';
+      
+      let totalAmount = 0;
+      let hasItems = false;
+
+      for (let sku in cart) {
+        hasItems = true;
+        let item = cart[sku];
+        let subtotal = item.price * item.qty;
+        totalAmount += subtotal;
+
+        container.innerHTML += `
+          <div class="cart-item">
+            <div class="cart-item-info">
+              <b>${item.name}</b><br>
+              <small>${item.price} THB x ${item.qty}</small>
+            </div>
+            <div class="cart-item-qty">${subtotal} THB</div>
+          </div>
+        `;
+      }
+
+      if (!hasItems) {
+        container.innerHTML = '<p style="text-align:center; font-size:13px;">ခြင်းတောင်းထဲတွင် ပစ္စည်းမရှိသေးပါ။</p>';
+      }
+
+      totalEl.innerText = `စုစုပေါင်း: ${totalAmount} THB`;
+      document.getElementById('cart-modal').style.display = 'block';
+    }
+
+    function closeCartModal() {
+      document.getElementById('cart-modal').style.display = 'none';
+    }
+
+    async function submitOrder() {
+      if (Object.keys(cart).length === 0) {
+        alert('ဝယ်ယူမည့် ပစ္စည်းများကို အရင်ရွေးချယ်ပါ။');
+        return;
+      }
+
+      const name = document.getElementById('order-name').value.trim();
+      const address = document.getElementById('order-address').value.trim();
+      const phone = document.getElementById('order-phone').value.trim();
+
+      if (!name || !address || !phone) {
+        alert('ကျေးဇူးပြု၍ အမည်၊ လိပ်စာ နှင့် ဖုန်းနံပါတ်တို့ကို ပြည့်စုံစွာ ဖြည့်ပေးပါ။');
+        return;
+      }
+
+      let text = `📦 <b>ဈေးဝယ်ယူမှု အော်ဒါအသစ်</b>\n`;
+      text += `━━━━━━━━━━━━━━━━━━━━\n`;
+      text += `👤 <b>အမည်:</b> ${name}\n`;
+      text += `📍 <b>လိပ်စာ:</b> ${address}\n`;
+      text += `📞 <b>ဖုန်း:</b> ${phone}\n`;
+      text += `━━━━━━━━━━━━━━━━━━━━\n`;
+      
+      let total = 0;
+      let i = 1;
+      for (let sku in cart) {
+        let item = cart[sku];
+        let sub = item.price * item.qty;
+        total += sub;
+        text += `${i}. ${item.name}\n   └ ${item.qty} ခု x ${item.price} = <b>${sub} THB</b>\n`;
+        i++;
+      }
+      text += `━━━━━━━━━━━━━━━━━━━━\n`;
+      text += `💰 <b>စုစုပေါင်း: ${total} THB</b>`;
+
+      // အောက်ပါ Token ကို အစားထိုးမထည့်ရသေးပါက error ပြမည်
+      if(TELEGRAM_BOT_TOKEN === '8627776480:AAHczUXDGPEe4zJ25Y5X9I46bcbDEDKop2I' || TELEGRAM_CHAT_ID === '6791985845') {
+        alert('Telegram Bot Token နှင့် Chat ID ထည့်သွင်းထားခြင်း မရှိသေးပါ။ ကုဒ်ထဲတွင် သွားရောက် ပြင်ဆင်ထည့်သွင်းပါ။');
+        return;
+      }
+
+      const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+      const submitBtn = document.querySelector('.btn-save');
+      submitBtn.innerText = '⏳ ပေးပို့နေပါသည်...';
+      submitBtn.disabled = true;
+
+      try {
+        const res = await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            chat_id: TELEGRAM_CHAT_ID,
+            text: text,
+            parse_mode: 'HTML'
+          })
+        });
+
+        if (res.ok) {
+          alert('အော်ဒါတင်ခြင်း အောင်မြင်ပါသည်။ ဆိုင်မှ မကြာမီ ဆက်သွယ်ပေးပါမည်။');
+          cart = {};
+          updateCartBadge();
+          closeCartModal();
+          document.getElementById('order-name').value = '';
+          document.getElementById('order-address').value = '';
+          document.getElementById('order-phone').value = '';
+        } else {
+          alert('Telegram သို့ ပို့ရာတွင် အမှားဖြစ်သွားပါသည်။');
+        }
+      } catch (err) {
+        alert('Internet ချိတ်ဆက်မှု စစ်ဆေးပါ။');
+      } finally {
+        submitBtn.innerText = '✅ ဝယ်ယူမည်';
+        submitBtn.disabled = false;
+      }
+    }
+
+    function handleSearch() {
+      const query = document.getElementById('search-input').value.toLowerCase().trim();
+      if (!query) {
+        renderCards(allItems);
+        return;
+      }
+      const filtered = allItems.filter(item => {
+        const sku = String(item.sku).toLowerCase();
+        const custom = overrideMap[sku] || {};
+        const name = (custom.item_name || item.name).toLowerCase();
+        return name.includes(query) || sku.includes(query);
+      });
+      renderCards(filtered);
+    }
+
+    function renderCards(items) {
       const container = document.getElementById('product-grid');
       container.innerHTML = '';
 
-      rawItems.forEach(item => {
+      items.forEach(item => {
         const sku = String(item.sku);
         const custom = overrideMap[sku] || {};
 
         const displayName = custom.item_name || item.name;
+        // prevent quote errors in HTML
+        const safeName = displayName.replace(/'/g, "\\'").replace(/"/g, "&quot;");
+        
         const displayPrice = (custom.price !== undefined && custom.price !== null) ? custom.price : item.price;
+        const displayStock = (custom.stock !== undefined && custom.stock !== null) ? custom.stock : item.stock;
         const displayImg = custom.image_url || 'https://placehold.co/200x160/e4e6eb/65676b?text=No+Image';
 
         const card = document.createElement('div');
@@ -193,7 +380,7 @@
           <div class="title">${displayName}</div>
           <div class="price">THB ${displayPrice}</div>
           <div class="sku">SKU: ${sku}</div>
-          <div class="stock">လက်ကျန်: ${item.stock} ခု</div>
+          <div class="stock">လက်ကျန်: ${displayStock} ခု</div>
           
           ${isAdmin ? `
             <button class="btn btn-edit" onclick="toggleEditBox('${sku}')">✏️ Edit</button>
@@ -202,19 +389,21 @@
               <input type="text" id="input-name-${sku}" value="${displayName}">
               <label>ဈေးနှုန်း (THB):</label>
               <input type="number" id="input-price-${sku}" value="${displayPrice}">
+              <label>လက်ကျန် (Stock):</label>
+              <input type="number" id="input-stock-${sku}" value="${displayStock}">
               <label>Image Direct Link:</label>
               <input type="text" id="input-img-${sku}" value="${custom.image_url || ''}" placeholder="https://...">
               <button class="btn btn-save" onclick="saveProduct('${sku}')">💾 Save</button>
             </div>
-          ` : ''}
+          ` : `
+            <button class="btn btn-add-cart" onclick="addToCart('${sku}', '${safeName}', ${displayPrice})">🛒 ခြင်းထဲထည့်မည်</button>
+          `}
         `;
         container.appendChild(card);
       });
     }
 
-    // စာမျက်နှာ စဖွင့်သည်နှင့် ချက်ချင်း render ပြုလုပ်မည်
-    renderCards();
-    window.addEventListener('load', initSupabase);
+    window.addEventListener('load', loadDatabase);
   </script>
 </body>
 </html>
