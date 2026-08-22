@@ -48,7 +48,7 @@
 <body>
 
   <div class="header">
-    <h2>NYEIN Mobile Phone Spare Parts And Tools</h2>
+    <h2>NYEIN Mobile Phone Spare Parts</h2>
     <div class="header-btns">
       <button id="admin-toggle-btn" class="btn btn-admin" onclick="handleAdminLogin()">Admin</button>
       <button class="btn btn-cart-top" onclick="openCartModal()">🛒 ခြင်းတောင်း (<span id="cart-count">0</span>)</button>
@@ -98,10 +98,10 @@
 
   <script>
     // ---------------------------------------------------------
-    // Telegram Bot Settings (သင့် Bot Token နှင့် Chat ID ဖြင့် အစားထိုးပါ)
+    // Telegram Bot Settings 
     // ---------------------------------------------------------
-    const TELEGRAM_BOT_TOKEN = 'YOUR_BOT_TOKEN_HERE'; 
-    const TELEGRAM_CHAT_ID = 'YOUR_CHAT_ID_HERE';
+    const TELEGRAM_BOT_TOKEN = '8627776480:AAHczUXDGPEe4zJ25Y5X9I46bcbDEDKop2I'; 
+    const TELEGRAM_CHAT_ID = '6791985845';
     // ---------------------------------------------------------
 
     const SUPABASE_URL = 'https://zrgbflsdffmotmovwfbx.supabase.co';
@@ -206,7 +206,7 @@
         .upsert({ sku: String(sku), item_name: name, price: price, stock: stock, image_url: img });
 
       if (error) {
-        alert('အမှားဖြစ်သွားပါသည် (Supabase တွင် stock column ရှိမရှိ စစ်ဆေးပါ): ' + error.message);
+        alert('အမှားဖြစ်သွားပါသည်: ' + error.message);
       } else {
         overrideMap[String(sku)] = { sku: String(sku), item_name: name, price: price, stock: stock, image_url: img };
         alert('သိမ်းဆည်းပြီးပါပြီ!');
@@ -301,27 +301,16 @@
       text += `━━━━━━━━━━━━━━━━━━━━\n`;
       text += `💰 <b>စုစုပေါင်း: ${total} THB</b>`;
 
-      // အောက်ပါ Token ကို အစားထိုးမထည့်ရသေးပါက error ပြမည်
-      if(TELEGRAM_BOT_TOKEN === '8627776480:AAHczUXDGPEe4zJ25Y5X9I46bcbDEDKop2I' || TELEGRAM_CHAT_ID === '6791985845') {
-        alert('Telegram Bot Token နှင့် Chat ID ထည့်သွင်းထားခြင်း မရှိသေးပါ။ ကုဒ်ထဲတွင် သွားရောက် ပြင်ဆင်ထည့်သွင်းပါ။');
-        return;
-      }
-
-      const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
       const submitBtn = document.querySelector('.btn-save');
       submitBtn.innerText = '⏳ ပေးပို့နေပါသည်...';
       submitBtn.disabled = true;
 
       try {
-        const res = await fetch(url, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            chat_id: TELEGRAM_CHAT_ID,
-            text: text,
-            parse_mode: 'HTML'
-          })
-        });
+        // GET Request ဖြင့် ပေးပို့ခြင်း
+        const encodedText = encodeURIComponent(text);
+        const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage?chat_id=${TELEGRAM_CHAT_ID}&text=${encodedText}&parse_mode=HTML`;
+
+        const res = await fetch(url);
 
         if (res.ok) {
           alert('အော်ဒါတင်ခြင်း အောင်မြင်ပါသည်။ ဆိုင်မှ မကြာမီ ဆက်သွယ်ပေးပါမည်။');
@@ -335,7 +324,7 @@
           alert('Telegram သို့ ပို့ရာတွင် အမှားဖြစ်သွားပါသည်။');
         }
       } catch (err) {
-        alert('Internet ချိတ်ဆက်မှု စစ်ဆေးပါ။');
+        alert('Internet ချိတ်ဆက်မှု စစ်ဆေးပါ။ (သို့မဟုတ် Brave Browser ၏ Shields ကို ပိတ်ပြီး စမ်းကြည့်ပါ)');
       } finally {
         submitBtn.innerText = '✅ ဝယ်ယူမည်';
         submitBtn.disabled = false;
@@ -366,9 +355,7 @@
         const custom = overrideMap[sku] || {};
 
         const displayName = custom.item_name || item.name;
-        // prevent quote errors in HTML
         const safeName = displayName.replace(/'/g, "\\'").replace(/"/g, "&quot;");
-        
         const displayPrice = (custom.price !== undefined && custom.price !== null) ? custom.price : item.price;
         const displayStock = (custom.stock !== undefined && custom.stock !== null) ? custom.stock : item.stock;
         const displayImg = custom.image_url || 'https://placehold.co/200x160/e4e6eb/65676b?text=No+Image';
