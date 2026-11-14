@@ -1,0 +1,43 @@
+name: Sync Loyverse POS Data
+
+on:
+  schedule:
+    # Run every 30 minutes
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Sync Loyverse items, stock, prices, and photos
+        env:
+          LOYVERSE_TOKEN: ${{ secrets.LOYVERSE_TOKEN }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          SUPABASE_TABLE: custom_items
+          OUTPUT_FILE: loyverse_auto_data.json
+        run: python sync_loyverse.py
+
+      - name: Commit and push updated JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto sync Loyverse stock, prices, and photos"
+            git push
+          fi
