@@ -7729,7 +7729,7 @@
         "reference_id": null,
         "item_name": "183°C Solder Paste",
         "description": null,
-        "track_stock": true,
+        "track_stock": false,
         "sold_by_weight": false,
         "is_composite": false,
         "use_production": false,
@@ -7745,7 +7745,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2026-10-11T05:39:29.000Z",
-        "updated_at": "2026-10-11T05:39:29.000Z",
+        "updated_at": "2026-11-14T12:03:55.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -7768,7 +7768,7 @@
                 "price": 160.0,
                 "available_for_sale": true,
                 "optimal_stock": null,
-                "low_stock": 1
+                "low_stock": null
               }
             ],
             "created_at": "2026-10-11T05:39:29.000Z",
@@ -18907,7 +18907,7 @@
         "reference_id": null,
         "item_name": "183 HIGH PURITY TIN PASTE",
         "description": null,
-        "track_stock": true,
+        "track_stock": false,
         "sold_by_weight": false,
         "is_composite": false,
         "use_production": false,
@@ -18923,7 +18923,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2026-09-03T04:12:23.000Z",
-        "updated_at": "2026-11-14T07:35:12.000Z",
+        "updated_at": "2026-11-14T12:03:47.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -18936,7 +18936,7 @@
             "option3_value": null,
             "barcode": null,
             "cost": 0.0,
-            "purchase_cost": 0.0,
+            "purchase_cost": null,
             "default_pricing_type": "FIXED",
             "default_price": 210.0,
             "stores": [
@@ -18946,7 +18946,7 @@
                 "price": 210.0,
                 "available_for_sale": true,
                 "optimal_stock": null,
-                "low_stock": 1
+                "low_stock": null
               }
             ],
             "created_at": "2026-09-03T04:12:23.000Z",
@@ -19059,60 +19059,6 @@
             ],
             "created_at": "2026-09-03T04:07:03.000Z",
             "updated_at": "2026-09-03T04:07:03.000Z",
-            "deleted_at": null
-          }
-        ]
-      },
-      {
-        "id": "fa1d821e-063c-4892-ae5b-38b2965768fb",
-        "handle": "7ကျောက်လှည့်ဗူး",
-        "reference_id": null,
-        "item_name": "7ကျောက်လှည့်ဗူး",
-        "description": null,
-        "track_stock": false,
-        "sold_by_weight": false,
-        "is_composite": false,
-        "use_production": false,
-        "category_id": "6cff14ba-139d-45e0-b047-563ecb2fb0ab",
-        "components": [],
-        "primary_supplier_id": null,
-        "tax_ids": [],
-        "modifier_ids": [],
-        "form": "SQUARE",
-        "color": "GREY",
-        "image_url": "https://api.loyverse.com/image/fa1d821e-063c-4892-ae5b-38b2965768fb",
-        "option1_name": null,
-        "option2_name": null,
-        "option3_name": null,
-        "created_at": "2026-09-02T08:22:06.000Z",
-        "updated_at": "2026-11-14T07:44:52.000Z",
-        "deleted_at": null,
-        "variants": [
-          {
-            "variant_id": "2f5e74b1-a6dd-49ed-af08-cfc3ab8d37dc",
-            "item_id": "fa1d821e-063c-4892-ae5b-38b2965768fb",
-            "sku": "10770",
-            "reference_variant_id": null,
-            "option1_value": null,
-            "option2_value": null,
-            "option3_value": null,
-            "barcode": "025527",
-            "cost": 0.0,
-            "purchase_cost": null,
-            "default_pricing_type": "FIXED",
-            "default_price": 190.0,
-            "stores": [
-              {
-                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-                "pricing_type": "FIXED",
-                "price": 190.0,
-                "available_for_sale": true,
-                "optimal_stock": null,
-                "low_stock": null
-              }
-            ],
-            "created_at": "2026-09-02T08:22:06.000Z",
-            "updated_at": "2026-11-14T07:44:52.000Z",
             "deleted_at": null
           }
         ]
@@ -58784,12 +58730,6 @@
         "updated_at": "2026-10-11T05:45:28.000Z"
       },
       {
-        "variant_id": "7f1b8892-2a3e-49f5-8272-5b183852e105",
-        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 0,
-        "updated_at": "2026-10-18T07:23:43.000Z"
-      },
-      {
         "variant_id": "6ee9e62b-6d1e-4214-a543-d90a3cdee287",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
         "in_stock": 0,
@@ -59942,12 +59882,6 @@
         "updated_at": "2026-10-24T10:27:44.000Z"
       },
       {
-        "variant_id": "2541bb3d-a7a9-486c-9c6f-e12923c6c7c1",
-        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 0,
-        "updated_at": "2026-11-14T07:35:12.000Z"
-      },
-      {
         "variant_id": "2fc6e814-4f98-4ecb-9562-c9f07e257325",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
         "in_stock": 1,
@@ -60712,8 +60646,8 @@
       {
         "variant_id": "2e764e91-4633-4686-94a7-220cce459a44",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 3,
-        "updated_at": "2026-10-12T10:40:17.000Z"
+        "in_stock": 2,
+        "updated_at": "2026-11-14T11:19:47.000Z"
       },
       {
         "variant_id": "27e6a10b-5e87-49a2-8854-07eb4b67a46f",
@@ -63856,8 +63790,8 @@
       {
         "variant_id": "76a0e257-cd10-43d4-bce9-1b062c78bbef",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 3,
-        "updated_at": "2026-11-03T04:58:24.000Z"
+        "in_stock": 2,
+        "updated_at": "2026-11-14T11:19:14.000Z"
       },
       {
         "variant_id": "9fc66d5f-e214-4b69-a9ad-ef2d4f52ee33",
@@ -63951,5 +63885,5 @@
       }
     ]
   },
-  "last_updated": "2026-11-14 16:38:54"
+  "last_updated": "2026-11-14 23:09:21"
 }
