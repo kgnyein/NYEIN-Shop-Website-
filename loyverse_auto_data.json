@@ -48769,7 +48769,7 @@
         "id": "bd0031b1-d207-44ed-bd4d-36e65541358f",
         "handle": "vivo-y21/y21s-usb",
         "reference_id": null,
-        "item_name": "Vivo Y21/Y21S USB ORIGINAL",
+        "item_name": "Vivo Y21/Y21S USB ORIGINAL ic",
         "description": null,
         "track_stock": true,
         "sold_by_weight": false,
@@ -48787,7 +48787,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2025-03-21T09:30:47.000Z",
-        "updated_at": "2026-10-07T09:38:21.000Z",
+        "updated_at": "2026-11-15T09:53:42.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -57805,7 +57805,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2024-09-19T07:23:23.000Z",
-        "updated_at": "2026-11-14T08:13:09.000Z",
+        "updated_at": "2026-11-15T11:38:43.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -58996,8 +58996,8 @@
       {
         "variant_id": "eee011da-49e0-4be9-b156-80ef5fdce46d",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 1,
-        "updated_at": "2026-11-14T04:28:16.000Z"
+        "in_stock": 0,
+        "updated_at": "2026-11-15T07:26:34.000Z"
       },
       {
         "variant_id": "3152219d-b638-469f-8798-c7c4c14efb20",
@@ -61888,8 +61888,8 @@
       {
         "variant_id": "37deb6d1-0be8-4ffb-b883-12577cacd3b2",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": -2,
-        "updated_at": "2026-11-14T08:51:18.000Z"
+        "in_stock": -1,
+        "updated_at": "2026-11-15T09:41:56.000Z"
       },
       {
         "variant_id": "cdb5e73c-5c7d-49f6-b2c0-141831ad9d93",
@@ -62932,8 +62932,8 @@
       {
         "variant_id": "98fb8f13-2472-4671-a60d-e76e9bec72f9",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 1,
-        "updated_at": "2026-10-07T09:38:21.000Z"
+        "in_stock": 0,
+        "updated_at": "2026-11-15T11:24:43.000Z"
       },
       {
         "variant_id": "81d19323-3b17-445e-aa94-bfc0fea92f45",
@@ -63256,8 +63256,8 @@
       {
         "variant_id": "e4e72f66-5f59-4334-a27f-7e9beb266479",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 4,
-        "updated_at": "2026-11-06T03:24:54.000Z"
+        "in_stock": 3,
+        "updated_at": "2026-11-15T09:42:10.000Z"
       },
       {
         "variant_id": "9d808949-14c8-4738-a2ba-20eaddc9449d",
@@ -63646,8 +63646,8 @@
       {
         "variant_id": "0018bb10-6443-442b-9f43-a557b794e4a4",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 2,
-        "updated_at": "2026-11-04T12:19:02.000Z"
+        "in_stock": -1,
+        "updated_at": "2026-11-15T08:53:47.000Z"
       },
       {
         "variant_id": "8de74b8a-3b15-49de-b458-4ce9caa1b900",
@@ -63885,5 +63885,5 @@
       }
     ]
   },
-  "last_updated": "2026-11-15 13:49:52"
+  "last_updated": "2026-11-15 21:22:47"
 }
