@@ -1033,7 +1033,7 @@
         "reference_id": null,
         "item_name": "iph 14 promax Soft OLED kaiku",
         "description": null,
-        "track_stock": true,
+        "track_stock": false,
         "sold_by_weight": false,
         "is_composite": false,
         "use_production": false,
@@ -1049,7 +1049,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2026-11-13T09:00:44.000Z",
-        "updated_at": "2026-11-13T09:00:44.000Z",
+        "updated_at": "2026-11-17T07:28:56.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -1072,7 +1072,7 @@
                 "price": 2500.0,
                 "available_for_sale": true,
                 "optimal_stock": null,
-                "low_stock": 0
+                "low_stock": null
               }
             ],
             "created_at": "2026-11-13T09:00:44.000Z",
@@ -2383,7 +2383,7 @@
         "reference_id": null,
         "item_name": "1.5 screw kasbear",
         "description": null,
-        "track_stock": true,
+        "track_stock": false,
         "sold_by_weight": false,
         "is_composite": false,
         "use_production": false,
@@ -2399,7 +2399,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2026-11-06T03:26:17.000Z",
-        "updated_at": "2026-11-06T03:26:17.000Z",
+        "updated_at": "2026-11-17T06:20:00.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -54079,7 +54079,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2024-11-20T13:09:06.000Z",
-        "updated_at": "2026-09-03T08:52:09.000Z",
+        "updated_at": "2026-11-17T06:20:26.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -58450,8 +58450,8 @@
       {
         "variant_id": "9fde9e67-1429-4cf7-b3bd-5de91833d9b5",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 1,
-        "updated_at": "2026-11-16T09:57:57.000Z"
+        "in_stock": 0,
+        "updated_at": "2026-11-17T04:49:16.000Z"
       },
       {
         "variant_id": "76c7abe2-bdcb-447c-af22-2c88b00bccea",
@@ -58476,12 +58476,6 @@
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
         "in_stock": 2,
         "updated_at": "2026-11-14T04:51:33.000Z"
-      },
-      {
-        "variant_id": "f6334552-2b15-4c6a-b1f9-c8282311e6c2",
-        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 1,
-        "updated_at": "2026-11-13T09:00:44.000Z"
       },
       {
         "variant_id": "457fcfa8-abad-4d2b-af59-e4a749219727",
@@ -58620,12 +58614,6 @@
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
         "in_stock": 1,
         "updated_at": "2026-11-12T04:13:47.000Z"
-      },
-      {
-        "variant_id": "3888ac2c-dce0-4d04-a2dd-3477c77bddcd",
-        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 0,
-        "updated_at": "2026-11-11T10:16:26.000Z"
       },
       {
         "variant_id": "cdf3e690-b40d-461d-ba0d-c2c7430173e1",
@@ -61654,8 +61642,8 @@
       {
         "variant_id": "13c51e1f-e1db-4af8-82d0-07d69dddca74",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 5,
-        "updated_at": "2026-11-14T09:52:07.000Z"
+        "in_stock": 3,
+        "updated_at": "2026-11-17T04:49:58.000Z"
       },
       {
         "variant_id": "8f68ff88-c677-4c91-bb68-5a2f1830afbf",
@@ -63964,8 +63952,8 @@
       {
         "variant_id": "ead7aff6-b170-4e08-96c3-76ca001b69f4",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 0,
-        "updated_at": "2026-11-16T07:21:21.000Z"
+        "in_stock": 1,
+        "updated_at": "2026-11-17T06:20:26.000Z"
       },
       {
         "variant_id": "aae0ed13-e9f1-4a22-a69b-2134caa0e8f9",
@@ -64390,8 +64378,8 @@
       {
         "variant_id": "c4aad36e-4c90-4daf-8470-d06cdd6473d5",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 3,
-        "updated_at": "2026-11-04T09:26:44.000Z"
+        "in_stock": 2,
+        "updated_at": "2026-11-17T02:23:28.000Z"
       },
       {
         "variant_id": "974d7810-195d-42c1-8af6-63e41873353b",
@@ -64425,5 +64413,5 @@
       }
     ]
   },
-  "last_updated": "2026-11-17 07:03:21"
+  "last_updated": "2026-11-17 15:09:25"
 }
