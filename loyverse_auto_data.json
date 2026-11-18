@@ -58456,8 +58456,8 @@
       {
         "variant_id": "76c7abe2-bdcb-447c-af22-2c88b00bccea",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 1,
-        "updated_at": "2026-11-14T09:53:16.000Z"
+        "in_stock": 0,
+        "updated_at": "2026-11-18T12:20:52.000Z"
       },
       {
         "variant_id": "a4e4fed0-4b4b-4d37-bdab-ca062cf62807",
@@ -58840,8 +58840,8 @@
       {
         "variant_id": "c2025579-4504-4474-b022-d4cb2782890d",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 3,
-        "updated_at": "2026-10-25T03:20:36.000Z"
+        "in_stock": 2,
+        "updated_at": "2026-11-18T08:23:40.000Z"
       },
       {
         "variant_id": "3938815b-31cf-4602-9521-67d0b6738eaf",
@@ -60011,7 +60011,7 @@
         "variant_id": "2b6dc0ab-769a-453e-a42b-5fe04c1b608a",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
         "in_stock": 4,
-        "updated_at": "2026-11-14T09:51:50.000Z"
+        "updated_at": "2026-11-18T10:05:24.000Z"
       },
       {
         "variant_id": "b578d435-3314-4127-9273-9c339a9499b4",
@@ -60208,8 +60208,8 @@
       {
         "variant_id": "1a8e462a-4907-4ea5-bf91-13be86c64af2",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 10,
-        "updated_at": "2026-11-16T10:58:09.000Z"
+        "in_stock": 9,
+        "updated_at": "2026-11-18T08:23:40.000Z"
       },
       {
         "variant_id": "9304d31f-238c-4ae9-bffa-15447ab16b66",
@@ -62170,8 +62170,8 @@
       {
         "variant_id": "ecbf3bb4-2c99-423c-b727-80cc3b5e30cd",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 3,
-        "updated_at": "2026-11-14T05:05:22.000Z"
+        "in_stock": 2,
+        "updated_at": "2026-11-18T12:01:28.000Z"
       },
       {
         "variant_id": "2af7a859-8389-4bee-949d-71573f01e00a",
@@ -62368,8 +62368,8 @@
       {
         "variant_id": "7db73d93-3d07-4ee3-bff3-99e29d25bf54",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 3,
-        "updated_at": "2026-11-16T10:32:46.000Z"
+        "in_stock": 2,
+        "updated_at": "2026-11-18T08:24:12.000Z"
       },
       {
         "variant_id": "bd49268a-1104-4d51-8315-3558e601c140",
@@ -63784,8 +63784,8 @@
       {
         "variant_id": "e4e72f66-5f59-4334-a27f-7e9beb266479",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 4,
-        "updated_at": "2026-11-16T07:22:53.000Z"
+        "in_stock": 3,
+        "updated_at": "2026-11-18T08:17:24.000Z"
       },
       {
         "variant_id": "9d808949-14c8-4738-a2ba-20eaddc9449d",
@@ -63970,8 +63970,8 @@
       {
         "variant_id": "8b150e1a-1ff8-4cee-a2ff-dbf38667f0b2",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 1,
-        "updated_at": "2026-11-16T08:23:24.000Z"
+        "in_stock": 0,
+        "updated_at": "2026-11-18T12:01:48.000Z"
       },
       {
         "variant_id": "8d3f99b5-2aad-40c3-9ac7-8417093d84af",
@@ -64360,8 +64360,8 @@
       {
         "variant_id": "d4faab4e-d2e6-4a09-bc3e-5aa4c7a69406",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 3,
-        "updated_at": "2026-11-16T10:06:26.000Z"
+        "in_stock": 2,
+        "updated_at": "2026-11-18T10:05:14.000Z"
       },
       {
         "variant_id": "9ba5c40a-196f-41b5-acf5-6144ba33b04f",
@@ -64413,5 +64413,5 @@
       }
     ]
   },
-  "last_updated": "2026-11-18 14:20:37"
+  "last_updated": "2026-11-18 23:17:59"
 }
