@@ -2,6 +2,384 @@
   "items": {
     "items": [
       {
+        "id": "4b60748a-0f19-42b2-8505-c66d2b7df1cd",
+        "handle": "oppo-a57/a57s/a57e/a73-5g/a77/a77s-volume-flex",
+        "reference_id": null,
+        "item_name": "OPPO A57/A57S/A57E/A73 5G/A77/A77S Volume flex",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "YELLOW",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-11-20T11:30:59.000Z",
+        "updated_at": "2026-11-20T11:30:59.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "8c8b11b8-eb64-4174-bd29-dad38d48ee35",
+            "item_id": "4b60748a-0f19-42b2-8505-c66d2b7df1cd",
+            "sku": "11085",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 45.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 45.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-11-20T11:30:59.000Z",
+            "updated_at": "2026-11-20T11:30:59.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "d0fd4a0d-c8f3-4514-bfd3-c9586139fe1b",
+        "handle": "vivo-y22-speaker",
+        "reference_id": null,
+        "item_name": "Vivo Y22 speaker",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-11-20T11:30:07.000Z",
+        "updated_at": "2026-11-20T11:30:07.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "dba21e24-8911-41e6-be35-f8aef553024d",
+            "item_id": "d0fd4a0d-c8f3-4514-bfd3-c9586139fe1b",
+            "sku": "11084",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 120.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 120.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-11-20T11:30:07.000Z",
+            "updated_at": "2026-11-20T11:30:07.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "1c556e3a-b7f1-4fe5-8516-d5d755b6cffc",
+        "handle": "pop-4-lite",
+        "reference_id": null,
+        "item_name": "Pop 4 lite",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "da709465-273d-4229-9e63-b3c1cd4c7842",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-11-20T11:29:42.000Z",
+        "updated_at": "2026-11-20T11:29:42.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "87e7d7e4-adbd-43bf-ba7a-a9bc70ed5da0",
+            "item_id": "1c556e3a-b7f1-4fe5-8516-d5d755b6cffc",
+            "sku": "11083",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 330.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 330.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-11-20T11:29:42.000Z",
+            "updated_at": "2026-11-20T11:29:42.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "675ac4c2-0283-42e1-a04b-b909652f935e",
+        "handle": "spark-4-lite",
+        "reference_id": null,
+        "item_name": "Spark 4 lite",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "da709465-273d-4229-9e63-b3c1cd4c7842",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-11-20T11:29:18.000Z",
+        "updated_at": "2026-11-20T11:29:18.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "c6d626e2-33d2-4757-944d-d566a8e04c91",
+            "item_id": "675ac4c2-0283-42e1-a04b-b909652f935e",
+            "sku": "11082",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 330.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 330.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-11-20T11:29:18.000Z",
+            "updated_at": "2026-11-20T11:29:18.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "a79cb9b1-c5c9-42ad-afc4-e9ace90b51b2",
+        "handle": "oppo-a1k-/realme-c2",
+        "reference_id": null,
+        "item_name": "oppo A1k /Realme C2",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "da709465-273d-4229-9e63-b3c1cd4c7842",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-11-20T11:09:04.000Z",
+        "updated_at": "2026-11-20T11:09:04.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "c9f1e297-6760-416d-b3d3-25fc96a2d7bc",
+            "item_id": "a79cb9b1-c5c9-42ad-afc4-e9ace90b51b2",
+            "sku": "11081",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "QC-OP005",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 380.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 380.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-11-20T11:09:04.000Z",
+            "updated_at": "2026-11-20T11:09:04.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "7fc28342-8454-4ce2-b135-27b3e1c8ee00",
+        "handle": "samsung-a04-kaiku",
+        "reference_id": null,
+        "item_name": "Samsung A04 kaiku",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "da709465-273d-4229-9e63-b3c1cd4c7842",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-11-20T10:59:27.000Z",
+        "updated_at": "2026-11-20T10:59:27.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "c7473247-fa2e-424e-8855-e17b3d49d3b7",
+            "item_id": "7fc28342-8454-4ce2-b135-27b3e1c8ee00",
+            "sku": "11080",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "YP-SM012",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 420.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 420.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-11-20T10:59:27.000Z",
+            "updated_at": "2026-11-20T10:59:27.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "cdf65595-b7e9-4265-82dc-a99d8043d9fb",
+        "handle": "vivo-s1-/y7s-oled-kaiku",
+        "reference_id": null,
+        "item_name": "Vivo S1 /Y7s OLED kaiku",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-11-20T10:54:45.000Z",
+        "updated_at": "2026-11-20T10:54:45.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "57f40604-f27e-479f-8af2-f504a47c07c2",
+            "item_id": "cdf65595-b7e9-4265-82dc-a99d8043d9fb",
+            "sku": "11079",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "OLED-VI005",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 1000.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 1000.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": null
+              }
+            ],
+            "created_at": "2026-11-20T10:54:45.000Z",
+            "updated_at": "2026-11-20T10:54:45.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
         "id": "a3be8dba-66d4-4f50-94de-0410b8d8c8b2",
         "handle": "dk-f90-iph-camera-cutter",
         "reference_id": null,
@@ -12047,7 +12425,7 @@
         "id": "fd8ef162-4876-4d5f-98bc-1ac9212f09ce",
         "handle": "rm-n-12-4g",
         "reference_id": null,
-        "item_name": "RM N 12 4G",
+        "item_name": "Redmi Note 12 /Poco X5 oled",
         "description": null,
         "track_stock": true,
         "sold_by_weight": false,
@@ -12065,7 +12443,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2026-09-25T08:17:10.000Z",
-        "updated_at": "2026-09-25T08:17:10.000Z",
+        "updated_at": "2026-11-20T11:08:08.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -12088,7 +12466,7 @@
                 "price": 1200.0,
                 "available_for_sale": true,
                 "optimal_stock": null,
-                "low_stock": 1
+                "low_stock": 0
               }
             ],
             "created_at": "2026-09-25T08:17:11.000Z",
@@ -15521,7 +15899,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2026-09-07T10:46:42.000Z",
-        "updated_at": "2026-10-16T09:46:21.000Z",
+        "updated_at": "2026-11-20T10:55:17.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -31777,7 +32155,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2026-03-21T13:16:18.000Z",
-        "updated_at": "2026-11-04T12:17:03.000Z",
+        "updated_at": "2026-11-20T11:07:12.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -31939,7 +32317,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2026-03-21T13:12:39.000Z",
-        "updated_at": "2026-11-14T09:52:07.000Z",
+        "updated_at": "2026-11-20T11:03:29.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -31993,7 +32371,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2026-03-21T13:07:34.000Z",
-        "updated_at": "2026-10-11T02:56:44.000Z",
+        "updated_at": "2026-11-20T11:06:26.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -40363,7 +40741,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2025-10-04T12:43:50.000Z",
-        "updated_at": "2026-09-08T10:28:04.000Z",
+        "updated_at": "2026-11-20T11:06:14.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -42199,7 +42577,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2025-07-31T04:55:26.000Z",
-        "updated_at": "2026-11-13T08:58:04.000Z",
+        "updated_at": "2026-11-20T11:05:10.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -45061,7 +45439,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2025-07-03T12:00:18.000Z",
-        "updated_at": "2026-10-31T11:07:02.000Z",
+        "updated_at": "2026-11-20T11:07:02.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -46897,7 +47275,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2025-06-07T12:36:20.000Z",
-        "updated_at": "2026-10-15T12:01:13.000Z",
+        "updated_at": "2026-11-20T11:06:46.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -48229,7 +48607,7 @@
         "id": "5f1e7eb3-7d27-41e6-9e48-aa79cae469da",
         "handle": "infinix-smart-9/spark-go-1/go-2025/hot-50/50i/pop-9/spark-30c",
         "reference_id": null,
-        "item_name": "Smart 9/Smart 10/Spark Go 1/Go 2025/Hot 50/50i/Pop 9/Spark 30C",
+        "item_name": "Smart 9/Smart 10/Go1/1S/2/Hot 50/50i/60/60i/Pop 9/30C/40C",
         "description": null,
         "track_stock": true,
         "sold_by_weight": false,
@@ -48247,7 +48625,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2025-04-01T01:59:46.000Z",
-        "updated_at": "2026-11-13T08:58:23.000Z",
+        "updated_at": "2026-11-20T11:03:10.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -52351,7 +52729,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2025-02-06T03:04:38.000Z",
-        "updated_at": "2026-10-15T12:03:58.000Z",
+        "updated_at": "2026-11-20T11:05:25.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -52891,7 +53269,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2025-01-12T04:55:46.000Z",
-        "updated_at": "2026-10-20T10:30:47.000Z",
+        "updated_at": "2026-11-20T11:04:24.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -52945,7 +53323,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2025-01-12T04:50:46.000Z",
-        "updated_at": "2026-11-16T09:24:13.000Z",
+        "updated_at": "2026-11-20T11:04:36.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -58382,6 +58760,48 @@
   "inventory": {
     "inventory_levels": [
       {
+        "variant_id": "8c8b11b8-eb64-4174-bd29-dad38d48ee35",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 3,
+        "updated_at": "2026-11-20T11:30:58.000Z"
+      },
+      {
+        "variant_id": "dba21e24-8911-41e6-be35-f8aef553024d",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 2,
+        "updated_at": "2026-11-20T11:30:07.000Z"
+      },
+      {
+        "variant_id": "87e7d7e4-adbd-43bf-ba7a-a9bc70ed5da0",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 2,
+        "updated_at": "2026-11-20T11:29:42.000Z"
+      },
+      {
+        "variant_id": "c6d626e2-33d2-4757-944d-d566a8e04c91",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 2,
+        "updated_at": "2026-11-20T11:29:18.000Z"
+      },
+      {
+        "variant_id": "c9f1e297-6760-416d-b3d3-25fc96a2d7bc",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 2,
+        "updated_at": "2026-11-20T11:09:03.000Z"
+      },
+      {
+        "variant_id": "c7473247-fa2e-424e-8855-e17b3d49d3b7",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 2,
+        "updated_at": "2026-11-20T10:59:27.000Z"
+      },
+      {
+        "variant_id": "57f40604-f27e-479f-8af2-f504a47c07c2",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 0,
+        "updated_at": "2026-11-20T10:58:08.000Z"
+      },
+      {
         "variant_id": "6e709e76-59d7-4ed9-88f3-bc20c1f1f1ae",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
         "in_stock": 3,
@@ -60016,8 +60436,8 @@
       {
         "variant_id": "b578d435-3314-4127-9273-9c339a9499b4",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 1,
-        "updated_at": "2026-11-17T10:42:24.000Z"
+        "in_stock": 3,
+        "updated_at": "2026-11-20T10:55:17.000Z"
       },
       {
         "variant_id": "37505c67-0b04-40fb-879a-544bf006b06e",
@@ -61258,8 +61678,8 @@
       {
         "variant_id": "863fcd69-66b7-41fb-a7ab-db3e9b327f15",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 2,
-        "updated_at": "2026-10-15T12:01:51.000Z"
+        "in_stock": 1,
+        "updated_at": "2026-11-20T10:58:08.000Z"
       },
       {
         "variant_id": "c5cd04df-25bd-4596-a1ca-5e2c712e6b0f",
@@ -61624,8 +62044,8 @@
       {
         "variant_id": "8ccfeb0d-202a-4b90-a7fb-e808da071768",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 1,
-        "updated_at": "2026-11-18T03:19:46.000Z"
+        "in_stock": 3,
+        "updated_at": "2026-11-20T11:07:12.000Z"
       },
       {
         "variant_id": "5b9afaac-e2e0-4878-bf7a-173991fee1fc",
@@ -61642,14 +62062,14 @@
       {
         "variant_id": "13c51e1f-e1db-4af8-82d0-07d69dddca74",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 1,
-        "updated_at": "2026-11-19T06:14:34.000Z"
+        "in_stock": 6,
+        "updated_at": "2026-11-20T11:03:29.000Z"
       },
       {
         "variant_id": "8f68ff88-c677-4c91-bb68-5a2f1830afbf",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 1,
-        "updated_at": "2026-11-16T06:56:08.000Z"
+        "in_stock": 3,
+        "updated_at": "2026-11-20T11:06:26.000Z"
       },
       {
         "variant_id": "4cc2a213-51d0-4541-9418-5b195696921a",
@@ -62560,8 +62980,8 @@
       {
         "variant_id": "ef3fcc4b-08ee-4850-b10e-67a6f033f0e6",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 0,
-        "updated_at": "2026-09-21T05:31:19.000Z"
+        "in_stock": 3,
+        "updated_at": "2026-11-20T11:06:14.000Z"
       },
       {
         "variant_id": "f74a1112-d2f4-4933-a1ee-6c94c1acaff2",
@@ -62734,8 +63154,8 @@
       {
         "variant_id": "303084d7-2739-4056-8125-da7d13f30d39",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 0,
-        "updated_at": "2026-11-17T10:42:24.000Z"
+        "in_stock": 2,
+        "updated_at": "2026-11-20T11:05:10.000Z"
       },
       {
         "variant_id": "29dcbffc-660e-4250-9247-29dcdf020ee2",
@@ -63046,8 +63466,8 @@
       {
         "variant_id": "d4389406-8be2-4bd1-b90e-7b0a4ec66899",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 0,
-        "updated_at": "2026-11-19T06:14:34.000Z"
+        "in_stock": 3,
+        "updated_at": "2026-11-20T11:07:02.000Z"
       },
       {
         "variant_id": "0e213af5-12f8-4afb-aa55-2a185f08702d",
@@ -63214,8 +63634,8 @@
       {
         "variant_id": "0112f6e5-4160-4ea6-bcbe-0e32e0b434e2",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 0,
-        "updated_at": "2026-11-17T08:55:15.000Z"
+        "in_stock": 2,
+        "updated_at": "2026-11-20T11:06:46.000Z"
       },
       {
         "variant_id": "d9abab77-924a-4b83-bda4-1c53b9448971",
@@ -63364,8 +63784,8 @@
       {
         "variant_id": "cd848d45-8bbf-4f10-9183-7ad6a4db037b",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 1,
-        "updated_at": "2026-11-16T06:41:54.000Z"
+        "in_stock": 6,
+        "updated_at": "2026-11-20T11:03:10.000Z"
       },
       {
         "variant_id": "ba5fe885-4b13-464b-a932-3fe10598810c",
@@ -63790,8 +64210,8 @@
       {
         "variant_id": "9d808949-14c8-4738-a2ba-20eaddc9449d",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 0,
-        "updated_at": "2026-11-17T10:42:24.000Z"
+        "in_stock": 3,
+        "updated_at": "2026-11-20T11:05:25.000Z"
       },
       {
         "variant_id": "be29c64f-b3e9-478a-af64-9fa26988d0e9",
@@ -63844,14 +64264,14 @@
       {
         "variant_id": "5f559c34-6070-4742-9504-5c72736749bd",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 1,
-        "updated_at": "2026-11-17T10:42:24.000Z"
+        "in_stock": 6,
+        "updated_at": "2026-11-20T11:04:24.000Z"
       },
       {
         "variant_id": "0750295e-10f5-4d8b-a813-282f64f654d1",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 3,
-        "updated_at": "2026-11-19T06:14:34.000Z"
+        "in_stock": 8,
+        "updated_at": "2026-11-20T11:04:36.000Z"
       },
       {
         "variant_id": "d76609fb-7b0c-42cf-aae7-c2a88dae400d",
@@ -64270,8 +64690,8 @@
       {
         "variant_id": "4e7fff3b-ef04-474f-8a78-a3e2f9d47398",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 3,
-        "updated_at": "2026-10-25T03:59:47.000Z"
+        "in_stock": 2,
+        "updated_at": "2026-11-20T10:58:10.000Z"
       },
       {
         "variant_id": "80f0fe21-059c-42b5-b6b4-5ad152c7fa19",
@@ -64413,5 +64833,5 @@
       }
     ]
   },
-  "last_updated": "2026-11-20 17:10:51"
+  "last_updated": "2026-11-21 01:24:14"
 }
