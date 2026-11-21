@@ -2,6 +2,60 @@
   "items": {
     "items": [
       {
+        "id": "464fcf14-30bc-43ad-ae81-40a6c107725f",
+        "handle": "iph-12-power-flex",
+        "reference_id": null,
+        "item_name": "Iph 12 power flex",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-11-21T10:50:14.000Z",
+        "updated_at": "2026-11-21T10:50:14.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "ebecbd3c-068a-4df8-ab43-837fbfb9f0ba",
+            "item_id": "464fcf14-30bc-43ad-ae81-40a6c107725f",
+            "sku": "11086",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 150.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 150.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-11-21T10:50:14.000Z",
+            "updated_at": "2026-11-21T10:50:14.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
         "id": "4b60748a-0f19-42b2-8505-c66d2b7df1cd",
         "handle": "oppo-a57/a57s/a57e/a73-5g/a77/a77s-volume-flex",
         "reference_id": null,
@@ -37231,7 +37285,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2026-01-15T02:30:27.000Z",
-        "updated_at": "2026-11-14T05:05:22.000Z",
+        "updated_at": "2026-11-21T10:50:23.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -38419,7 +38473,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2025-12-27T08:48:26.000Z",
-        "updated_at": "2026-10-11T11:59:00.000Z",
+        "updated_at": "2026-11-21T10:49:47.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -58760,6 +58814,12 @@
   "inventory": {
     "inventory_levels": [
       {
+        "variant_id": "ebecbd3c-068a-4df8-ab43-837fbfb9f0ba",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 2,
+        "updated_at": "2026-11-21T10:50:13.000Z"
+      },
+      {
         "variant_id": "8c8b11b8-eb64-4174-bd29-dad38d48ee35",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
         "in_stock": 3,
@@ -59194,8 +59254,8 @@
       {
         "variant_id": "bbe5a949-23d1-4296-9cfd-9edcc23019a5",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 1,
-        "updated_at": "2026-10-27T02:50:51.000Z"
+        "in_stock": 0,
+        "updated_at": "2026-11-21T07:39:51.000Z"
       },
       {
         "variant_id": "d6c85329-a04d-4be9-ac14-cef47858a881",
@@ -62590,8 +62650,8 @@
       {
         "variant_id": "ecbf3bb4-2c99-423c-b727-80cc3b5e30cd",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 0,
-        "updated_at": "2026-11-20T04:13:06.000Z"
+        "in_stock": 2,
+        "updated_at": "2026-11-21T10:50:23.000Z"
       },
       {
         "variant_id": "2af7a859-8389-4bee-949d-71573f01e00a",
@@ -62722,8 +62782,8 @@
       {
         "variant_id": "f3aad3e5-0030-4b3b-b57f-075e72210708",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 1,
-        "updated_at": "2026-11-03T07:47:55.000Z"
+        "in_stock": 3,
+        "updated_at": "2026-11-21T10:49:47.000Z"
       },
       {
         "variant_id": "33bd8735-58c9-4a4d-80c7-cf533360cada",
@@ -64270,8 +64330,8 @@
       {
         "variant_id": "0750295e-10f5-4d8b-a813-282f64f654d1",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 8,
-        "updated_at": "2026-11-20T11:04:36.000Z"
+        "in_stock": 6,
+        "updated_at": "2026-11-21T09:01:21.000Z"
       },
       {
         "variant_id": "d76609fb-7b0c-42cf-aae7-c2a88dae400d",
@@ -64833,5 +64893,5 @@
       }
     ]
   },
-  "last_updated": "2026-11-21 14:00:22"
+  "last_updated": "2026-11-21 22:02:04"
 }
