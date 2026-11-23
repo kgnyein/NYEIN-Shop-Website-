@@ -2,6 +2,276 @@
   "items": {
     "items": [
       {
+        "id": "7543df8f-55aa-4099-a71d-4d7ae249f3e3",
+        "handle": "m.y-dfu/-sm-odin",
+        "reference_id": null,
+        "item_name": "M.Y DFU/ SM Odin",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "6cff14ba-139d-45e0-b047-563ecb2fb0ab",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": "https://api.loyverse.com/image/7543df8f-55aa-4099-a71d-4d7ae249f3e3",
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-11-23T11:41:50.000Z",
+        "updated_at": "2026-11-23T11:41:50.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "ab450a56-7d70-47c4-9e41-92d44f78b055",
+            "item_id": "7543df8f-55aa-4099-a71d-4d7ae249f3e3",
+            "sku": "11091",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 330.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 330.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-11-23T11:41:50.000Z",
+            "updated_at": "2026-11-23T11:41:50.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "549b3852-f227-413f-be5c-099162101915",
+        "handle": "qianli-ကလော်တံ",
+        "reference_id": null,
+        "item_name": "Qianli ကလော်တံ",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": "https://api.loyverse.com/image/549b3852-f227-413f-be5c-099162101915",
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-11-23T11:39:06.000Z",
+        "updated_at": "2026-11-23T11:39:06.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "c1cfa505-0c32-4bc8-8ee5-dbfa77486d1e",
+            "item_id": "549b3852-f227-413f-be5c-099162101915",
+            "sku": "11090",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "6971064231850",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 85.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 85.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-11-23T11:39:06.000Z",
+            "updated_at": "2026-11-23T11:39:06.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "7ebac4af-4a33-43a4-b1d1-a186e0c6a1be",
+        "handle": "fabric-မီးခံတိပ်-10mm",
+        "reference_id": null,
+        "item_name": "Fabric မီးခံတိပ် 10mm",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "6cff14ba-139d-45e0-b047-563ecb2fb0ab",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": "https://api.loyverse.com/image/7ebac4af-4a33-43a4-b1d1-a186e0c6a1be",
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-11-23T11:37:33.000Z",
+        "updated_at": "2026-11-23T11:37:33.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "04e6b8d0-6a92-4cb9-ab36-4fdc85b77c67",
+            "item_id": "7ebac4af-4a33-43a4-b1d1-a186e0c6a1be",
+            "sku": "11089",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 100.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 100.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-11-23T11:37:33.000Z",
+            "updated_at": "2026-11-23T11:37:33.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "19e58986-5e6e-458f-977b-14e7629e7089",
+        "handle": "sunshine-6-ports-charger-ss-304q",
+        "reference_id": null,
+        "item_name": "Sunshine 6 ports Charger SS-304Q",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "6cff14ba-139d-45e0-b047-563ecb2fb0ab",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": "https://api.loyverse.com/image/19e58986-5e6e-458f-977b-14e7629e7089",
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-11-23T11:34:24.000Z",
+        "updated_at": "2026-11-23T11:34:24.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "98b311ef-cda1-49fe-a381-ef259da8eeaf",
+            "item_id": "19e58986-5e6e-458f-977b-14e7629e7089",
+            "sku": "11088",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "6971806512803",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 500.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 500.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-11-23T11:34:24.000Z",
+            "updated_at": "2026-11-23T11:34:24.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "50ea20cd-a622-487a-ac17-e0eb191d319f",
+        "handle": "relife-electric-screwdriver-e1",
+        "reference_id": null,
+        "item_name": "RELIFE Electric Screwdriver E1",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "6cff14ba-139d-45e0-b047-563ecb2fb0ab",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": "https://api.loyverse.com/image/50ea20cd-a622-487a-ac17-e0eb191d319f",
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-11-23T11:32:23.000Z",
+        "updated_at": "2026-11-23T11:32:23.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "6dec2815-bb55-4f5c-8318-d54077cd3430",
+            "item_id": "50ea20cd-a622-487a-ac17-e0eb191d319f",
+            "sku": "11087",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "6941590210711",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 620.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 620.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-11-23T11:32:23.000Z",
+            "updated_at": "2026-11-23T11:32:23.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
         "id": "464fcf14-30bc-43ad-ae81-40a6c107725f",
         "handle": "iph-12-power-flex",
         "reference_id": null,
@@ -58814,6 +59084,36 @@
   "inventory": {
     "inventory_levels": [
       {
+        "variant_id": "ab450a56-7d70-47c4-9e41-92d44f78b055",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-11-23T11:41:50.000Z"
+      },
+      {
+        "variant_id": "c1cfa505-0c32-4bc8-8ee5-dbfa77486d1e",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-11-23T11:39:05.000Z"
+      },
+      {
+        "variant_id": "04e6b8d0-6a92-4cb9-ab36-4fdc85b77c67",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 2,
+        "updated_at": "2026-11-23T11:37:32.000Z"
+      },
+      {
+        "variant_id": "98b311ef-cda1-49fe-a381-ef259da8eeaf",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-11-23T11:34:23.000Z"
+      },
+      {
+        "variant_id": "6dec2815-bb55-4f5c-8318-d54077cd3430",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-11-23T11:32:23.000Z"
+      },
+      {
         "variant_id": "ebecbd3c-068a-4df8-ab43-837fbfb9f0ba",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
         "in_stock": 2,
@@ -64893,5 +65193,5 @@
       }
     ]
   },
-  "last_updated": "2026-11-23 17:27:31"
+  "last_updated": "2026-11-24 04:54:24"
 }
