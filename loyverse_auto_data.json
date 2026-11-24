@@ -62416,8 +62416,8 @@
       {
         "variant_id": "bdd9e28d-ff25-4bb5-9fca-ea4b5a5819b8",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 3,
-        "updated_at": "2026-11-19T06:15:00.000Z"
+        "in_stock": 2,
+        "updated_at": "2026-11-24T05:16:18.000Z"
       },
       {
         "variant_id": "13c51e1f-e1db-4af8-82d0-07d69dddca74",
@@ -62902,8 +62902,8 @@
       {
         "variant_id": "5f77a7f3-0f03-4d07-8474-ff7a1dbde4a8",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 2,
-        "updated_at": "2026-11-13T09:00:02.000Z"
+        "in_stock": 1,
+        "updated_at": "2026-11-24T03:11:39.000Z"
       },
       {
         "variant_id": "713926bc-c0a8-4f71-87b1-5fc82ca35550",
@@ -63214,8 +63214,8 @@
       {
         "variant_id": "5d042609-7d13-4f97-af8b-043496ef893d",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 4,
-        "updated_at": "2026-11-12T05:11:07.000Z"
+        "in_stock": 3,
+        "updated_at": "2026-11-24T05:15:59.000Z"
       },
       {
         "variant_id": "cf98137d-f184-4aa7-9d3b-c1cf8c857d9c",
@@ -64156,8 +64156,8 @@
       {
         "variant_id": "8ae9e9b7-f319-4d21-8e28-50e8a237393c",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 1,
-        "updated_at": "2026-11-14T08:44:00.000Z"
+        "in_stock": 0,
+        "updated_at": "2026-11-24T03:54:47.000Z"
       },
       {
         "variant_id": "db4d52f3-7f76-41e8-ba5a-df9c09494aee",
@@ -64456,8 +64456,8 @@
       {
         "variant_id": "6d68879d-255e-4732-90d0-e59ed53d1820",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 4,
-        "updated_at": "2026-11-17T08:54:16.000Z"
+        "in_stock": 3,
+        "updated_at": "2026-11-24T03:02:08.000Z"
       },
       {
         "variant_id": "aa507282-c7e0-4f3f-aa68-f177888ad28c",
@@ -65193,5 +65193,5 @@
       }
     ]
   },
-  "last_updated": "2026-11-24 04:54:24"
+  "last_updated": "2026-11-24 12:41:29"
 }
