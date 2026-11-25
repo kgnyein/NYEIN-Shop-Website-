@@ -2,6 +2,600 @@
   "items": {
     "items": [
       {
+        "id": "99ece737-6a5e-4c4a-9b24-037317512cb1",
+        "handle": "vivo-y03/y03t/y18-4g-usb-board",
+        "reference_id": null,
+        "item_name": "Vivo Y03/Y03T/Y18 4G USB board",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "11133a82-0b6e-4c02-8049-65405e5c40b9",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "PURPLE",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-11-25T12:43:36.000Z",
+        "updated_at": "2026-11-25T12:43:36.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "1cd3954e-4dfc-4382-8d0b-ab862e22bcfa",
+            "item_id": "99ece737-6a5e-4c4a-9b24-037317512cb1",
+            "sku": "11103",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": null,
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 65.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 65.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-11-25T12:43:36.000Z",
+            "updated_at": "2026-11-25T12:43:36.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "1edb6c06-668d-4989-bba7-8da24cfd60ec",
+        "handle": "redmi-note-8-pro-middle-flex",
+        "reference_id": null,
+        "item_name": "Redmi Note 8 pro middle flex",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "6cff14ba-139d-45e0-b047-563ecb2fb0ab",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "YELLOW",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-11-25T12:41:50.000Z",
+        "updated_at": "2026-11-25T12:41:50.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "b4b45dbc-5f48-44fc-bf47-313ad4b0e43d",
+            "item_id": "1edb6c06-668d-4989-bba7-8da24cfd60ec",
+            "sku": "11102",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "FC00395",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 65.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 65.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-11-25T12:41:50.000Z",
+            "updated_at": "2026-11-25T12:41:50.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "a72ce6e5-154e-498c-8c35-ada33fc58f76",
+        "handle": "oppo-a94-4g/f19-pro-blp-835",
+        "reference_id": null,
+        "item_name": "Oppo A94 4G/F19 pro BLP 835",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "ffaf30cf-88cc-4f86-a430-b284da9ed43a",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREEN",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-11-25T12:39:09.000Z",
+        "updated_at": "2026-11-25T12:39:09.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "8d9bc01e-615d-40e2-9a62-f983b7ac1411",
+            "item_id": "a72ce6e5-154e-498c-8c35-ada33fc58f76",
+            "sku": "11101",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "BT00863",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 210.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 210.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-11-25T12:39:09.000Z",
+            "updated_at": "2026-11-25T12:39:09.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "9a161d4a-ee04-4b1e-9956-65ba7471cbee",
+        "handle": "iph-14-promax-back-glass-(deep-purple)",
+        "reference_id": null,
+        "item_name": "Iph 14 promax back glass (Deep Purple)",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "051972d6-6228-4f16-ad0c-994c373ad6c2",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "PINK",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-11-25T12:33:56.000Z",
+        "updated_at": "2026-11-25T12:33:56.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "304e82de-537b-439b-a034-383bd4fab732",
+            "item_id": "9a161d4a-ee04-4b1e-9956-65ba7471cbee",
+            "sku": "11100",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "BC01223",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 300.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 300.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-11-25T12:33:56.000Z",
+            "updated_at": "2026-11-25T12:33:56.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "a06daa4d-d422-4111-8800-467b03c64708",
+        "handle": "iph-14-promax-back-glass-(silver)",
+        "reference_id": null,
+        "item_name": "Iph 14 promax back glass (Silver)",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "051972d6-6228-4f16-ad0c-994c373ad6c2",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "PINK",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-11-25T12:33:09.000Z",
+        "updated_at": "2026-11-25T12:33:09.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "19db47c1-727b-4345-890a-605ad7088af2",
+            "item_id": "a06daa4d-d422-4111-8800-467b03c64708",
+            "sku": "11099",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "BC01225",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 300.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 300.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-11-25T12:33:09.000Z",
+            "updated_at": "2026-11-25T12:33:09.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "782d46e6-67ca-4386-8e15-34a4375b2b74",
+        "handle": "iph-14-promax-back-glass-(black)",
+        "reference_id": null,
+        "item_name": "Iph 14 promax back glass (Black)",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "051972d6-6228-4f16-ad0c-994c373ad6c2",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "PINK",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-11-25T12:32:25.000Z",
+        "updated_at": "2026-11-25T12:32:25.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "e3093707-8908-4409-b96b-575c0bae584a",
+            "item_id": "782d46e6-67ca-4386-8e15-34a4375b2b74",
+            "sku": "11098",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "BC01222",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 300.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 300.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-11-25T12:32:25.000Z",
+            "updated_at": "2026-11-25T12:32:25.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "aa5aa204-99bb-4aac-afd0-b1bf5387e4ee",
+        "handle": "iph-12-back-glass-(green)",
+        "reference_id": null,
+        "item_name": "iph 12 back glass (Green)",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "051972d6-6228-4f16-ad0c-994c373ad6c2",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "PINK",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-11-25T12:31:17.000Z",
+        "updated_at": "2026-11-25T12:31:17.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "9c7d60b9-b56f-4d33-adec-3260e6447551",
+            "item_id": "aa5aa204-99bb-4aac-afd0-b1bf5387e4ee",
+            "sku": "11097",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "BC01241",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 180.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 180.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-11-25T12:31:17.000Z",
+            "updated_at": "2026-11-25T12:31:17.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "2bc42271-ed4d-46e4-b692-63dde7ab1bbc",
+        "handle": "iph-13-back-glass-(pink)",
+        "reference_id": null,
+        "item_name": "iph 13 back glass (Pink)",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "051972d6-6228-4f16-ad0c-994c373ad6c2",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "PINK",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-11-25T12:29:02.000Z",
+        "updated_at": "2026-11-25T12:29:02.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "511a3f56-05ef-4ded-ae8d-81ba36006db1",
+            "item_id": "2bc42271-ed4d-46e4-b692-63dde7ab1bbc",
+            "sku": "11096",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "BC01202",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 180.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 180.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-11-25T12:29:02.000Z",
+            "updated_at": "2026-11-25T12:29:02.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "24312a5e-5fe0-48c0-a1b3-c7a7d055e076",
+        "handle": "iph-13-back-glass-(green)",
+        "reference_id": null,
+        "item_name": "iph 13 back glass (Green)",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "051972d6-6228-4f16-ad0c-994c373ad6c2",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "PINK",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-11-25T12:28:26.000Z",
+        "updated_at": "2026-11-25T12:29:12.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "dfdfa736-3564-4e29-ab13-79151e03ccbc",
+            "item_id": "24312a5e-5fe0-48c0-a1b3-c7a7d055e076",
+            "sku": "11095",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "BC00395",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 180.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 180.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-11-25T12:28:26.000Z",
+            "updated_at": "2026-11-25T12:28:26.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "ec3fe2a4-4b71-4e1d-8302-a0cc7d5a3724",
+        "handle": "itel-city-200/smart-20",
+        "reference_id": null,
+        "item_name": "ITEL City 200/Smart 20",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": "da709465-273d-4229-9e63-b3c1cd4c7842",
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-11-25T12:27:14.000Z",
+        "updated_at": "2026-11-25T12:27:14.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "65d85e20-d8e2-4850-8078-0a30a4b39a34",
+            "item_id": "ec3fe2a4-4b71-4e1d-8302-a0cc7d5a3724",
+            "sku": "11094",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "TL02778",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 370.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 370.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-11-25T12:27:14.000Z",
+            "updated_at": "2026-11-25T12:27:14.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
+        "id": "edcd27b1-46ed-484a-9afa-144ba57c4251",
+        "handle": "pop-5-lite-/smart-6/go-2022/pop-5-pro-trojan",
+        "reference_id": null,
+        "item_name": "Pop 5 lite /Smart 6/Go 2022/pop 5 pro Trojan",
+        "description": null,
+        "track_stock": true,
+        "sold_by_weight": false,
+        "is_composite": false,
+        "use_production": false,
+        "category_id": null,
+        "components": [],
+        "primary_supplier_id": null,
+        "tax_ids": [],
+        "modifier_ids": [],
+        "form": "SQUARE",
+        "color": "GREY",
+        "image_url": null,
+        "option1_name": null,
+        "option2_name": null,
+        "option3_name": null,
+        "created_at": "2026-11-25T12:25:51.000Z",
+        "updated_at": "2026-11-25T12:25:51.000Z",
+        "deleted_at": null,
+        "variants": [
+          {
+            "variant_id": "5dc620f6-4ae5-4613-b83a-469d0caaabfa",
+            "item_id": "edcd27b1-46ed-484a-9afa-144ba57c4251",
+            "sku": "11093",
+            "reference_variant_id": null,
+            "option1_value": null,
+            "option2_value": null,
+            "option3_value": null,
+            "barcode": "TL02143",
+            "cost": 0.0,
+            "purchase_cost": null,
+            "default_pricing_type": "FIXED",
+            "default_price": 350.0,
+            "stores": [
+              {
+                "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+                "pricing_type": "FIXED",
+                "price": 350.0,
+                "available_for_sale": true,
+                "optimal_stock": null,
+                "low_stock": 0
+              }
+            ],
+            "created_at": "2026-11-25T12:25:51.000Z",
+            "updated_at": "2026-11-25T12:25:51.000Z",
+            "deleted_at": null
+          }
+        ]
+      },
+      {
         "id": "fde25541-552a-42bf-a1b7-ca7c24fa7fd0",
         "handle": "iph-14-aa-kaiku",
         "reference_id": null,
@@ -12281,7 +12875,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2026-10-01T12:07:47.000Z",
-        "updated_at": "2026-10-01T12:07:47.000Z",
+        "updated_at": "2026-11-25T12:40:26.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -12301,7 +12895,7 @@
               {
                 "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
                 "pricing_type": "FIXED",
-                "price": 40.0,
+                "price": 35.0,
                 "available_for_sale": true,
                 "optimal_stock": null,
                 "low_stock": 0
@@ -12695,7 +13289,7 @@
         "id": "48d1866c-c5a8-45e2-b9fc-5674e05dd9ff",
         "handle": "iph-12-back-glass-purple",
         "reference_id": null,
-        "item_name": "Iph 12 back glass purple (True Colour)",
+        "item_name": "Iph 12 back glass (Red)",
         "description": null,
         "track_stock": true,
         "sold_by_weight": false,
@@ -12707,13 +13301,13 @@
         "tax_ids": [],
         "modifier_ids": [],
         "form": "SQUARE",
-        "color": "YELLOW",
+        "color": "PINK",
         "image_url": null,
         "option1_name": null,
         "option2_name": null,
         "option3_name": null,
         "created_at": "2026-09-29T03:38:23.000Z",
-        "updated_at": "2026-10-01T09:03:52.000Z",
+        "updated_at": "2026-11-25T12:30:33.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -12724,7 +13318,7 @@
             "option1_value": null,
             "option2_value": null,
             "option3_value": null,
-            "barcode": "0311347",
+            "barcode": "BC00387",
             "cost": 0.0,
             "purchase_cost": null,
             "default_pricing_type": "FIXED",
@@ -12733,14 +13327,14 @@
               {
                 "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
                 "pricing_type": "FIXED",
-                "price": 130.0,
+                "price": 180.0,
                 "available_for_sale": true,
                 "optimal_stock": null,
                 "low_stock": 0
               }
             ],
             "created_at": "2026-09-29T03:38:24.000Z",
-            "updated_at": "2026-10-01T09:03:52.000Z",
+            "updated_at": "2026-11-25T12:30:33.000Z",
             "deleted_at": null
           }
         ]
@@ -32947,7 +33541,7 @@
         "id": "2e6667ed-cd84-4c8d-88a2-04478d563b1d",
         "handle": "iph-12-back-glass-black",
         "reference_id": null,
-        "item_name": "Iph 12 back glass black",
+        "item_name": "Iph 12 back glass (White)",
         "description": null,
         "track_stock": true,
         "sold_by_weight": false,
@@ -32959,13 +33553,13 @@
         "tax_ids": [],
         "modifier_ids": [],
         "form": "SQUARE",
-        "color": "YELLOW",
+        "color": "PINK",
         "image_url": null,
         "option1_name": null,
         "option2_name": null,
         "option3_name": null,
         "created_at": "2026-03-20T07:04:59.000Z",
-        "updated_at": "2026-10-19T03:14:03.000Z",
+        "updated_at": "2026-11-25T12:29:54.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -32976,7 +33570,7 @@
             "option1_value": null,
             "option2_value": null,
             "option3_value": null,
-            "barcode": null,
+            "barcode": "BC00386",
             "cost": 0.0,
             "purchase_cost": null,
             "default_pricing_type": "FIXED",
@@ -32985,14 +33579,14 @@
               {
                 "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
                 "pricing_type": "FIXED",
-                "price": 155.0,
+                "price": 180.0,
                 "available_for_sale": true,
                 "optimal_stock": null,
                 "low_stock": 0
               }
             ],
             "created_at": "2026-03-20T07:04:59.000Z",
-            "updated_at": "2026-07-07T11:26:38.000Z",
+            "updated_at": "2026-11-25T12:29:54.000Z",
             "deleted_at": null
           }
         ]
@@ -39391,7 +39985,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2025-12-12T06:46:34.000Z",
-        "updated_at": "2026-11-16T10:32:46.000Z",
+        "updated_at": "2026-11-25T12:39:38.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -41875,7 +42469,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2025-09-13T08:20:27.000Z",
-        "updated_at": "2026-08-25T04:39:48.000Z",
+        "updated_at": "2026-11-25T12:40:43.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -42469,7 +43063,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2025-08-19T03:25:42.000Z",
-        "updated_at": "2026-05-23T11:46:37.000Z",
+        "updated_at": "2026-11-25T12:37:07.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -50029,7 +50623,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2025-03-21T09:30:47.000Z",
-        "updated_at": "2026-11-15T09:53:42.000Z",
+        "updated_at": "2026-11-25T12:42:18.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -50245,7 +50839,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2025-03-21T09:25:08.000Z",
-        "updated_at": "2026-10-27T10:34:07.000Z",
+        "updated_at": "2026-11-25T12:40:57.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -54835,7 +55429,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2024-11-20T13:09:06.000Z",
-        "updated_at": "2026-11-17T06:20:26.000Z",
+        "updated_at": "2026-11-25T12:36:19.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -54997,7 +55591,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2024-11-20T02:24:57.000Z",
-        "updated_at": "2026-11-02T03:54:30.000Z",
+        "updated_at": "2026-11-25T12:34:55.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -55017,7 +55611,7 @@
               {
                 "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
                 "pricing_type": "FIXED",
-                "price": 230.0,
+                "price": 240.0,
                 "available_for_sale": true,
                 "optimal_stock": null,
                 "low_stock": 1
@@ -57643,7 +58237,7 @@
         "option2_name": null,
         "option3_name": null,
         "created_at": "2024-10-31T09:16:45.000Z",
-        "updated_at": "2026-10-25T03:26:36.000Z",
+        "updated_at": "2026-11-25T12:35:32.000Z",
         "deleted_at": null,
         "variants": [
           {
@@ -59138,6 +59732,72 @@
   "inventory": {
     "inventory_levels": [
       {
+        "variant_id": "1cd3954e-4dfc-4382-8d0b-ab862e22bcfa",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 2,
+        "updated_at": "2026-11-25T12:43:35.000Z"
+      },
+      {
+        "variant_id": "b4b45dbc-5f48-44fc-bf47-313ad4b0e43d",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 2,
+        "updated_at": "2026-11-25T12:41:49.000Z"
+      },
+      {
+        "variant_id": "8d9bc01e-615d-40e2-9a62-f983b7ac1411",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-11-25T12:39:09.000Z"
+      },
+      {
+        "variant_id": "304e82de-537b-439b-a034-383bd4fab732",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-11-25T12:33:56.000Z"
+      },
+      {
+        "variant_id": "19db47c1-727b-4345-890a-605ad7088af2",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-11-25T12:33:08.000Z"
+      },
+      {
+        "variant_id": "e3093707-8908-4409-b96b-575c0bae584a",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-11-25T12:32:24.000Z"
+      },
+      {
+        "variant_id": "9c7d60b9-b56f-4d33-adec-3260e6447551",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-11-25T12:31:16.000Z"
+      },
+      {
+        "variant_id": "511a3f56-05ef-4ded-ae8d-81ba36006db1",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-11-25T12:29:02.000Z"
+      },
+      {
+        "variant_id": "dfdfa736-3564-4e29-ab13-79151e03ccbc",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 1,
+        "updated_at": "2026-11-25T12:28:25.000Z"
+      },
+      {
+        "variant_id": "65d85e20-d8e2-4850-8078-0a30a4b39a34",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 2,
+        "updated_at": "2026-11-25T12:27:13.000Z"
+      },
+      {
+        "variant_id": "5dc620f6-4ae5-4613-b83a-469d0caaabfa",
+        "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
+        "in_stock": 2,
+        "updated_at": "2026-11-25T12:25:50.000Z"
+      },
+      {
         "variant_id": "fb7e98b8-ef33-4602-a7ff-9214f9bfb230",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
         "in_stock": 2,
@@ -60430,8 +61090,8 @@
       {
         "variant_id": "3beb5e36-58dd-4e8a-b435-392b731770d6",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 0,
-        "updated_at": "2026-11-16T07:21:21.000Z"
+        "in_stock": 5,
+        "updated_at": "2026-11-25T12:40:26.000Z"
       },
       {
         "variant_id": "d7881976-6a1a-4bf5-87cc-8843ac58f67d",
@@ -60478,8 +61138,8 @@
       {
         "variant_id": "b0110f4b-67bb-4e34-a5cd-c01f3fe66a21",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 0,
-        "updated_at": "2026-10-01T09:03:52.000Z"
+        "in_stock": 1,
+        "updated_at": "2026-11-25T12:30:33.000Z"
       },
       {
         "variant_id": "383a5f1b-33f6-4a83-b483-fd853a25e28a",
@@ -62500,8 +63160,8 @@
       {
         "variant_id": "b4e70dbc-0d0a-4b13-99fb-25cecdb0cef9",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 2,
-        "updated_at": "2026-10-19T03:14:03.000Z"
+        "in_stock": 1,
+        "updated_at": "2026-11-25T12:29:54.000Z"
       },
       {
         "variant_id": "edda34d9-a4ee-4cae-9387-b8e6f400fc1f",
@@ -63196,8 +63856,8 @@
       {
         "variant_id": "7db73d93-3d07-4ee3-bff3-99e29d25bf54",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 1,
-        "updated_at": "2026-11-21T04:20:04.000Z"
+        "in_stock": 3,
+        "updated_at": "2026-11-25T12:39:38.000Z"
       },
       {
         "variant_id": "bd49268a-1104-4d51-8315-3558e601c140",
@@ -63466,8 +64126,8 @@
       {
         "variant_id": "941b2aa7-7c55-4241-8231-630c56591c28",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 0,
-        "updated_at": "2026-11-16T03:26:30.000Z"
+        "in_stock": 3,
+        "updated_at": "2026-11-25T12:40:43.000Z"
       },
       {
         "variant_id": "73a84a4c-f102-41eb-a6c7-d86b3af559e0",
@@ -63514,8 +64174,8 @@
       {
         "variant_id": "ba86dda1-8be9-4888-92ff-fe4f65a5d12b",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 0,
-        "updated_at": "2026-11-16T04:59:32.000Z"
+        "in_stock": 2,
+        "updated_at": "2026-11-25T12:37:07.000Z"
       },
       {
         "variant_id": "7563114a-7aa8-475c-90da-f04291220124",
@@ -64288,8 +64948,8 @@
       {
         "variant_id": "98fb8f13-2472-4671-a60d-e76e9bec72f9",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 0,
-        "updated_at": "2026-11-15T11:24:43.000Z"
+        "in_stock": 3,
+        "updated_at": "2026-11-25T12:42:18.000Z"
       },
       {
         "variant_id": "81d19323-3b17-445e-aa94-bfc0fea92f45",
@@ -64312,8 +64972,8 @@
       {
         "variant_id": "078bd4e8-42e1-4aa7-9e9b-e613ac3f96d0",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 0,
-        "updated_at": "2026-11-21T03:53:48.000Z"
+        "in_stock": 5,
+        "updated_at": "2026-11-25T12:40:57.000Z"
       },
       {
         "variant_id": "6237b922-09ce-4baf-9c83-74cc51d936e9",
@@ -64780,8 +65440,8 @@
       {
         "variant_id": "ead7aff6-b170-4e08-96c3-76ca001b69f4",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 1,
-        "updated_at": "2026-11-17T06:20:26.000Z"
+        "in_stock": 3,
+        "updated_at": "2026-11-25T12:36:19.000Z"
       },
       {
         "variant_id": "aae0ed13-e9f1-4a22-a69b-2134caa0e8f9",
@@ -64798,8 +65458,8 @@
       {
         "variant_id": "8b150e1a-1ff8-4cee-a2ff-dbf38667f0b2",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 0,
-        "updated_at": "2026-11-18T12:01:48.000Z"
+        "in_stock": 2,
+        "updated_at": "2026-11-25T12:34:55.000Z"
       },
       {
         "variant_id": "8d3f99b5-2aad-40c3-9ac7-8417093d84af",
@@ -65074,8 +65734,8 @@
       {
         "variant_id": "3290ebe7-4332-4a4b-919f-4e8618fbc289",
         "store_id": "13102092-10eb-4677-9480-296a2c89aeb6",
-        "in_stock": 0,
-        "updated_at": "2026-11-23T04:08:44.000Z"
+        "in_stock": 3,
+        "updated_at": "2026-11-25T12:35:32.000Z"
       },
       {
         "variant_id": "89d2d55b-ac7d-4d81-a0c8-b6d53b58579b",
@@ -65241,5 +65901,5 @@
       }
     ]
   },
-  "last_updated": "2026-11-25 17:19:16"
+  "last_updated": "2026-11-26 02:46:36"
 }
